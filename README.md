@@ -1,4 +1,4 @@
-# JS-REACT-NODE-LABS-IFEANYI
+# REACT-LABS-IFEANYI
 by Ifeanyi Omeata
 
 <details>
