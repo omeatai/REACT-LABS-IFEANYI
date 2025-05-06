@@ -325,7 +325,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Local images in Public Folder (Less Performant)</summary>
+  <summary>Project - Booklist - Local images in Public Folder (Less Performant)</summary>
 
   ### Local images in Public Folder (Less Performant)
 
