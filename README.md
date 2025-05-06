@@ -2,7 +2,7 @@
 by Ifeanyi Omeata
 
 <details>
-  <summary>React Setup</summary>
+  <summary>React Basic Setup</summary>
 
   ### Confirm Node Version
   
