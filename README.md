@@ -2,16 +2,13 @@
 by Ifeanyi Omeata
 
 <details>
-  <summary>1 - Python Basics - Print String & Comments</summary>
+  <summary>React Basics</summary>
 
-  ### 1. Print String
+  ### Confirm Node Version
   
-  ```py
-  print("Hello World!")
-  print("Python is easy!")
-
-  if __name__ == '__main__':
-      print('Completed!')
+  ```
+  $ node --version
+  v22.14.0
   ```
 
   ```
