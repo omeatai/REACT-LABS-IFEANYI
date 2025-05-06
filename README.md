@@ -6,7 +6,7 @@ by Ifeanyi Omeata
 
   ### Confirm Node Version
   
-  ```bs
+  ```
   $ node --version
   v22.14.0
   ```
