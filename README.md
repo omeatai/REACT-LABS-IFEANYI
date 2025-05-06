@@ -372,7 +372,64 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Project - Booklist - CSS in JSX</summary>
 
+  ### CSS in JSX
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  
+  import "./index.css";
+  
+  function BookList() {
+    return (
+      <React.Fragment>
+        <section className="booklist">
+          <Book />
+          <Book />
+          <Book />
+          <Book />
+        </section>
+      </React.Fragment>
+    );
+  }
+  
+  const Book = () => {
+    return (
+      <article className="book">
+        <Image />
+        <Title />
+        <Author />
+      </article>
+    );
+  };
+  
+  const Image = () => <img src={"./images/the_let_them_theory.jpg"} alt="book" />;
+  const Title = () => (
+    <h2 style={{ color: "red", fontSize: "1rem", marginTop: "0.5rem" }}>
+      The Let Them Theory
+    </h2>
+  );
+  const Author = () => {
+    const inlineStyleForAuthor = {
+      color: "#617d98",
+      fontSize: "0.75rem",
+      marginTop: "0.25rem",
+    };
+    return (
+      <h3 style={inlineStyleForAuthor}>by Mel Robbins and Sawyer Robbins</h3>
+    );
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+  ![image](https://github.com/user-attachments/assets/837a43c4-29aa-47da-8284-ad94fe4660f4)
+
+</details>
 
 
 
