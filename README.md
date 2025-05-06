@@ -21,6 +21,7 @@ by Ifeanyi Omeata
   ### Start React App
 
   ```
+  cd my-app
   npm start
   ```
 
