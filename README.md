@@ -324,7 +324,53 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Local images in Public Folder (Less Performant)</summary>
 
+  ### Local images in Public Folder (Less Performant)
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  
+  import "./index.css";
+  
+  function BookList() {
+    return (
+      <React.Fragment>
+        <section className="booklist">
+          <Book />
+          <Book />
+          <Book />
+          <Book />
+        </section>
+      </React.Fragment>
+    );
+  }
+  
+  const Book = () => {
+    return (
+      <article className="book">
+        <Image />
+        <Title />
+        <Author />
+      </article>
+    );
+  };
+  
+  const Image = () => <img src={"./images/the_let_them_theory.jpg"} alt="book" />;
+  const Title = () => <h2>The Let Them Theory</h2>;
+  const Author = () => {
+    return <h3>by Mel Robbins and Sawyer Robbins</h3>;
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+  ![image](https://github.com/user-attachments/assets/8f5d223f-8848-499f-9fa0-a05b88384d6a)
+
+</details>
 
 
 
