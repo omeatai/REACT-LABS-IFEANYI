@@ -2,7 +2,7 @@
 by Ifeanyi Omeata
 
 <details>
-  <summary>React Basics</summary>
+  <summary>React Setup</summary>
 
   ### Confirm Node Version
   
@@ -24,7 +24,12 @@ by Ifeanyi Omeata
   npm start
   ```
 
-  ### Index.js setup
+</details>
+
+<details>
+  <summary>Index.js default setup</summary>
+
+  ### Index.js default setup
 
   ```
   import React from "react";
@@ -38,7 +43,23 @@ by Ifeanyi Omeata
   root.render(<Greeting />);
   ```
 
-  ![image](https://github.com/user-attachments/assets/0de638b7-2b78-4636-accf-12718a7847d3)
-
+  ![image](https://github.com/user-attachments/assets/0de638b7-2b78-4636-accf-12718a7847d3)  
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
