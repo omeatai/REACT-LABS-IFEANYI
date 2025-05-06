@@ -434,7 +434,7 @@ root.render(<Greeting />);
 <details>
   <summary>Project - Booklist - Javascript in JSX</summary>
 
-  ### CSS in JSX
+  ###   ### Javascript in JSX
 
   ```js
   import React from "react";
