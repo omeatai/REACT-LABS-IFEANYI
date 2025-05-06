@@ -123,7 +123,7 @@ root.render(<Greeting />);
 
 <details>
   <summary>Project - Booklist</summary>
-
+  
   - [ ] 1-Create Structure
   - [ ] 2-Add Image, Title and Author from Amazon
   - [ ] 3-Add CSS Styling with Grid
