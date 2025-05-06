@@ -122,13 +122,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist</summary>
-  
-  - [ ] 1-Create Structure
-  - [ ] 2-Add Image, Title and Author from Amazon
-  - [ ] 3-Add CSS Styling with Grid
+  <summary>Project - Booklist - Create Structure</summary>
 
-  ### 1-Create Structure
+  ### Create Structure
 
   ```js
   import React from "react";
@@ -166,7 +162,12 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/ad46c540-c7f4-4378-b7f7-28f7515537d2)
 
-  ### 2-Add Image, Title and Author from Amazon
+</details>
+
+<details>
+  <summary>Project - Booklist - Add CSS Styling with Grid</summary>
+
+  ### Add Image, Title and Author from Amazon
 
   ```js
   import React from "react";
@@ -211,8 +212,13 @@ root.render(<Greeting />);
   ```
 
   ![image](https://github.com/user-attachments/assets/37a278ce-a028-4969-9fbf-73d9f4a2547a)
+  
+</details>
 
-  ### 3-Add CSS Styling with Grid
+<details>
+  <summary>Project - Booklist - Add Image, Title and Author from Amazon</summary>
+
+  ### Add CSS Styling with Grid
 
   ##### lab\react\my-app\src\index.css:
   
@@ -317,6 +323,8 @@ root.render(<Greeting />);
   ![image](https://github.com/user-attachments/assets/361deb16-d9d5-4371-a946-67d02d0dab3f)
 
 </details>
+
+
 
 
 
