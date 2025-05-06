@@ -124,7 +124,7 @@ root.render(<Greeting />);
 <details>
   <summary>Project - Booklist</summary>
 
-  ### Create Structure
+  ### 1-Create Structure
 
   ```js
   import React from "react";
@@ -162,7 +162,7 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/ad46c540-c7f4-4378-b7f7-28f7515537d2)
 
-  ### Add Image, Title and Author from Amazon
+  ### 2-Add Image, Title and Author from Amazon
 
   ```js
   import React from "react";
@@ -172,6 +172,9 @@ root.render(<Greeting />);
     return (
       <React.Fragment>
         <section>
+          <Book />
+          <Book />
+          <Book />
           <Book />
         </section>
       </React.Fragment>
@@ -188,17 +191,23 @@ root.render(<Greeting />);
     );
   };
   
-  const Image = () => <h2>Image Placeholder</h2>;
-  const Title = () => <h2>Book Title</h2>;
+  const Image = () => (
+    <img
+      src={"https://m.media-amazon.com/images/I/91ZVf3kNrcL._AC_UL320_.jpg"}
+      alt="book"
+    />
+  );
+  const Title = () => <h2>The Let Them Theory</h2>;
   const Author = () => {
-    return <h3>Author</h3>;
+    return <h3>by Mel Robbins and Sawyer Robbins</h3>;
   };
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(<BookList />);
   ```
 
-  ![image](https://github.com/user-attachments/assets/ad46c540-c7f4-4378-b7f7-28f7515537d2)
+  ![image](https://github.com/user-attachments/assets/37a278ce-a028-4969-9fbf-73d9f4a2547a)
+
 
 </details>
 
