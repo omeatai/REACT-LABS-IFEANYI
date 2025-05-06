@@ -442,6 +442,22 @@ root.render(<Greeting />);
   
   import "./index.css";
   
+  const inlineStyleForAuthor = {
+    color: "#617d98",
+    fontSize: "0.75rem",
+    marginTop: "0.25rem",
+  };
+  
+  const inlineStyleForTitle = {
+    color: "red",
+    fontSize: "1rem",
+    marginTop: "0.5rem",
+  };
+  
+  const title = "The Let Them Theory";
+  const author = "Mel Robbins and Sawyer Robbins";
+  const image = "./images/the_let_them_theory.jpg";
+  
   function BookList() {
     return (
       <React.Fragment>
@@ -456,21 +472,10 @@ root.render(<Greeting />);
   }
   
   const Book = () => {
-    const inlineStyleForAuthor = {
-      color: "#617d98",
-      fontSize: "0.75rem",
-      marginTop: "0.25rem",
-    };
-  
-    const title = "The Let Them Theory";
-    const author = "Mel Robbins and Sawyer Robbins";
-  
     return (
       <article className="book">
-        <img src={"./images/the_let_them_theory.jpg"} alt="book" />
-        <h2 style={{ color: "red", fontSize: "1rem", marginTop: "0.5rem" }}>
-          {title}
-        </h2>
+        <img src={image} alt="book" />
+        <h2 style={inlineStyleForTitle}>{title}</h2>
         <h3 style={inlineStyleForAuthor}>by {author.toUpperCase()}</h3>
       </article>
     );
