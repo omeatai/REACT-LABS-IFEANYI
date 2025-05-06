@@ -83,9 +83,43 @@ by Ifeanyi Omeata
 
 </details>
 
+<details>
+  <summary>Nested Components with React Fragments</summary>
 
+  ### Nested Components with React Fragments
 
+  ```js
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+// Nested Components with React Fragments
+function Greeting() {
+  return (
+    <React.Fragment>
+      <h2>Message Board</h2>
+      <hr />
+      <div>
+        <h3>Person: {<Person />}</h3>
+        <h3>Message: {<Message />}</h3>
+      </div>
+    </React.Fragment>
+  );
+}
+
+const Person = () => {
+  return <span>John Doe</span>;
+};
+const Message = () => {
+  return <span>This is a message.</span>;
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Greeting />);
+  ```
+
+![image](https://github.com/user-attachments/assets/d4c5ec68-4bf3-4490-9c15-094b0c94c6f7)
+
+</details>
 
 
 
