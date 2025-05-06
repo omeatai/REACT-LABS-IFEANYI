@@ -165,7 +165,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Add CSS Styling with Grid</summary>
+  <summary>Project - Booklist - Add Image, Title and Author from Amazon</summary>
 
   ### Add Image, Title and Author from Amazon
 
@@ -216,7 +216,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Add Image, Title and Author from Amazon</summary>
+  <summary>Project - Booklist - Add CSS Styling with Grid</summary>
 
   ### Add CSS Styling with Grid
 
