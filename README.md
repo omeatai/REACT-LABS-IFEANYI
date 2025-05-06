@@ -48,7 +48,40 @@ by Ifeanyi Omeata
 
 </details>
 
+<details>
+  <summary>Using React.createElement()</summary>
 
+  ### Using React.createElement()
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  
+  function Greeting() {
+    return (
+      <div>
+        <h1>My First Component</h1>
+        <Greeting2 />
+      </div>
+    );
+  }
+  
+  const Greeting2 = () => {
+    return React.createElement(
+      "div",
+      {},
+      React.createElement("h1", {}, "My Second Component")
+    );
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<Greeting />);
+  ```
+
+  ![image](https://github.com/user-attachments/assets/13dc2db3-257b-4f9b-a23b-1343a91b604a)
+
+
+</details>
 
 
 
