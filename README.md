@@ -565,10 +565,88 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/70695be6-264f-4dba-8895-2833c6df31c9)
 
-
 </details>
 
+<details>
+  <summary>Project - Booklist - Children Props</summary>
 
+  ### Children Props
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  import "./index.css";
+  
+  const inlineStyleForAuthor = {
+    color: "#617d98",
+    fontSize: "0.75rem",
+    marginTop: "0.25rem",
+  };
+  
+  const inlineStyleForTitle = {
+    color: "red",
+    fontSize: "1rem",
+    marginTop: "0.5rem",
+  };
+  
+  const firstBook = {
+    title: "The Let Them Theory",
+    author: "Mel Robbins and Sawyer Robbins",
+    image: "./images/the_let_them_theory.jpg",
+  };
+  
+  const secondBook = {
+    title: "The Lost Bookshop",
+    author: "Evie Woods",
+    image: "./images/the_lost_bookshop.jpg",
+  };
+  
+  const thirdBook = {
+    title: "Hello Beautiful",
+    author: "Ann Napolitano",
+    image: "./images/hello_beautiful.jpg",
+  };
+  
+  function BookList() {
+    return (
+      <React.Fragment>
+        <section className="booklist">
+          <Book {...firstBook} />
+          <Book {...secondBook} />
+          <Book
+            title={thirdBook.title}
+            author={thirdBook.author}
+            image={thirdBook.image}
+          >
+            <p>This is a text from the children prop.</p>
+            <button type="button">Click me</button>
+          </Book>
+        </section>
+      </React.Fragment>
+    );
+  }
+  
+  const Book = (props) => {
+    const { title, author, image, children } = props;
+    return (
+      <article className="book">
+        <img src={image} alt="book" />
+        <h2 style={inlineStyleForTitle}>{title}</h2>
+        <h3 style={inlineStyleForAuthor}>
+          by {author ? author.toUpperCase() : ""}
+        </h3>
+        {children}
+      </article>
+    );
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+  ![image](https://github.com/user-attachments/assets/98fe992f-bc75-4e77-a06b-6e36d5bb0825)
+
+</details>
 
 
 
