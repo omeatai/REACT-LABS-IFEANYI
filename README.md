@@ -733,7 +733,89 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Project - Booklist - Spread Objects as Props</summary>
 
+  ### Spread Objects as Props
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  import "./index.css";
+  
+  const inlineStyleForAuthor = {
+    color: "#617d98",
+    fontSize: "0.75rem",
+    marginTop: "0.25rem",
+  };
+  
+  const inlineStyleForTitle = {
+    color: "red",
+    fontSize: "1rem",
+    marginTop: "0.5rem",
+  };
+  
+  const books = [
+    {
+      id: 1,
+      title: "The Let Them Theory",
+      author: "Mel Robbins and Sawyer Robbins",
+      image: "./images/the_let_them_theory.jpg",
+      caption: "This is a caption from the Let Them Theory.",
+    },
+    {
+      id: 2,
+      title: "The Lost Bookshop",
+      author: "Evie Woods",
+      image: "./images/the_lost_bookshop.jpg",
+      caption: "This is a caption from the Lost Bookshop.",
+    },
+    {
+      id: 3,
+      title: "Hello Beautiful",
+      author: "Ann Napolitano",
+      image: "./images/hello_beautiful.jpg",
+    },
+  ];
+  
+  const bookListMap = books.map((book) => {
+    // const { id, title, author, image, caption } = book;
+    return (
+      <Book {...book} key={book.id}>
+        <p>{book.caption}</p>
+        <button type="button">Click Button: {book.id}</button>
+      </Book>
+    );
+  });
+  
+  function Book({ title, author, image, children }) {
+    return (
+      <article className="book">
+        <img src={image} alt="book" />
+        <h2 style={inlineStyleForTitle}>{title}</h2>
+        <h3 style={inlineStyleForAuthor}>
+          by {author ? author.toUpperCase() : ""}
+        </h3>
+        {children}
+      </article>
+    );
+  }
+  
+  function BookList() {
+    return (
+      <React.Fragment>
+        <section className="booklist">{bookListMap}</section>
+      </React.Fragment>
+    );
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+  ![image](https://github.com/user-attachments/assets/c5eb3bd8-c510-4b85-85ec-540f4cdb0e78)
+
+</details>
 
 
 
