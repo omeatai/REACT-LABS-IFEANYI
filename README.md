@@ -489,7 +489,84 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Project - Booklist - JSX Props</summary>
 
+  ### JSX Props
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  
+  import "./index.css";
+  
+  const inlineStyleForAuthor = {
+    color: "#617d98",
+    fontSize: "0.75rem",
+    marginTop: "0.25rem",
+  };
+  
+  const inlineStyleForTitle = {
+    color: "red",
+    fontSize: "1rem",
+    marginTop: "0.5rem",
+  };
+  
+  const firstBook = {
+    title: "The Let Them Theory",
+    author: "Mel Robbins and Sawyer Robbins",
+    image: "./images/the_let_them_theory.jpg",
+  };
+  
+  const secondBook = {
+    title: "The Lost Bookshop",
+    author: "Evie Woods",
+    image: "./images/the_lost_bookshop.jpg",
+  };
+  
+  const thirdBook = {
+    title: "Hello Beautiful",
+    author: "Ann Napolitano",
+    image: "./images/hello_beautiful.jpg",
+  };
+  
+  function BookList() {
+    return (
+      <React.Fragment>
+        <section className="booklist">
+          <Book {...firstBook} />
+          <Book {...secondBook} />
+          <Book
+            title={thirdBook.title}
+            author={thirdBook.author}
+            image={thirdBook.image}
+          />
+        </section>
+      </React.Fragment>
+    );
+  }
+  
+  const Book = (props) => {
+    const { title, author, image } = props;
+    return (
+      <article className="book">
+        <img src={image} alt="book" />
+        <h2 style={inlineStyleForTitle}>{title}</h2>
+        <h3 style={inlineStyleForAuthor}>
+          by {author ? author.toUpperCase() : ""}
+        </h3>
+      </article>
+    );
+  };
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+  ![image](https://github.com/user-attachments/assets/70695be6-264f-4dba-8895-2833c6df31c9)
+
+
+</details>
 
 
 
