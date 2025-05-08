@@ -818,6 +818,143 @@ root.render(<Greeting />);
 </details>
 
 
+<details>
+  <summary>Project - Booklist - Form Events Basics</summary>
+
+  ### Form Events Basics
+
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  import "./index.css";
+  
+  const inlineStyleForAuthor = {
+    color: "#617d98",
+    fontSize: "0.75rem",
+    marginTop: "0.25rem",
+  };
+  
+  const inlineStyleForTitle = {
+    color: "red",
+    fontSize: "1rem",
+    marginTop: "0.5rem",
+  };
+
+  const books = [
+    {
+      id: 1,
+      title: "The Let Them Theory",
+      author: "Mel Robbins and Sawyer Robbins",
+      image: "./images/the_let_them_theory.jpg",
+      caption: "This is a caption from the Let Them Theory.",
+    },
+    {
+      id: 2,
+      title: "The Lost Bookshop",
+      author: "Evie Woods",
+      image: "./images/the_lost_bookshop.jpg",
+      caption: "This is a caption from the Lost Bookshop.",
+    },
+    {
+      id: 3,
+      title: "Hello Beautiful",
+      author: "Ann Napolitano",
+      image: "./images/hello_beautiful.jpg",
+    },
+  ];
+
+  const handleFormInput = (e) => {
+    const { name, value } = e.target;
+    console.log(`Input Name: ${name}`);
+    console.log(`Input Value: ${value}`);
+  };
+  
+  const handleButtonClick = (e) => {
+    console.log("handle button click");
+  };
+  
+  const handleFormSubmission = (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+  };
+
+  function BookList() {
+    return (
+      <React.Fragment>
+        <section className="booklist">
+          <form onSubmit={handleFormSubmission}>
+            <input
+              type="text"
+              placeholder="Search for a book"
+              name="search"
+              onChange={handleFormInput}
+            />
+            <button type="submit" onClick={handleButtonClick}>
+              Search
+            </button>
+          </form>
+        </section>
+        <section className="booklist">
+          {books.map((book) => (
+            <Book {...book} key={book.id}>
+              <p>{book.caption}</p>
+              <button
+                type="button"
+                onClick={(e) => console.log(`Clicked Button ${book.id}.`)}
+              >
+                Click Button: {book.id}
+              </button>
+            </Book>
+          ))}
+        </section>
+      </React.Fragment>
+    );
+  }
+  
+  function Book({ title, author, image, children }) {
+    return (
+      <article className="book">
+        <img src={image} alt="book" />
+        <h2 style={inlineStyleForTitle}>{title}</h2>
+        <h3 style={inlineStyleForAuthor}>
+          by {author ? author.toUpperCase() : ""}
+        </h3>
+        {children}
+      </article>
+    );
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
