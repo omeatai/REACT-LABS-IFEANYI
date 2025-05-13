@@ -1174,6 +1174,18 @@ root.render(<Greeting />);
 </details>
 
 
+<details>
+  <summary>Project - Booklist - Split Components with ES6 Modules</summary>
+
+  ### Split Components with ES6 Modules
+
+  ```js
+
+  ```
+
+
+
+</details>
 
 
 
