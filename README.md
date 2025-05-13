@@ -1336,8 +1336,46 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Project - Booklist - Local Images from src Folder </summary>
 
+  ### Local Images from src Folder
 
+  ##### books.js:
+  
+  ```js
+  import book1 from "./images/book1.jpg";
+  import book2 from "./images/book2.jpg";
+  import book3 from "./images/book3.jpg";
+  
+  export const books = [
+    {
+      id: 1,
+      title: "The Let Them Theory",
+      author: "Mel Robbins and Sawyer Robbins",
+      image: book1,
+      caption: "This is a caption from the Let Them Theory.",
+    },
+    {
+      id: 2,
+      title: "The Lost Bookshop",
+      author: "Evie Woods",
+      image: book2,
+      caption: "This is a caption from the Lost Bookshop.",
+    },
+    {
+      id: 3,
+      title: "Hello Beautiful",
+      author: "Ann Napolitano",
+      image: book3,
+    },
+  ];
+  ```
+
+![image](https://github.com/user-attachments/assets/bbca7ff8-2bee-434f-bd23-9c1b6b91cb7c)
+![image](https://github.com/user-attachments/assets/479a8283-0edc-4117-92cb-283378649368)
+
+</details>
 
 
 
