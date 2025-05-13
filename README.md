@@ -1337,7 +1337,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Local Images from src Folder </summary>
+  <summary>Project - Booklist - Local Images from src Folder (better performant) </summary>
 
   ### Local Images from src Folder
 
