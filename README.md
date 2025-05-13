@@ -1179,11 +1179,164 @@ root.render(<Greeting />);
 
   ### Split Components with ES6 Modules
 
+  ##### index.js:
+  
   ```js
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { books } from "./books";
+
+import {
+  handleFormInput,
+  handleButtonClick,
+  handleFormSubmission,
+} from "./handleFunctions";
+
+import Book from "./Book";
+
+function BookList() {
+  const getBook = (id) => {
+    const book = books.find((book) => book.id === id);
+    console.log(book);
+  };
+
+  return (
+    <React.Fragment>
+      <section className="booklist">
+        <form onSubmit={handleFormSubmission}>
+          <input
+            type="text"
+            placeholder="Search for a book"
+            name="search"
+            onChange={handleFormInput}
+          />
+          <button type="submit" onClick={handleButtonClick}>
+            Search
+          </button>
+        </form>
+      </section>
+      <section className="booklist">
+        {books.map(({ id, ...book }) => (
+          <Book {...book} getBook={() => getBook(id)} key={id}>
+            <p>{book.caption}</p>
+          </Book>
+        ))}
+      </section>
+    </React.Fragment>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<BookList />);
 
   ```
 
+  ##### Book.jsx:
 
+  ```js
+import { inlineStyleForAuthor, inlineStyleForTitle } from "./indexStyles";
+import BookButton from "./BookButton";
+
+const Book = ({ id, title, author, image, getBook, children }) => {
+  return (
+    <article className="book">
+      <img src={image} alt="book" />
+      <h2 style={inlineStyleForTitle}>{title}</h2>
+      <h3 style={inlineStyleForAuthor}>
+        by {author ? author.toUpperCase() : "No Author"}
+      </h3>
+      {children}
+      <BookButton id={id} text="Get Book Title" onGetBook={getBook} />
+    </article>
+  );
+};
+
+export default Book;
+
+  ```
+
+  ##### BookButton.jsx:
+
+  ```js
+const BookButton = ({ id, text, onGetBook }) => {
+  return (
+    <button type="button" onClick={onGetBook}>
+      {text}
+    </button>
+  );
+};
+
+export default BookButton;
+  ```
+
+  ##### books.js:
+
+  ```js
+export const books = [
+  {
+    id: 1,
+    title: "The Let Them Theory",
+    author: "Mel Robbins and Sawyer Robbins",
+    image: "./images/the_let_them_theory.jpg",
+    caption: "This is a caption from the Let Them Theory.",
+  },
+  {
+    id: 2,
+    title: "The Lost Bookshop",
+    author: "Evie Woods",
+    image: "./images/the_lost_bookshop.jpg",
+    caption: "This is a caption from the Lost Bookshop.",
+  },
+  {
+    id: 3,
+    title: "Hello Beautiful",
+    author: "Ann Napolitano",
+    image: "./images/hello_beautiful.jpg",
+  },
+];
+
+  ```
+
+  ##### handleFunctions.js:
+
+  ```js
+const handleFormInput = (e) => {
+  const { name, value } = e.target;
+  console.log(`Input Name: ${name}`);
+  console.log(`Input Value: ${value}`);
+};
+
+const handleButtonClick = (e) => {
+  console.log("handle button click");
+};
+
+const handleFormSubmission = (e) => {
+  e.preventDefault();
+  console.log("Form submitted");
+};
+
+export { handleFormInput, handleButtonClick, handleFormSubmission };
+
+  ```
+
+  ##### indexStyles.js:
+
+  ```js
+const inlineStyleForTitle = {
+  color: "red",
+  fontSize: "1rem",
+  marginTop: "0.5rem",
+};
+
+const inlineStyleForAuthor = {
+  color: "#617d98",
+  fontSize: "0.75rem",
+  marginTop: "0.25rem",
+};
+
+export { inlineStyleForTitle, inlineStyleForAuthor };
+  ```
 
 </details>
 
