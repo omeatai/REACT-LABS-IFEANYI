@@ -15,7 +15,6 @@ by Ifeanyi Omeata
 
   ```
   npx create-react-app my-app
-  npx create-react-app my-app@latest
   ```
 
   ### Start React App
