@@ -1377,6 +1377,125 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Project - Booklist - Book Number Tags </summary>
+
+  ### Book Number Tags
+
+  ##### index.js:
+  
+  ```js
+  import React from "react";
+  import ReactDOM from "react-dom/client";
+  import "./index.css";
+  import { books } from "./books";
+  
+  import {
+    handleFormInput,
+    handleButtonClick,
+    handleFormSubmission,
+  } from "./handleFunctions";
+  
+  import Book from "./Book";
+  
+  function BookList() {
+    const getBook = (id) => {
+      const book = books.find((book) => book.id === id);
+      console.log(book);
+    };
+  
+    return (
+      <React.Fragment>
+        <h1>Amazon Best Sellers</h1>
+        <section className="booklist">
+          <form onSubmit={handleFormSubmission}>
+            <input
+              type="text"
+              placeholder="Search for a book"
+              name="search"
+              onChange={handleFormInput}
+            />
+            <button type="submit" onClick={handleButtonClick}>
+              Search
+            </button>
+          </form>
+        </section>
+        <section className="booklist">
+          {books.map(({ id, ...book }, index) => (
+            <Book {...book} number={index} getBook={() => getBook(id)} key={id}>
+              <p>{book.caption}</p>
+            </Book>
+          ))}
+        </section>
+      </React.Fragment>
+    );
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<BookList />);
+  ```
+
+  ##### Book.jsx:
+  
+  ```jsx
+  import { inlineStyleForAuthor, inlineStyleForTitle } from "./indexStyles";
+  import BookButton from "./BookButton";
+  
+  const Book = ({ id, title, author, image, getBook, children, number }) => {
+    return (
+      <article className="book">
+        <img src={image} alt="book" />
+        <h2 style={inlineStyleForTitle}>{title}</h2>
+        <h3 style={inlineStyleForAuthor}>
+          by {author ? author.toUpperCase() : "No Author"}
+        </h3>
+        <span className="number">{`# ${number + 1}`}</span>
+        {children}
+        <BookButton
+          id={id}
+          text={`Get Book Title ${number + 1}`}
+          onGetBook={getBook}
+        />
+      </article>
+    );
+  };
+  
+  export default Book;
+  ```
+
+  ##### index.css:
+  
+  ```css
+  .book {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+  }
+  
+  .number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background: red;
+      color: #fff;
+  }
+  
+  h1 {
+      text-align: center;
+      margin-top: 4rem;
+      text-transform: capitalize;
+  }
+  ```
+
+  ![image](https://github.com/user-attachments/assets/0afa0b6d-0286-4dc7-b8bf-c42f72a5e179)
+
+</details>
 
 
 
@@ -1390,6 +1509,27 @@ root.render(<Greeting />);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details>
+  <summary>Project - Booklist - A </summary>
+
+  ### A
+
+</details>
 
 
 
