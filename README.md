@@ -1497,6 +1497,29 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Project - Booklist - Build Application and Deploy</summary>
+
+  ### Build Application and Deploy
+
+  ##### build App:
+  
+  ```
+  npm run build
+  ```
+
+  ##### package.json:
+  
+  ```
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  ```
+
+</details>
 
 
 
@@ -1528,6 +1551,12 @@ root.render(<Greeting />);
   <summary>Project - Booklist - A </summary>
 
   ### A
+
+  ##### index.js:
+  
+  ```js
+
+  ```
 
 </details>
 
