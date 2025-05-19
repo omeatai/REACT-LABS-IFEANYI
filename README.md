@@ -28,6 +28,8 @@ by Ifeanyi Omeata
   npm run dev
   ```
 
+  ![image](https://github.com/user-attachments/assets/2b2eabdb-b716-42e0-806f-a83e5a731991)
+
 </details>
 
 <details>
