@@ -1597,6 +1597,73 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - UseState Basics </summary>
+
+  ### UseState Basics
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <UseStateBasics />;
+  }
+  
+  const UseStateBasics = () => {
+    const [value, setValue] = useState(101);
+    const [count, setCount] = useState(0);
+    const rooms = [101, 103, 107, 109, 112];
+  
+    const toggleRooms = () => {
+      if (value === rooms[rooms.length - 1]) {
+        setValue(rooms[0]);
+        setCount((prevCount) => prevCount + 1);
+      } else {
+        setValue(rooms[rooms.indexOf(value) + 1]);
+        setCount((prevCount) => prevCount + 1);
+      }
+      console.log(`count: ${count}, value: ${value}`);
+    };
+  
+    return (
+      <>
+        <h2>useState basics - Room {value}</h2>
+        <h3>You have clicked {count} times</h3>
+        <button onClick={toggleRooms}>Toggle Rooms</button>
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/a5c2b148-0f44-4567-9e0f-56e6ed770f8f)
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1622,13 +1689,13 @@ root.render(<Greeting />);
 
 
 <details>
-  <summary>Project Booklist - A </summary>
+  <summary>React Hooks - Setup </summary>
 
   ### A
 
-  ##### index.js:
+  ##### App.jsx:
   
-  ```js
+  ```jsx
 
   ```
 
