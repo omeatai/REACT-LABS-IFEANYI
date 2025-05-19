@@ -127,7 +127,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Create Structure</summary>
+  <summary>Project Booklist - Create Structure</summary>
 
   ### Create Structure
 
@@ -170,7 +170,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Add Image, Title and Author from Amazon</summary>
+  <summary>Project Booklist - Add Image, Title and Author from Amazon</summary>
 
   ### Add Image, Title and Author from Amazon
 
@@ -221,7 +221,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Add CSS Styling with Grid</summary>
+  <summary>Project Booklist - Add CSS Styling with Grid</summary>
 
   ### Add CSS Styling with Grid
 
@@ -330,7 +330,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Local images in Public Folder (Less Performant)</summary>
+  <summary>Project Booklist - Local images in Public Folder (Less Performant)</summary>
 
   ### Local images in Public Folder (Less Performant)
 
@@ -378,7 +378,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - CSS in JSX</summary>
+  <summary>Project Booklist - CSS in JSX</summary>
 
   ### CSS in JSX
 
@@ -437,7 +437,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Javascript in JSX</summary>
+  <summary>Project Booklist - Javascript in JSX</summary>
 
   ###   ### Javascript in JSX
 
@@ -495,7 +495,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - JSX Props</summary>
+  <summary>Project Booklist - JSX Props</summary>
 
   ### JSX Props
 
@@ -573,7 +573,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Children Props</summary>
+  <summary>Project Booklist - Children Props</summary>
 
   ### Children Props
 
@@ -654,7 +654,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Displaying Lists</summary>
+  <summary>Project Booklist - Displaying Lists</summary>
 
   ### Displaying Lists
 
@@ -739,7 +739,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Spread Objects as Props</summary>
+  <summary>Project Booklist - Spread Objects as Props</summary>
 
   ### Spread Objects as Props
 
@@ -824,7 +824,7 @@ root.render(<Greeting />);
 
 
 <details>
-  <summary>Project - Booklist - Form Events Basics</summary>
+  <summary>Project Booklist - Form Events Basics</summary>
 
   ### Form Events Basics
 
@@ -939,7 +939,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Component Specificity</summary>
+  <summary>Project Booklist - Component Specificity</summary>
 
   ### Component Specificity
 
@@ -1057,7 +1057,7 @@ root.render(<Greeting />);
 
 
 <details>
-  <summary>Project - Booklist - Prop Drilling</summary>
+  <summary>Project Booklist - Prop Drilling</summary>
 
   ### Prop Drilling
 
@@ -1180,7 +1180,7 @@ root.render(<Greeting />);
 
 
 <details>
-  <summary>Project - Booklist - Split Components with ES6 Modules</summary>
+  <summary>Project Booklist - Split Components with ES6 Modules</summary>
 
   ### Split Components with ES6 Modules
 
@@ -1342,7 +1342,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Local Images in src Folder (More Performant) </summary>
+  <summary>Project Booklist - Local Images in src Folder (More Performant) </summary>
 
   ### Local Images in src Folder
 
@@ -1383,7 +1383,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Book Number Tags </summary>
+  <summary>Project Booklist - Book Number Tags </summary>
 
   ### Book Number Tags
 
@@ -1503,7 +1503,7 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>Project - Booklist - Build Application and Deploy</summary>
+  <summary>Project Booklist - Build Application and Deploy</summary>
 
   ### Build Application and Deploy
 
@@ -1523,6 +1523,77 @@ root.render(<Greeting />);
     "eject": "react-scripts eject"
   },
   ```
+
+</details>
+
+<details>
+  <summary>React Hooks - Setup React App with Vite </summary>
+
+  ### Setup React App with Vite
+
+  ```
+  npm create vite@latest my-app -- --template react
+  cd my-app
+  npm install
+  npm run dev
+  ```
+
+  ##### main.jsx:
+  
+  ```jsx
+  import { StrictMode } from "react";
+  import { createRoot } from "react-dom/client";
+  import "./index.css";
+  import App from "./App.jsx";
+  
+  createRoot(document.getElementById("root")).render(
+    // <StrictMode>
+    <App />
+    // </StrictMode>
+  );
+  ```
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import reactLogo from "./assets/react.svg";
+  import viteLogo from "/vite.svg";
+  import "./App.css";
+  
+  function App() {
+    const [count, setCount] = useState(0);
+  
+    return (
+      <>
+        <div>
+          <a href="https://vite.dev" target="_blank">
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+          </a>
+          <a href="https://react.dev" target="_blank">
+            <img src={reactLogo} className="logo react" alt="React logo" />
+          </a>
+        </div>
+        <h1>Vite + React</h1>
+        <div className="card">
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
+          <p>
+            Edit <code>src/App.jsx</code> and save to test HMR
+          </p>
+        </div>
+        <p className="read-the-docs">
+          Click on the Vite and React logos to learn more
+        </p>
+      </>
+    );
+  }
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/2b2eabdb-b716-42e0-806f-a83e5a731991)
 
 </details>
 
@@ -1550,10 +1621,8 @@ root.render(<Greeting />);
 
 
 
-
-
 <details>
-  <summary>Project - Booklist - A </summary>
+  <summary>Project Booklist - A </summary>
 
   ### A
 
