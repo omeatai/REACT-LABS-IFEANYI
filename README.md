@@ -11,17 +11,21 @@ by Ifeanyi Omeata
   v22.14.0
   ```
 
-  ### Install React App
+  ### Install and run React App with create-react-app
 
   ```
   npx create-react-app my-app
-  ```
-
-  ### Start React App
-
-  ```
   cd my-app
   npm start
+  ```
+
+  ### Install and run React App with vite
+
+  ```
+  npm create vite@latest my-app -- --template react
+  cd my-app
+  npm install
+  npm run dev
   ```
 
 </details>
