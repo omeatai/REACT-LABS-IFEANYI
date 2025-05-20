@@ -1644,7 +1644,118 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - UseState on Arrays </summary>
 
+  ### UseState on Arrays
+
+  ##### data.js:
+  
+  ```js
+  export const data = [
+    { id: 1, name: "john" },
+    { id: 2, name: "peter" },
+    { id: 3, name: "susan" },
+    { id: 4, name: "anna" },
+  ];
+  
+  export const people = [
+    { id: 1, name: "bob", nickName: "Stud Muffin" },
+    { id: 2, name: "peter" },
+    {
+      id: 3,
+      name: "oliver",
+      images: [
+        {
+          small: {
+            url: "https://res.cloudinary.com/diqqf3eq2/image/upload/ar_1:1,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1595959121/person-1_aufeoq.jpg",
+          },
+        },
+      ],
+    },
+    { id: 4, name: "david" },
+  ];
+  ```
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  import { data } from "./db/data";
+  
+  function App() {
+    return <UseStateArray />;
+  }
+  
+  const UseStateArray = () => {
+    const [people, setPeople] = useState(data);
+    const [name, setName] = useState("");
+  
+    const handleRemoveItem = (id) => {
+      const newPeople = people.filter((person) => {
+        return person.id !== id;
+      });
+      setPeople(newPeople);
+    };
+  
+    const handleClearAllItems = () => {
+      setPeople([]);
+    };
+  
+    const handleReset = () => {
+      setPeople(data);
+    };
+  
+    const handleAddItem = () => {
+      if (name) {
+        setPeople([...people, { id: people.length + 1, name: name }]);
+        setName("");
+      }
+    };
+  
+    return (
+      <>
+        <h1>Team Members</h1>
+        <section style={{ display: "flex", gap: "10px", marginBottom: "10px" }}>
+          <button
+            style={{ backgroundColor: "red" }}
+            onClick={handleClearAllItems}
+          >
+            Clear All
+          </button>
+          <button onClick={handleReset}>Reset All</button>
+          <input
+            type="text"
+            placeholder="Name"
+            name="personName"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <button onClick={handleAddItem}>Add Item</button>
+        </section>
+        <section>
+          {people.map((person) => {
+            const { id, name } = person;
+            return (
+              <div key={id}>
+                <h2>{name[0].toUpperCase() + name.slice(1)}</h2>
+                <button onClick={() => handleRemoveItem(id)}>Delete</button>
+              </div>
+            );
+          })}
+        </section>
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+![image](https://github.com/user-attachments/assets/7e145447-b6cd-4c1e-89ff-0e104f9a74f7)
+
+
+</details>
 
 
 
