@@ -2190,10 +2190,20 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/3a60cec9-c913-416d-9abf-2305dcfba923)
 
-
 </details>
 
+<details>
+  <summary>React Hooks - ShortCircuitOperators </summary>
 
+  ### ShortCircuitOperators
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
