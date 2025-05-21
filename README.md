@@ -1757,7 +1757,55 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - UseState on Objects </summary>
 
+  ### useState on Objects 
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <UseStateObject />;
+  }
+  
+  const UseStateObject = () => {
+    const [person, setPerson] = useState({
+      name: "John",
+      age: 20,
+      message: "Hello, John!",
+    });
+  
+    const handleChangeMessage = () => {
+      setPerson({
+        ...person,
+        message: "Yey! That's great! Welcome to the team!",
+      });
+    };
+  
+    return (
+      <>
+        <h1>Team Members</h1>
+        <section>
+          <h2>{person.name}</h2>
+          <h2>{person.age}</h2>
+          <h2>{person.message}</h2>
+          <button onClick={handleChangeMessage}>Change Message</button>
+        </section>
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/716cb596-2068-4991-88a0-1ff27ca98304)
+
+
+</details>
 
 
 
