@@ -1986,9 +1986,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Hooks - useEffect with Conditional Rendering with isLoading </summary>
+  <summary>React Hooks - useEffect with Conditional Rendering (isLoading) </summary>
 
-  ### useEffect with Conditional Rendering with isLoading
+  ### useEffect with Conditional Rendering (isLoading)
 
   ##### App.jsx:
   
@@ -2027,9 +2027,20 @@ root.render(<Greeting />);
   ![image](https://github.com/user-attachments/assets/a2a77087-bf6f-462c-a484-a5bfe861209d)
   ![image](https://github.com/user-attachments/assets/d7420c66-f474-4d7f-92bb-cd4ed3bec29a)
 
-
 </details>
 
+<details>
+  <summary>React Hooks - useEffect with Multiple Returns </summary>
+
+  ### useEffect with Multiple Returns
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
