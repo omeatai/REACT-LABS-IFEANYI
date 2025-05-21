@@ -2200,8 +2200,34 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
-
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <ShortCircuitOperators />;
+  }
+  
+  const ShortCircuitOperators = () => {
+    const [name, setName] = useState("Susan Jones");
+    const [isOpen, setIsOpen] = useState(true);
+  
+    return (
+      <>
+        <h2>{name || "default value"}</h2>
+        {isOpen && (
+          <div>
+            <h2>Hello World</h2>
+            <h2>{`My name is ${name}`}</h2>
+          </div>
+        )}
+      </>
+    );
+  };
+  
+  export default App;
   ```
+
+  ![image](https://github.com/user-attachments/assets/0d417986-5e24-41d8-a027-1e9c1bad74d4)
 
 </details>
 
