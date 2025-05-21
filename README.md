@@ -2160,6 +2160,37 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/fa9ce44f-370c-419b-96e6-2f4086d57def)
 
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <TruthyFalsyLogicalOperators />;
+  }
+  
+  const TruthyFalsyLogicalOperators = () => {
+    const [text, setText] = useState("");
+    const [name, setName] = useState("John Smith");
+  
+    return (
+      <>
+        <h1>Truthy Falsy Logical Operators</h1>
+        <h2>Falsy OR : {text || "default value"}</h2>
+        <h2>Falsy AND : {text && "Hello World"}</h2>
+        <h2>Truthy OR : {name || "default value"}</h2>
+        <h2>Truthy AND : {name && "Hello World"}</h2>
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/3a60cec9-c913-416d-9abf-2305dcfba923)
+
+
 </details>
 
 
