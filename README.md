@@ -2030,9 +2030,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Hooks - useEffect with Multiple Returns (isLoading, setIsError) </summary>
+  <summary>React Hooks - useEffect with Multiple Promises and Returns (isLoading, setIsError) </summary>
 
-  ### useEffect with Multiple Returns (isLoading, setIsError)
+  ### useEffect with Multiple Promises and Returns (isLoading, setIsError)
 
   ##### App.jsx:
   
@@ -2051,15 +2051,14 @@ root.render(<Greeting />);
     const [isError, setIsError] = useState(false);
   
     useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 3000);
-    }, []);
-  
-    useEffect(() => {
       const fetchUsers = async () => {
         try {
-          const response = await fetch(url);
+          const timeoutPromise = new Promise((resolve) =>
+            setTimeout(resolve, 3000)
+          );
+          const fetchPromise = fetch(url);
+          const [response] = await Promise.all([fetchPromise, timeoutPromise]);
+  
           if (!response.ok) {
             setIsError(true);
             setIsLoading(false);
