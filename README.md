@@ -1848,6 +1848,61 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - useEffect Basics </summary>
+
+  ### useEffect Basics
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState, useEffect } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <UseEffectBasics />;
+  }
+  
+  const UseEffectBasics = () => {
+    const [value, setValue] = useState(0);
+    const [count, setCount] = useState(0);
+  
+    const handleClick = () => {
+      setValue((prevValue) => prevValue + 2);
+    };
+  
+    const handleCount = () => {
+      setCount((prevCount) => prevCount + 1);
+    };
+  
+    useEffect(() => {
+      console.log("Welcome to first render.");
+    }, []);
+  
+    useEffect(() => {
+      console.log("Value is: ", value);
+      console.log("Count is: ", count);
+    }, [value, count]);
+  
+    return (
+      <>
+        <h1>Let's count!</h1>
+        <section>
+          <h2>Value: {value}</h2>
+          <button onClick={handleClick}>Increase Value</button>
+          <h2>Count: {count}</h2>
+          <button onClick={handleCount}>IncreaseCount</button>
+        </section>
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/9157fa26-a378-46c1-b09f-ea07caa2091a)
+
+</details>
 
 
 
