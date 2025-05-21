@@ -2037,8 +2037,84 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
-
+  import { useState, useEffect } from "react";
+  import "./App.css";
+  const url = "https://api.github.com/users/QuincyLarson";
+  
+  function App() {
+    return <UseEffectMultipleReturns />;
+  }
+  
+  const UseEffectMultipleReturns = () => {
+    const [user, setUser] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [isError, setIsError] = useState(false);
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    }, []);
+  
+    useEffect(() => {
+      const fetchUsers = async () => {
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            setIsError(true);
+            setIsLoading(false);
+            return;
+          }
+          const user = await response.json();
+          setUser(user);
+          setIsError(false);
+        } catch (error) {
+          console.log(error);
+          setIsError(true);
+        }
+        setIsLoading(false);
+      };
+      fetchUsers();
+    }, []);
+  
+    if (isLoading) {
+      return <h1>Loading...</h1>;
+    }
+  
+    if (isError) {
+      return <h1>There was an error...</h1>;
+    }
+  
+    return (
+      <>
+        <h1>Fetch Data Example</h1>
+        <h2>Github Users</h2>
+  
+        <img
+          src={user.avatar_url}
+          alt={user.name}
+          width={150}
+          height={150}
+          style={{ borderRadius: "25px" }}
+        />
+        <h3>{user.name}</h3>
+        <h4>Works at {user.company}</h4>
+        <p>{user.bio}</p>
+        <h5>
+          Followers: {user.followers} | Following: {user.following} | Public
+          Repos: {user.public_repos} | Public Gists: {user.public_gists}
+        </h5>
+        <a href={user.html_url} className="btn">
+          View Profile
+        </a>
+      </>
+    );
+  };
+  
+  export default App;
   ```
+
+  ![image](https://github.com/user-attachments/assets/865ba73e-f806-4408-a114-cefe97205fad)
 
 </details>
 
