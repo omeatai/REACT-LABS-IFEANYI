@@ -1985,6 +1985,18 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - useEffect with Conditional Rendering </summary>
+
+  ### useEffect with Conditional Rendering
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
