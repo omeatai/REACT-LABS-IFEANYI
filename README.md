@@ -2125,8 +2125,40 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
-
+  // import { useState, useEffect } from "react";
+  import "./App.css";
+  // const url = "https://api.github.com/users/QuincyLarson";
+  
+  function App() {
+    return <TruthyFalsyLogicalOperators />;
+  }
+  
+  const TruthyFalsyLogicalOperators = () => {
+    function displayUser(name1, name2) {
+      return name1 || name2;
+    }
+  
+    function displayNumber(number1, number2) {
+      return number1 && number2;
+    }
+  
+    return (
+      <>
+        <h1>Display Users</h1>
+        <h2>{displayUser("Frank Bourges", "John Smith")}</h2>
+        <h2>{displayUser("Frank Bourges", null)}</h2>
+        <h2>{displayUser(null, "Frank Bourges")}</h2>
+        <h2>{displayNumber(1, 2)}</h2>
+        <h2>{displayNumber(1, 0)}</h2>
+        <h2>{displayNumber(0, 1)}</h2>
+      </>
+    );
+  };
+  
+  export default App;
   ```
+
+  ![image](https://github.com/user-attachments/assets/fa9ce44f-370c-419b-96e6-2f4086d57def)
 
 </details>
 
