@@ -2117,6 +2117,19 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - Falsy and Truthy Logical Operators </summary>
+
+  ### Falsy and Truthy Logical Operators
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
+
 
 
 
