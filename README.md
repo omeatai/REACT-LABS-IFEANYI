@@ -1986,9 +1986,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Hooks - useEffect with Conditional Rendering </summary>
+  <summary>React Hooks - useEffect with Conditional Rendering with isLoading </summary>
 
-  ### useEffect with Conditional Rendering
+  ### useEffect with Conditional Rendering with isLoading
 
   ##### App.jsx:
   
