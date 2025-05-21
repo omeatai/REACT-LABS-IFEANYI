@@ -2030,9 +2030,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Hooks - useEffect with Multiple Returns </summary>
+  <summary>React Hooks - useEffect with Multiple Returns (isLoading, setIsError) </summary>
 
-  ### useEffect with Multiple Returns
+  ### useEffect with Multiple Returns (isLoading, setIsError)
 
   ##### App.jsx:
   
