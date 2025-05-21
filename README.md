@@ -1904,6 +1904,86 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - useEffect with Fetch Data </summary>
+
+  ### useEffect with Fetch Data
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState, useEffect } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <UseEffectFetchData />;
+  }
+  
+  const styles = {
+    card: {
+      display: "flex",
+      gap: "10px",
+      backgroundColor: "#f0f0f0",
+      padding: "10px",
+      margin: "10px",
+    },
+  };
+  
+  const UseEffectFetchData = () => {
+    const [users, setUsers] = useState([]);
+    const url = "https://api.github.com/users";
+  
+    useEffect(() => {
+      // fetch(url)
+      //   .then((response) => response.json())
+      //   .then((data) => console.log(data))
+      //   .catch((error) => console.log(error));
+  
+      const fetchUsers = async () => {
+        try {
+          const response = await fetch(url);
+          const users = await response.json();
+          console.log(users);
+          setUsers(users);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+  
+      fetchUsers();
+    }, []);
+  
+    return (
+      <>
+        <h1>Fetch Data Example</h1>
+        <h2>Github Users</h2>
+  
+        {users.map((user) => {
+          const { id, login, avatar_url, html_url } = user;
+          return (
+            <section key={id} style={styles.card}>
+              <div className="img-container">
+                <img src={avatar_url} alt={login} width={150} height={150} />
+              </div>
+              <div className="user-info">
+                <h3>{login}</h3>
+                <h4>
+                  <a href={html_url}>Profile</a>
+                </h4>
+              </div>
+            </section>
+          );
+        })}
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/95f998ce-a027-4331-8bd2-70bc544881bc)
+
+</details>
 
 
 
