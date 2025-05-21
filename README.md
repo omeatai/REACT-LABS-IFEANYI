@@ -1804,10 +1804,49 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/716cb596-2068-4991-88a0-1ff27ca98304)
 
-
 </details>
 
+<details>
+  <summary>React Hooks - UseState on setTimeout </summary>
 
+  ### UseState on setTimeout
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <UseStateSetTimeout />;
+  }
+  
+  const UseStateSetTimeout = () => {
+    const [value, setValue] = useState(0);
+  
+    const handleClick = () => {
+      setTimeout(() => {
+        setValue((prevValue) => prevValue + 1);
+      }, 2000);
+    };
+  
+    return (
+      <>
+        <h1>Number of people</h1>
+        <section>
+          <h2>{value}</h2>
+          <button onClick={handleClick}>Click me</button>
+        </section>
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/f059f306-d026-42e1-b221-6f1c6a6b63d5)
+
+</details>
 
 
 
