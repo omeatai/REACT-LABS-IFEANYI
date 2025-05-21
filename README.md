@@ -1993,8 +1993,40 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
-
+  import { useState, useEffect } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <UseEffectConditionalRendering />;
+  }
+  
+  const UseEffectConditionalRendering = () => {
+    const [isLoading, setIsLoading] = useState(true);
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 3000);
+    }, []);
+  
+    if (isLoading) {
+      return <h1>Loading...</h1>;
+    }
+  
+    return (
+      <>
+        <h1>Fetch Data Example</h1>
+        <h2>Github Users</h2>
+      </>
+    );
+  };
+  
+  export default App;  
   ```
+
+  ![image](https://github.com/user-attachments/assets/a2a77087-bf6f-462c-a484-a5bfe861209d)
+  ![image](https://github.com/user-attachments/assets/d7420c66-f474-4d7f-92bb-cd4ed3bec29a)
+
 
 </details>
 
