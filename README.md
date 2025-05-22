@@ -2526,9 +2526,20 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/c7c96d72-b1f7-47de-a001-7102eda2b164)
 
-
 </details>
 
+<details>
+  <summary>React Project Structure - Setup </summary>
+
+  ### React Project Structure - Setup
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
