@@ -2307,12 +2307,133 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <LoginAndLogoutUser />;
+  }
+  
+  const LoginAndLogoutUser = () => {
+    const [dbUser, setDbUser] = useState({
+      name: "John Doe",
+      email: "john.doe@gmail.com",
+      password: "123456",
+    });
+  
+    const [user, setUser] = useState(null);
+    const [formData, setFormData] = useState({
+      email: "",
+      password: "",
+    });
+  
+    const handleLogin = () => {
+      if (
+        formData.email === dbUser.email &&
+        formData.password === dbUser.password
+      ) {
+        setUser(dbUser);
+        setFormData({ email: "", password: "" });
+      } else {
+        alert("Invalid credentials");
+      }
+    };
+  
+    const handleFormChange = (e) => {
+      console.log(e.target.name, e.target.value);
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+  
+    const handleLogout = () => {
+      setUser(null);
+    };
+  
+    return (
+      <>
+        {!user ? (
+          <>
+            <h1>Welcome, Please Login</h1>
+            <form
+              onSubmit={handleLogin}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+                width: "300px",
+                margin: "0 auto",
+              }}
+            >
+              <input
+                type="text"
+                placeholder="Email"
+                name="email"
+                value={formData.email}
+                onChange={handleFormChange}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={formData.password}
+                onChange={handleFormChange}
+              />
+              <button
+                type="submit"
+                style={{
+                  backgroundColor: "blue",
+                  color: "white",
+                  cursor: "pointer",
+                  border: "none",
+                  padding: "10px 20px",
+                }}
+              >
+                Login
+              </button>
+            </form>
+          </>
+        ) : (
+          <>
+            <h1>Welcome to your Account, {user.name?.toUpperCase()}</h1>
+            <h3>Name: {user.name}</h3>
+            <h3>Email: {user.email}</h3>
+            <button
+              onClick={handleLogout}
+              style={{
+                backgroundColor: "red",
+                color: "white",
+                cursor: "pointer",
+                border: "none",
+                padding: "10px 80px",
+              }}
+            >
+              Logout
+            </button>
+          </>
+        )}
+      </>
+    );
+  };
+  
+  export default App;
+  ```
+
+  ![image](https://github.com/user-attachments/assets/323de8e1-d13d-42e2-a55f-07b1ec14baea)
+  ![image](https://github.com/user-attachments/assets/01c334da-8182-4780-9a16-2ee2a00ae059)
+
+</details>
+
+<details>
+  <summary>React Hooks - UseEffect Cleanup Function </summary>
+
+  ### UseEffect Cleanup Function
+
+  ##### App.jsx:
+  
+  ```jsx
 
   ```
 
 </details>
-
-
 
 
 
