@@ -2193,9 +2193,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Hooks - ShortCircuitOperators </summary>
+  <summary>React Hooks - Short Circuit Operators </summary>
 
-  ### ShortCircuitOperators
+  ### Short Circuit Operators
 
   ##### App.jsx:
   
@@ -2208,18 +2208,23 @@ root.render(<Greeting />);
   }
   
   const ShortCircuitOperators = () => {
+    const [greeting, setGreeting] = useState("Welcome to my Website!");
     const [name, setName] = useState("Susan Jones");
     const [isOpen, setIsOpen] = useState(true);
   
     return (
       <>
-        <h2>{name || "default value"}</h2>
-        {isOpen && (
-          <div>
-            <h2>Hello World</h2>
-            <h2>{`My name is ${name}`}</h2>
-          </div>
-        )}
+        <h1>{greeting || "default value"}</h1>
+        {isOpen && <div>{name && <SomeComponent personsName={name} />}</div>}
+        <button onClick={() => setIsOpen(!isOpen)}>Toggle Show Name</button>
+      </>
+    );
+  };
+  
+  const SomeComponent = ({ personsName }) => {
+    return (
+      <>
+        <h2>{`My name is ${personsName}`}</h2>
       </>
     );
   };
@@ -2227,11 +2232,22 @@ root.render(<Greeting />);
   export default App;
   ```
 
-  ![image](https://github.com/user-attachments/assets/0d417986-5e24-41d8-a027-1e9c1bad74d4)
+  ![image](https://github.com/user-attachments/assets/c26965c5-645d-48a3-84f4-1215bee68748)
 
 </details>
 
+<details>
+  <summary>React Hooks - Ternary Operator </summary>
 
+  ### A
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
