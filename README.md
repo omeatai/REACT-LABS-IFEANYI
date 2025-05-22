@@ -2239,13 +2239,63 @@ root.render(<Greeting />);
 <details>
   <summary>React Hooks - Ternary Operator </summary>
 
-  ### A
+  ### Ternary Operator
 
   ##### App.jsx:
   
   ```jsx
-
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <TernaryOperator />;
+  }
+  
+  const TernaryOperator = () => {
+    const [greeting, setGreeting] = useState("Welcome to my Website!");
+    const [name, setName] = useState("Susan Jones");
+    const [isOpen, setIsOpen] = useState(true);
+  
+    return (
+      <>
+        <h1>{greeting || "default value"}</h1>
+        {isOpen ? (
+          <div>{name && <SomeComponent personsName={name} />}</div>
+        ) : (
+          <div>
+            <SomeComponent personsName="********" />
+          </div>
+        )}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          style={{
+            backgroundColor: !isOpen ? "red" : "indigo",
+            color: "white",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
+          {isOpen ? "Hide Name" : "Show Name"}
+        </button>
+      </>
+    );
+  };
+  
+  const SomeComponent = ({ personsName }) => {
+    return (
+      <>
+        <h2>{`My name is ${personsName}`}</h2>
+      </>
+    );
+  };
+  
+  export default App;
   ```
+
+  ![image](https://github.com/user-attachments/assets/ffc49c8e-735a-447a-9a6a-4712ac47568f)
+  ![image](https://github.com/user-attachments/assets/b22903a4-0b43-4a19-8530-0db4b6cab635)
 
 </details>
 
