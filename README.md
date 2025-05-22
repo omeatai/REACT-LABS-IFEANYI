@@ -2430,8 +2430,47 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
-
+  import { useState, useEffect } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <CleanUpFunction />;
+  }
+  
+  const CleanUpFunction = () => {
+    const [toggle, setToggle] = useState(false);
+  
+    return (
+      <>
+        <h2>Hello</h2>
+        <button className="btn" onClick={() => setToggle(!toggle)}>
+          Toggle Component
+        </button>
+        {toggle && <MyComponent />}
+      </>
+    );
+  };
+  
+  const MyComponent = () => {
+    useEffect(() => {
+      console.log("Mounting....");
+      const myInt = setInterval(() => {
+        console.log("Interval....");
+      }, 1000);
+  
+      return () => {
+        console.log("Unmounting....");
+        clearInterval(myInt);
+      };
+    }, []);
+  
+    return <h2>My Component</h2>;
+  };
+  
+  export default App;
   ```
+  
+  ![image](https://github.com/user-attachments/assets/a1b57dd1-95e2-4189-9bf3-d667bfb65b6d)
 
 </details>
 
