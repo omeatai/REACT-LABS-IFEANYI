@@ -2482,8 +2482,50 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
-
+  import { useState, useEffect } from "react";
+  import "./App.css";
+  
+  function App() {
+    return <CleanUpFunction />;
+  }
+  
+  const CleanUpFunction = () => {
+    const [toggle, setToggle] = useState(false);
+  
+    return (
+      <>
+        <h2>Hello</h2>
+        <button className="btn" onClick={() => setToggle(!toggle)}>
+          Toggle Component
+        </button>
+        {toggle && <MyComponent />}
+      </>
+    );
+  };
+  
+  const MyComponent = () => {
+    useEffect(() => {
+      console.log("Mounting....");
+      const myFunc = () => {
+        console.log("Running myFunc....");
+      };
+      myFunc();
+      window.addEventListener("scroll", myFunc);
+  
+      return () => {
+        console.log("Unmounting....");
+        window.removeEventListener("scroll", myFunc);
+      };
+    }, []);
+  
+    return <h2>My Component</h2>;
+  };
+  
+  export default App;
   ```
+
+  ![image](https://github.com/user-attachments/assets/c7c96d72-b1f7-47de-a001-7102eda2b164)
+
 
 </details>
 
