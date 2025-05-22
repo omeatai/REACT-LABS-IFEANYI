@@ -2423,9 +2423,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Hooks - UseEffect Cleanup Function </summary>
+  <summary>React Hooks - UseEffect Cleanup Function for setInterval </summary>
 
-  ### UseEffect Cleanup Function
+  ### UseEffect Cleanup Function for setInterval
 
   ##### App.jsx:
   
@@ -2435,6 +2435,18 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Hooks - UseEffect Cleanup Function for Event Listeners </summary>
+
+  ### UseEffect Cleanup Function for Event Listeners
+  
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
