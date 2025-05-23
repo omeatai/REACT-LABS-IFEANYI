@@ -1553,7 +1553,7 @@ root.render(<Greeting />);
   );
   ```
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -1602,7 +1602,7 @@ root.render(<Greeting />);
 
   ### UseState Basics
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -1677,7 +1677,7 @@ root.render(<Greeting />);
   ];
   ```
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -1762,7 +1762,7 @@ root.render(<Greeting />);
 
   ### useState on Objects 
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -1811,7 +1811,7 @@ root.render(<Greeting />);
 
   ### UseState on setTimeout
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -1853,7 +1853,7 @@ root.render(<Greeting />);
 
   ### useEffect Basics
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -1909,7 +1909,7 @@ root.render(<Greeting />);
 
   ### useEffect with Fetch Data
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -1990,7 +1990,7 @@ root.render(<Greeting />);
 
   ### useEffect with Conditional Rendering (isLoading)
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -2034,7 +2034,7 @@ root.render(<Greeting />);
 
   ### useEffect with Multiple Promises and Returns (isLoading, setIsError)
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -2122,7 +2122,7 @@ root.render(<Greeting />);
 
   ### Falsy and Truthy Logical Operators
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   // import { useState, useEffect } from "react";
@@ -2160,7 +2160,7 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/fa9ce44f-370c-419b-96e6-2f4086d57def)
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -2197,7 +2197,7 @@ root.render(<Greeting />);
 
   ### Short Circuit Operators
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -2241,7 +2241,7 @@ root.render(<Greeting />);
 
   ### Ternary Operator
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -2304,7 +2304,7 @@ root.render(<Greeting />);
 
   ### Login and Logout User
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState } from "react";
@@ -2427,7 +2427,7 @@ root.render(<Greeting />);
 
   ### UseEffect Cleanup Function for setInterval
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -2479,7 +2479,7 @@ root.render(<Greeting />);
 
   ### UseEffect Cleanup Function for Event Listeners
   
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -2529,14 +2529,115 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Project Structure - Setup </summary>
+  <summary>React Project Structure Setup </summary>
 
-  ### React Project Structure - Setup
+  ### React Project Structure Setup
 
-  ##### App.jsx:
+  ##### react\my-app\src\main.jsx:
   
   ```jsx
+  import { StrictMode } from "react";
+  import { createRoot } from "react-dom/client";
+  import "./index.css";
+  import App from "./App.jsx";
+  
+  createRoot(document.getElementById("root")).render(
+    // <StrictMode>
+    <App />
+    // </StrictMode>
+  );
+  ```
 
+  ##### react\my-app\src\App.jsx:
+  
+  ```jsx
+  import "./App.css";
+  import Navbar from "./components/Navbar";
+  import { Home, About } from "./pages";
+  
+  function App() {
+    return (
+      <>
+        <h1>Welcome to my App</h1>
+        <Navbar />
+        <Home />
+        <About />
+      </>
+    );
+  }
+  
+  export default App;
+  ```
+
+  ##### react\my-app\src\pages\index.jsx:
+  
+  ```jsx
+  import Home from "./Home";
+  import About from "./About";
+  
+  export { Home, About };
+  ```
+
+  ##### react\my-app\src\pages\Home.jsx:
+  
+  ```jsx
+  import React from "react";
+  
+  const Home = () => {
+    return (
+      <div>
+        <h1>Home</h1>
+      </div>
+    );
+  };
+  
+  export default Home;
+  ```
+
+  ##### react\my-app\src\pages\About.jsx:
+  
+  ```jsx
+  import React from "react";
+  
+  const About = () => {
+    return (
+      <div>
+        <h1>About</h1>
+      </div>
+    );
+  };
+  
+  export default About;
+  ```
+
+  ##### react\my-app\src\components\Navbar\index.jsx:
+  
+  ```jsx
+  import Navbar from "./Navbar";
+  export default Navbar;
+  
+  // export { default } from "./Navbar";
+  ```
+
+  ##### react\my-app\src\components\Navbar\Navbar.jsx:
+  
+  ```jsx
+  import React from "react";
+  
+  const Navbar = () => {
+    return (
+      <nav>
+        <h2>Navbar</h2>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    );
+  };
+  
+  export default Navbar;
   ```
 
 </details>
