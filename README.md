@@ -2645,8 +2645,143 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>Optional Chaining with Default Values </summary>
 
+  ### Optional Chaining with Default Values 
 
+   ##### react\my-app\src\main.jsx:
+  
+  ```jsx
+  import { StrictMode } from "react";
+  import { createRoot } from "react-dom/client";
+  import "./index.css";
+  import App from "./App.jsx";
+  
+  createRoot(document.getElementById("root")).render(
+    // <StrictMode>
+    <App />
+    // </StrictMode>
+  );
+  ```
+  
+  ##### react\my-app\src\App.jsx:
+  
+  ```jsx
+  import "./App.css";
+  
+  import List from "./components/List/List";
+  
+  function App() {
+    return (
+      <>
+        <List />
+      </>
+    );
+  }
+  
+  export default App;
+  ```
+
+  ##### react\my-app\src\db\data.js:
+  
+  ```jsx
+  export const data = [
+    { id: 1, name: "john" },
+    { id: 2, name: "peter" },
+    { id: 3, name: "susan" },
+    { id: 4, name: "anna" },
+  ];
+  
+  export const people = [
+    { id: 1, name: "bob", nickName: "Stud Muffin" },
+    { id: 2, name: "peter" },
+    {
+      id: 3,
+      name: "oliver",
+      images: [
+        {
+          small: {
+            url: "https://res.cloudinary.com/diqqf3eq2/image/upload/ar_1:1,bo_5px_solid_rgb:ff0000,c_fill,g_auto,r_max,w_1000/v1595959121/person-1_aufeoq.jpg",
+          },
+        },
+      ],
+    },
+    { id: 4, name: "david" },
+  ];
+  ```
+
+  ##### react\my-app\src\components\List\List.jsx:
+  
+  ```jsx
+  import React from "react";
+  
+  import Person from "../Person";
+  import { people } from "../../db/data";
+  
+  const List = () => {
+    return (
+      <div>
+        <h1>People List</h1>
+        {people.map((person) => {
+          return <Person key={person.id} {...person} />;
+        })}
+      </div>
+    );
+  };
+  
+  export default List;
+  ```
+
+  ##### react\my-app\src\components\List\index.jsx:
+  
+  ```jsx
+  export { default } from "./List";
+  ```
+
+  ##### react\my-app\src\components\Person\Person.jsx:
+  
+  ```jsx
+  import React from "react";
+  import user from "../../assets/user.png";
+  
+  const Person = ({ name, nickName = "[None]", images }) => {
+    // const img = images && images[0] && images[0].small && images[0].small.url;
+    // const img = images?.[0]?.small?.url ?? user;
+    const img = images?.[0]?.small?.url || user;
+  
+    return (
+      <>
+        <img src={img} alt={name} width={100} height={100} />
+        <h3>{name[0].toUpperCase() + name.slice(1)}</h3>
+        <h4>Nickname: {nickName} </h4>
+      </>
+    );
+  };
+  
+  export default Person;
+  ```
+
+  ##### react\my-app\src\components\Person\index.jsx:
+  
+  ```jsx
+  export { default } from "./Person";
+  ```
+
+</details>
+
+<details>
+  <summary>React Forms </summary>
+
+  ### A
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+</details>
 
 
 
@@ -2670,7 +2805,7 @@ root.render(<Greeting />);
 
 
 <details>
-  <summary>React Hooks - Setup </summary>
+  <summary>React - Setup </summary>
 
   ### A
 
