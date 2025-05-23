@@ -2640,6 +2640,9 @@ root.render(<Greeting />);
   export default Navbar;
   ```
 
+  ![image](https://github.com/user-attachments/assets/ae3e5816-3fe9-4c4c-bc1a-e4d29d48fff3)
+  ![image](https://github.com/user-attachments/assets/c60c2a4c-4e12-40f4-b04b-26fc3810c0b3)
+
 </details>
 
 
