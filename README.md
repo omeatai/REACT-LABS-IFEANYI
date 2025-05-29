@@ -3115,9 +3115,9 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Forms - Add and Remove Users </summary>
+  <summary>React Forms - Add and Remove Users (Filter and FInd) </summary>
 
-  ### Add and Remove Users
+  ### Add and Remove Users (Filter and FInd)
 
   ##### App.jsx:
   
