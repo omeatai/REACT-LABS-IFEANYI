@@ -2768,6 +2768,8 @@ root.render(<Greeting />);
   export { default } from "./Person";
   ```
 
+  ![image](https://github.com/user-attachments/assets/feab6768-0204-4926-99e3-78448ac8493a)
+
 </details>
 
 <details>
