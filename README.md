@@ -3115,9 +3115,110 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Forms - Add and Remove Users (Filter and FInd) </summary>
+  <summary>React Forms - Add and Remove Users (Filter and Find) </summary>
 
-  ### Add and Remove Users (Filter and FInd)
+  ### Add and Remove Users (Filter and Find)
+
+  ##### App.jsx:
+  
+  ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  import { data } from "./db/data";
+  import user from "./assets/user.png";
+  
+  function App() {
+    return (
+      <>
+        <ControlledInputs />
+      </>
+    );
+  }
+  
+  export default App;
+  
+  const ControlledInputs = () => {
+    const [people, setPeople] = useState(data);
+    const [name, setName] = useState("");
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      // if (!name) return;
+      if (!name) {
+        alert("Please enter a name");
+        return;
+      }
+  
+      const newPerson = { id: Date.now(), name };
+      const updatedPeople = [newPerson, ...people];
+      setPeople(updatedPeople);
+      setName("");
+      console.log(`Added ${newPerson.name} to the list`);
+    };
+  
+    const removePerson = (id) => {
+      const removedPerson = people.find((person) => person.id === id);
+      const updatedPeople = people.filter((person) => person.id !== id);
+      setPeople(updatedPeople);
+      console.log(`Removed ${removedPerson.name} from the list`);
+    };
+  
+    return (
+      <div>
+        <form className="form" onSubmit={handleSubmit}>
+          <h1>Add User</h1>
+          <div className="form-row">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="form-input"
+            />
+          </div>
+          <button type="submit" className="btn btn-block">
+            submit
+          </button>
+        </form>
+        <section
+          style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+        >
+          {people.map((person) => {
+            const cleanedName =
+              person.name.slice(0, 1).toUpperCase() + person.name.slice(1);
+            return (
+              <div key={person.id}>
+                <img
+                  src={person?.img || user}
+                  alt={person.name}
+                  width={50}
+                  height={50}
+                />
+                <h4>{cleanedName}</h4>
+                <button onClick={() => removePerson(person.id)}>
+                  remove {cleanedName}
+                </button>
+              </div>
+            );
+          })}
+        </section>
+      </div>
+    );
+  };
+  ```
+
+  ![image](https://github.com/user-attachments/assets/6d154823-79fb-4a8d-a522-47037220de04)
+
+</details>
+
+<details>
+  <summary>React Forms - Multiple Inputs </summary>
+
+  ### Multiple Inputs
 
   ##### App.jsx:
   
@@ -3132,8 +3233,6 @@ root.render(<Greeting />);
   ```
 
 </details>
-
-
 
 
 
