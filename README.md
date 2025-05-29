@@ -2828,13 +2828,306 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Forms </summary>
+  <summary>React Forms - Controlled Inputs </summary>
 
-  ### A
+  ### Controlled Inputs
 
   ##### App.jsx:
   
   ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return (
+      <>
+        <ControlledInputs />
+      </>
+    );
+  }
+  
+  export default App;
+  
+  const ControlledInputs = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+  
+    // const handleChange = (e) => {
+    //   if (e.target.name === "name") {
+    //     setName(e.target.value);
+    //     console.log(name);
+    //   } else if (e.target.name === "email") {
+    //     setEmail(e.target.value);
+    //     console.log(email);
+    //   }
+    // };
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      if (name && email) {
+        console.log(name, email);
+      } else {
+        console.log("Invalid data");
+      }
+    };
+  
+    return (
+      <div>
+        <form className="form" onSubmit={handleSubmit}>
+          <h1>Controlled Inputs</h1>
+          <div className="form-row">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="form-input"
+            />
+          </div>
+          <div className="form-row">
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="form-input"
+            />
+          </div>
+          <button type="submit" className="btn btn-block">
+            submit
+          </button>
+        </form>
+      </div>
+    );
+  };
+  ```
+
+  ##### App.css:
+  
+  ```css
+  #root {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+  
+      /* colors */
+      --primary-100: #e2e0ff;
+      --primary-200: #c1beff;
+      --primary-300: #a29dff;
+      --primary-400: #837dff;
+      --primary-500: #645cff;
+      --primary-600: #504acc;
+      --primary-700: #3c3799;
+      --primary-800: #282566;
+      --primary-900: #141233;
+  
+      /* grey */
+      --grey-50: #f8fafc;
+      --grey-100: #f1f5f9;
+      --grey-200: #e2e8f0;
+      --grey-300: #cbd5e1;
+      --grey-400: #94a3b8;
+      --grey-500: #64748b;
+      --grey-600: #475569;
+      --grey-700: #334155;
+      --grey-800: #1e293b;
+      --grey-900: #0f172a;
+      /* rest of the colors */
+      --black: #222;
+      --white: #fff;
+      --red-light: #f8d7da;
+      --red-dark: #842029;
+      --green-light: #d1e7dd;
+      --green-dark: #0f5132;
+  
+      /* fonts  */
+  
+      --small-text: 0.875rem;
+      --extra-small-text: 0.7em;
+      /* rest of the vars */
+      --backgroundColor: var(--grey-50);
+      --textColor: var(--grey-900);
+      --borderRadius: 0.25rem;
+      --letterSpacing: 1px;
+      --transition: 0.3s ease-in-out all;
+      --max-width: 1120px;
+      --fixed-width: 600px;
+  
+      /* box shadow*/
+      --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  
+  a {
+      font-weight: 500;
+      color: #646cff;
+      text-decoration: inherit;
+  }
+  
+  a:hover {
+      color: #535bf2;
+  }
+  
+  body {
+      margin: 0;
+      display: flex;
+      place-items: center;
+      min-width: 320px;
+      min-height: 100vh;
+  }
+  
+  h1 {
+      font-size: 3.2em;
+      line-height: 1.1;
+  }
+  
+  button {
+      border-radius: 8px;
+      border: 1px solid transparent;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      font-weight: 500;
+      font-family: inherit;
+      /* background-color: #1a1a1a; */
+      cursor: pointer;
+      transition: border-color 0.25s;
+  }
+  
+  button:hover {
+      border-color: #646cff;
+  }
+  
+  button:focus,
+  button:focus-visible {
+      outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  /* form */
+  
+  .form {
+      width: 90vw;
+      max-width: var(--fixed-width);
+      background: var(--white);
+      border-radius: var(--borderRadius);
+      box-shadow: var(--shadow-2);
+      padding: 2rem 2.5rem;
+      margin: 3rem auto;
+  }
+  
+  .form-label {
+      display: block;
+      font-size: var(--small-text);
+      margin-bottom: 0.5rem;
+      text-transform: capitalize;
+      letter-spacing: var(--letterSpacing);
+  }
+  
+  .form-input,
+  .form-textarea {
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      border-radius: var(--borderRadius);
+      background: var(--backgroundColor);
+      border: 1px solid var(--grey-200);
+  }
+  
+  .form-row {
+      margin-bottom: 1rem;
+  }
+  
+  .form-textarea {
+      height: 7rem;
+  }
+  
+  ::placeholder {
+      font-family: inherit;
+      color: var(--grey-400);
+  }
+  
+  .form-alert {
+      color: var(--red-dark);
+      letter-spacing: var(--letterSpacing);
+      text-transform: capitalize;
+  }
+  
+  /* extra styles */
+  .form .form-label {
+      text-align: left;
+  }
+  
+  .form .btn-block {
+      margin-top: 0.5rem;
+  }
+  
+  /* buttons */
+  
+  .btn {
+      cursor: pointer;
+      color: var(--white);
+      background: var(--primary-500);
+      border: transparent;
+      border-radius: var(--borderRadius);
+      letter-spacing: var(--letterSpacing);
+      padding: 0.375rem 0.75rem;
+      box-shadow: var(--shadow-1);
+      transition: var(--transition);
+      text-transform: capitalize;
+      display: inline-block;
+  }
+  
+  .btn:hover {
+      background: var(--primary-700);
+      box-shadow: var(--shadow-3);
+  }
+  
+  .btn-hipster {
+      color: var(--primary-500);
+      background: var(--primary-200);
+  }
+  
+  .btn-hipster:hover {
+      color: var(--primary-200);
+      background: var(--primary-700);
+  }
+  
+  .btn-block {
+      width: 100%;
+  }
+  ```
+
+  ![image](https://github.com/user-attachments/assets/b3f1aa7c-a47e-48b2-9a9d-bc46be46e4b0)
+
+</details>
+
+<details>
+  <summary>React Forms - Add and Remove Users </summary>
+
+  ### Add and Remove Users
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+  ##### App.css:
+  
+  ```css
 
   ```
 
@@ -2860,15 +3153,20 @@ root.render(<Greeting />);
 
 
 
-
 <details>
-  <summary>React - Setup </summary>
+  <summary>React Forms - C </summary>
 
   ### A
 
   ##### App.jsx:
   
   ```jsx
+
+  ```
+
+  ##### App.css:
+  
+  ```css
 
   ```
 
