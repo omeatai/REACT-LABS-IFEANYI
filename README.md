@@ -3220,7 +3220,7 @@ root.render(<Greeting />);
 
   ### Handle Multiple Inputs
 
-  ##### App.jsx:
+  ##### react\my-app\src\App.jsx:
   
   ```jsx
   import { useState, useEffect } from "react";
@@ -3312,7 +3312,7 @@ root.render(<Greeting />);
 
   ![image](https://github.com/user-attachments/assets/373c3761-2fb6-41d4-9322-5ac3f711071b)
 
-  ##### App.css:
+  ##### react\my-app\src\App.css:
   
   ```css
   #root {
@@ -3514,6 +3514,24 @@ root.render(<Greeting />);
 
 </details>
 
+<details>
+  <summary>React Forms - Checkbox and Select Inputs </summary>
+
+  ### Checkbox and Select Inputs
+
+  ##### App.jsx:
+  
+  ```jsx
+
+  ```
+
+  ##### App.css:
+  
+  ```css
+
+  ```
+
+</details>
 
 
 
