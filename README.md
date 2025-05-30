@@ -3310,8 +3310,6 @@ root.render(<Greeting />);
   };
   ```
 
-  ![image](https://github.com/user-attachments/assets/373c3761-2fb6-41d4-9322-5ac3f711071b)
-
   ##### react\my-app\src\App.css:
   
   ```css
@@ -3511,6 +3509,8 @@ root.render(<Greeting />);
       width: 100%;
   }
   ```
+
+  ![image](https://github.com/user-attachments/assets/373c3761-2fb6-41d4-9322-5ac3f711071b)
 
 </details>
 
