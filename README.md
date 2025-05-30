@@ -3216,21 +3216,101 @@ root.render(<Greeting />);
 </details>
 
 <details>
-  <summary>React Forms - Multiple Inputs </summary>
+  <summary>React Forms - Handle Multiple Inputs </summary>
 
-  ### Multiple Inputs
+  ### Handle Multiple Inputs
 
   ##### App.jsx:
   
   ```jsx
-
-  ```
-
-  ##### App.css:
+  import { useState, useEffect } from "react";
+  import "./App.css";
   
-  ```css
-
+  function App() {
+    return (
+      <>
+        <ControlledInputs />
+      </>
+    );
+  }
+  
+  export default App;
+  
+  const ControlledInputs = () => {
+    const [user, setUser] = useState({ name: "", email: "", password: "" });
+  
+    const handleChange = (e) => {
+      setUser({ ...user, [e.target.name]: e.target.value });
+    };
+  
+    // useEffect(() => {
+    //   console.log(`user: ${user.name} - ${user.email} - ${user.password}`);
+    // }, [user]);
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log(user);
+    };
+  
+    return (
+      <div>
+        <form className="form" onSubmit={handleSubmit}>
+          <h1>Multiple Inputs</h1>
+          <div className="form-row">
+            <label htmlFor="name" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={user.name}
+              onChange={handleChange}
+              className="form-input"
+            />
+          </div>
+          <div className="form-row">
+            <label htmlFor="email" className="form-label">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={user.email}
+              onChange={handleChange}
+              className="form-input"
+            />
+          </div>
+          <div className="form-row">
+            <label htmlFor="password" className="form-label">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={user.password}
+              onChange={handleChange}
+              className="form-input"
+            />
+          </div>
+          <button type="submit" className="btn btn-block">
+            submit
+          </button>
+        </form>
+        <section className="info">
+          <h3>Info</h3>
+          <h5>name: {user.name}</h5>
+          <h5>email: {user.email}</h5>
+          <h5>password: {user.password}</h5>
+        </section>
+      </div>
+    );
+  };
   ```
+
+  ![image](https://github.com/user-attachments/assets/373c3761-2fb6-41d4-9322-5ac3f711071b)
 
 </details>
 
