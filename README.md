@@ -3522,6 +3522,101 @@ root.render(<Greeting />);
   ##### App.jsx:
   
   ```jsx
+  import { useState } from "react";
+  import "./App.css";
+  
+  function App() {
+    return (
+      <>
+        <SelectInputs />
+      </>
+    );
+  }
+  
+  export default App;
+  
+  const myFrameworks = ["react", "vue", "angular", "svelte", "next"];
+  
+  const SelectInputs = () => {
+    const [shipping, setShipping] = useState(false);
+    const [framework, setFramework] = useState("react");
+  
+    const handleCheckbox = (e) => {
+      setShipping(e.target.checked);
+    };
+  
+    const handleSelect = (e) => {
+      setFramework(e.target.value);
+    };
+  
+    return (
+      <div>
+        <form className="form">
+          <h1>Checkbox and Select Inputs</h1>
+          <div
+            className="form-row"
+            style={{ textAlign: "left", marginBottom: "10px" }}
+          >
+            <label htmlFor="shipping" className="form-label-x">
+              Free Shipping
+            </label>
+            <input
+              type="checkbox"
+              id="shipping"
+              name="shipping"
+              className="form-input-x"
+              checked={shipping}
+              onChange={handleCheckbox}
+            />
+          </div>
+  
+          <div className="form-row">
+            <label htmlFor="name" className="form-label">
+              Select
+            </label>
+            <select
+              name="select"
+              id="select"
+              className="form-input"
+              value={framework}
+              onChange={handleSelect}
+            >
+              {myFrameworks.map((framework) => (
+                <option value={framework} key={framework}>
+                  {framework}
+                </option>
+              ))}
+            </select>
+          </div>
+          <button type="submit" className="btn btn-block">
+            submit
+          </button>
+        </form>
+  
+        <section className="info">
+          <h3>Info</h3>
+          <h4 style={{ color: shipping ? "green" : "red" }}>
+            Shipping Status: {shipping ? "FREE" : "PAID"}
+          </h4>
+          <h4>Selected Framework: {framework.toUpperCase()}</h4>
+        </section>
+      </div>
+    );
+  };
+  ```
+
+  ![image](https://github.com/user-attachments/assets/480da1c3-49d3-4468-a37d-933d2a732ce1)
+
+</details>
+
+<details>
+  <summary>React Forms - Submitting Form Data with Uncontrolled Inputs (FormData API) </summary>
+
+  ### Submitting Form Data with uncontrolled Inputs (FormData API)
+
+  ##### App.jsx:
+  
+  ```jsx
 
   ```
 
@@ -3532,7 +3627,6 @@ root.render(<Greeting />);
   ```
 
 </details>
-
 
 
 
