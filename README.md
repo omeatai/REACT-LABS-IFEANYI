@@ -1,6 +1,10 @@
 # REACT-LABS-IFEANYI
 by Ifeanyi Omeata
 
+# React
+
+## [React Course 1](https://www.codingaddict.io/l/products)
+
 <details>
   <summary>Install React</summary>
 
@@ -3671,7 +3675,7 @@ root.render(<Greeting />);
 
 
 
-
+<hr>
 
 
 
