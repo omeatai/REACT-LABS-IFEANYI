@@ -2,7 +2,8 @@
 
 ### CODING ADDICT
 
-- [x] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products) 
+- [x] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products)
+- [ ] [Js Fundamentals](https://www.codingaddict.io/l/products)
 - [x] [React Fundamentals](https://www.codingaddict.io/l/products) | [Notes](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/1.md)
 
 ### HTML & CSS BASICS
@@ -14,6 +15,18 @@
 - [ ] [10 Mega Responsive Websites with HTML, CSS, and JavaScript](https://www.udemy.com/course/10-mega-responsive-websites-with-html-css-and-javascript/)
 - [ ] [Build a Quiz App with HTML, CSS, and JavaScript](https://www.udemy.com/course/build-a-quiz-app-with-html-css-and-javascript/)
 - [ ] [Complete Web & Mobile Designer: UI/UX, Figma](https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/)
+
+### JS BASICS
+
+- [ ] [JavaScript Fundamentals](https://www.udemy.com/course/javascriptfundamentals/)
+- [ ] [Advanced Javascript](https://www.udemy.com/course/advanced-javascript-concepts/)
+- [ ] [JavaScript - The Complete Guide 2025 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
+
+### TYPESCRIPT BASICS
+
+- [ ] [TYPESCRIPT FOR BEGINNERS](https://www.udemy.com/course/typescript-for-beginners/)
+- [ ] [TypeScript Developer Course in 2025 – Beginner to Expert](https://www.udemy.com/course/typescript-developer-course-beginner-to-expert/)
+- [ ] [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
 
 ### REACT BASICS
 
@@ -32,6 +45,11 @@
 - [ ] [React in easy steps with Node and Java Backend](https://www.udemy.com/course/reactjs-in-easy-steps/)
 - [ ] [React - Build your React App fast using React Design System](https://www.udemy.com/course/creative-tim/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
+
+### REACT NATIVE BASICS
+
+- [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
+- [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 
 ### REACT TESTING & DESIGN
 
@@ -56,11 +74,6 @@
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
-
-### REACT NATIVE BASICS
-
-- [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
-- [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 
 ### YOUTUBE
 
@@ -97,6 +110,23 @@
 - [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
 - [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
 - [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
+
+### YOUTUBE - JAVASCRIPT/TS
+
+- [ ] [TypeScript Pro: A 4-Hour Deep Dive from Basics to Expert Level](https://www.youtube.com/watch?v=zeCDuo74uzA)
+- [ ] [JavaScript Full Course for free 🌐 (2024)](https://www.youtube.com/watch?v=lfmg-EJ8gm4)
+- [ ] [JavaScript tutorial for beginners 🌐 Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv)
+- [ ] [JavaScript Crash Course - Tutorial for Complete Beginners-CE](https://www.youtube.com/watch?v=XIOLqoPHCJ4)
+- [ ] [Advanced JavaScript Crash Course-CE](https://www.youtube.com/watch?v=R9I85RhI7Cg)
+- [ ] [ES6 and Typescript Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhI0V5mE9Vu6Nm-nap8EcjV)
+- [ ] [Asynchronous JavaScript Crash Course-CE](https://www.youtube.com/watch?v=exBgWAIeIeg)
+- [ ] [JavaScript Promises for Complete Beginners-CE](https://www.youtube.com/watch?v=YiYtwbnPfkY)
+- [ ] [JavaScript Algorithms and Data Structures-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP)
+- [ ] [JavaScript Tutorial Full Course - Beginner to Pro-SuperSimpleDev](https://www.youtube.com/watch?v=EerdGm-ehJQ)
+- [ ] [JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022) - Clever Programmer](https://www.youtube.com/watch?v=lI1ae4REbFM)
+- [ ] [Top 50 JavaScript Interview Questions and Answers](https://www.youtube.com/watch?v=Mv3m7YaZ4lA)
+- [ ] [Build 25 JavaScript Projects in 9 Hours | JS Full Course | JavaScript Interview Questions 2024](https://www.youtube.com/watch?v=YoVdhJgw8Wc)
+- [ ] [From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps](https://www.youtube.com/watch?v=H3XIJYEPdus)
 
 ### YOUTUBE - NODE.JS
 
