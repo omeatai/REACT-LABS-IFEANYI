@@ -26,7 +26,7 @@
 - [ ] [React - Build your React App fast using React Design System](https://www.udemy.com/course/creative-tim/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
-# REACT TESTING & DESIGN
+### REACT TESTING & DESIGN
 
 - [ ] [JavaScript Unit Testing - The Practical Guide](https://www.udemy.com/course/javascript-unit-testing-the-practical-guide/)
 - [ ] [React Testing Library and Jest: The Complete Guide](https://www.udemy.com/course/react-testing-library-and-jest/)
@@ -34,19 +34,28 @@
 - [ ] [Cypress End-to-End Testing - Getting Started](https://www.udemy.com/course/cypress-end-to-end-testing-getting-started/)
 - [ ] [React Testing Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd)
 
-# NEXTJS BASICS
+### NODE BASICS
+
+- [ ] [NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)](https://www.udemy.com/course/nodejs-the-complete-guide/)
+- [ ] [Complete NodeJS Developer (GraphQL, MongoDB, + more)](https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery)
+- [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
+- [ ] [MERN Stack Bootcamp 2023 - MongoDB, Express, React & NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
+- [ ] [Advanced MERN Stack Authentication](https://www.udemy.com/course/advanced-mern-stack-authentication/)
+
+
+### NEXTJS BASICS
 
 - [ ] [NextJS Developer-zero-to-mastery](https://www.udemy.com/course/complete-nextjs-developer-zero-to-mastery/)
 - [ ] [React, Next.js and Django: A Rapid Guide - Advanced](https://www.udemy.com/course/react-django-advanced/)
 - [ ] [The Ultimate Authentication Course with NestJS and React](https://www.udemy.com/course/react-nest-authentication/)
 - [ ] [NestJS Microservices: Build & Deploy a Scaleable Backend](https://www.udemy.com/course/nestjs-microservices-build-deploy-a-scaleable-backend/)
 
-# REACT NATIVE BASICS
+### REACT NATIVE BASICS
 
 - [ ] [React Native - The Practical Guide - 2025](https://www.udemy.com/course/react-native-the-practical-guide/)
 - [ ] [Complete React Native Bootcamp (with Hooks)](https://www.udemy.com/course/complete-react-native-mobile-development-zero-to-mastery-with-hooks/)
 
-# YOUTUBE
+### YOUTUBE
 
 - [ ] [React Full Course for free ⚛️ (2024)](https://www.youtube.com/watch?v=CgkZ7MvWUAA)
 - [ ] [React tutorial for beginners ⚛️ Playlist](https://www.youtube.com/playlist?list=PLZPZq0r_RZOMQArzyI32mVndGBZ3D99XQ)
@@ -81,6 +90,22 @@
 - [ ] [THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=futeaowy34Y)
 - [ ] [ADVANCE REACT: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 3 )](https://www.youtube.com/watch?v=-Qnf2bME-rE)
 - [ ] [THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE ON THE INTERNET ( PART 4 )](https://www.youtube.com/watch?v=znZQFzoV3CM)
+
+### YOUTUBE - NODE.JS
+
+- [ ] [Node.js Tutorial-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY)
+- [ ] [The Complete Node.js Bootcamp: From Beginner to Expert ](https://www.youtube.com/watch?v=EsUL2bfKKLc)
+- [ ] [Node JS Full Course 2025 Part 1| Complete Backend Development Course | Part 1](https://www.youtube.com/watch?v=MIJt9H69QVc)
+- [ ] [Node JS Full Course 2025 Part 2| Microservices, Redis, CI CD, Docker, VPS Hosting | Hostinger | Part 2](https://www.youtube.com/watch?v=_f7h6xQXiLA)
+- [ ] [Node JS Full Course 2025 Part 3| PostgreSQL, Prisma, Nest JS, Bun, Hono, Prometheus, Grafana | Part 3](https://www.youtube.com/watch?v=pa9xqOnorx0)
+- [ ] [MERN Stack Full Course - ECommerce App with Admin Panel : React, Redux Toolkit, Tailwind, MongoDB](https://www.youtube.com/watch?v=_4CPp670fK4)
+- [ ] [How To Deploy MERN Stack App | Deploy MERN Stack E-Commerce App](https://www.youtube.com/watch?v=39DloCh510E)
+- [ ] [MERN Mastery: Building a Scalable Movies App for Ultimate User Experience](https://www.youtube.com/watch?v=Bd1EBSCu2os)
+- [ ] [Express JS Full Course](https://www.youtube.com/watch?v=nH9E25nkk3I)
+- [ ] [Socket.IO Mastery: Learn Real-Time Web Development](https://www.youtube.com/watch?v=EtG0tv2a9Uw)
+
+### YOUTUBE - NEXT.JS
+
 - [ ] [Next.js 15 Full Tutorial - Beginner to Advanced](https://www.youtube.com/watch?v=k7o9R6eaSes)
 - [ ] [Next.js 15 Tutorial - Beginner to Advanced-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY)
 - [ ] [Learn Next.js 15 in 1 hour - Beginner Tutorial-CE](https://www.youtube.com/watch?v=_EgI9WH8q1A)
@@ -92,7 +117,15 @@
 - [ ] [Next.js Full Course 2024 | Learn Next.js 14 In One Video | 14 Hours](https://www.youtube.com/watch?v=mQnWCmVErnw)
 - [ ] [THE BIGGEST NEXT.JS COURSE ON THE INTERNET ( PART 1 )](https://www.youtube.com/watch?v=QIDkK0FbXDc)
 - [ ] [THE BIGGEST NEXT.JS 15 COURSE ON THE INTERNET ( PART 2 )](https://www.youtube.com/watch?v=kiPrrtclZOA)
+
+### YOUTUBE - REACT NATIVE
+
 - [ ] [React Native Tutorial for Beginners-Playlist-CE](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhiQJD1di4eRVN30WWCXkg1)
 - [ ] [React Native Full Course 2024 | 5+ Projects | 12 Hours](https://www.youtube.com/watch?v=hKxnj1CS1o4)
 - [ ] [Master React Native 2024: Comprehensive Course with Expo, Expo Router, TypeScript, Zustand](https://www.youtube.com/watch?v=a_SthPXtV6c)
 - [ ] [React Native Course for Beginners in 2025 | Build a Full Stack React Native App](https://youtu.be/f8Z9JyB2EIE?si=bnqS2Uv_fVCeUPh8)
+
+
+
+
+
