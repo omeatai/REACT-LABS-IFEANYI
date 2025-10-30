@@ -3,7 +3,7 @@
 ### CODING ADDICT
 
 - [x] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products)
-- [x] [Js Fundamentals](https://www.codingaddict.io/l/products)
+- [x] [JS Fundamentals](https://www.codingaddict.io/l/products)
 - [x] [React Fundamentals](https://www.codingaddict.io/l/products) | [Notes](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/1.md)
 
 ### HTML & CSS BASICS
