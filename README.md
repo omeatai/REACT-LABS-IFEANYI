@@ -2,9 +2,10 @@
 
 ### CODING ADDICT
 
-- [x] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products)
-- [x] [JS Fundamentals](https://www.codingaddict.io/l/products)
-- [x] [React Fundamentals](https://www.codingaddict.io/l/products) | [Notes](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/1.md)
+- [x] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products) | [Notes_html_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/html_1.md)
+- [x] [JS Fundamentals](https://www.codingaddict.io/l/products) | [Notes_js_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/js_1.md)
+- [x] [REACT Fundamentals](https://www.codingaddict.io/l/products) | [Notes_react_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/react_1.md)
+- [x] [NODE Fundamentals](https://www.codingaddict.io/l/products) | [Notes_node_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/node_1.md)
 
 ### HTML & CSS BASICS
 
@@ -66,7 +67,6 @@
 - [ ] [The Complete Node.js Developer Course (3rd Edition)](https://www.udemy.com/course/the-complete-nodejs-developer-course-2/)
 - [ ] [MERN Stack Bootcamp 2023 - MongoDB, Express, React & NodeJS](https://www.udemy.com/course/mern-stack-course-mongodb-express-react-nodejs/)
 - [ ] [Advanced MERN Stack Authentication](https://www.udemy.com/course/advanced-mern-stack-authentication/)
-
 
 ### NEXTJS BASICS
 
@@ -213,5 +213,3 @@
 - [ ] [THE EXACT PROCESS OF HOW I REDESIGNED MY OLD LANDING PAGE UI DESIGN](https://www.youtube.com/watch?v=qItVX3c3C6U&ab_channel=duiverse)
 - [ ] [FIGMA UI DESIGN TUTORIAL - HOW TO REDESIGN ANY WEBSITE (A BEGINNER'S GUIDE)](https://www.youtube.com/watch?v=fcWahZqGU44&ab_channel=AJ%26Smart)
 - [ ] [THE 60-30-10 COLOR RULE](https://www.youtube.com/watch?v=UWwNIMHFdW4&ab_channel=JesseShowalter)
-
-
