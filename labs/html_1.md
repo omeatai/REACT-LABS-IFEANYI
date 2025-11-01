@@ -431,16 +431,99 @@
 ### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+
+    <!-- Form Element -->
+    <h3>Sample Form</h3>
+    <form action="#" method="post">
+      <!-- Text Input -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter First Name"
+        value=""
+        required
+      />
+      <br /><br />
+
+      <!-- Text Area Input -->
+      <label for="message">Message:</label><br /><br />
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Enter your message"
+        cols="30"
+        rows="10"
+        required
+      ></textarea>
+      <br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+```
+
+<img width="1583" height="1221" alt="image" src="https://github.com/user-attachments/assets/45be8fb5-f21e-4795-96be-7dd8753915c0" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/68e38b87-01c9-428e-94a6-8b73e093f598" />
+
+</details>
+
+<details>
+  <summary>HTML Radio Input</summary>
+
+### projects-v1\html_app\index.html
+
+```html
 
 ```
 
 </details>
 
+<details>
+  <summary>HTML Checkbox input</summary>
 
+### projects-v1\html_app\index.html
 
+```html
 
+```
 
+</details>
 
+<details>
+  <summary>I</summary>
+
+### projects-v1\html_app\index.html
+
+```html
+
+```
+
+</details>
 
 
 
