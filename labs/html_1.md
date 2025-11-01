@@ -219,13 +219,71 @@
 ### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+    <!-- laptop Logo -->
+    <h3>Laptop Image</h3>
+    <img src="./img/laptop2.jpg" width="150" height="" alt="Laptop Image" />
+
+    <!-- Unordered List -->
+    <h3>Unordered List</h3>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h3>Ordered List</h3>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <!-- Nested List -->
+    <h3>Nested List</h3>
+    <ul>
+      <li>
+        Item 1
+        <ul>
+          <li>Subitem 1</li>
+          <li>Subitem 2</li>
+        </ul>
+      </li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </body>
+</html>
 
 ```
+
+<img width="1583" height="1126" alt="image" src="https://github.com/user-attachments/assets/3a2dc906-266b-4428-8437-d00dec8366d7" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/259567f0-73f6-407a-8af3-856202ad396c" />
 
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>HTML Table Element</summary>
 
 ### projects-v1\html_app\index.html
 
