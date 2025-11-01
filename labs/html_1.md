@@ -587,8 +587,59 @@
 ### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
 
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+
+    <!-- Form Element -->
+    <h3>Sample Form</h3>
+    <form action="#" method="post">
+      <!-- Text Input -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter First Name"
+        value=""
+        required
+      />
+      <br /><br />
+
+      <!-- Select Input -->
+      <label for="gender">Select your Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
 ```
+
+<img width="1583" height="1223" alt="image" src="https://github.com/user-attachments/assets/a14a4ef0-a241-497d-b8ad-77da2cae4a03" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/0897ec96-afd7-4206-b0ac-8e263218932d" />
 
 </details>
 
