@@ -81,6 +81,7 @@
       content="A simple, accessible HTML5 starter page."
     />
   </head>
+  <body>
   <!-- This is a comment -->
     <h1>Hello World 5!</h1>
     <p>This is a simple HTML 5 app.</p>
@@ -103,13 +104,59 @@
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>HTML Links</summary>
 
-### 
+### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
 
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <!-- Same Page Link -->
+    <a id="top" href="#bottom">Go to Footer Menu</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+    <!-- laptop Logo -->
+    <h3>Laptop Image</h3>
+    <img src="./img/laptop2.jpg" width="348" height="" alt="Laptop Image" />
+    <!-- Udemy Logo -->
+    <h3>Udemy Logo</h3>
+    <img src="./img/udemy.png" width="348" height="148" alt="Udemy Logo" />
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <footer>
+      <p>&copy; 2024 My HTML5 App</p>
+      <hr />
+      <h3>Footer Menu</h3>
+      <a id="bottom" href="#top">Back to Top</a>
+    </footer>
+  </body>
+</html>
 ```
+
+<img width="1583" height="1126" alt="image" src="https://github.com/user-attachments/assets/685fde6e-bf0b-48a0-9bea-84f2f5a44054" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/e46d28db-3856-4cd8-bdc9-53bbf14b4a80" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/4ae8d8f3-f6ce-4588-9c6a-46a8e74ba2a9" />
 
 </details>
 
