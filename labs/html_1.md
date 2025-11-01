@@ -283,7 +283,7 @@
 </details>
 
 <details>
-  <summary>HTML Table Element</summary>
+  <summary>HTML Tables</summary>
 
 ### projects-v1\html_app\index.html
 
