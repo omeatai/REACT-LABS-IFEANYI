@@ -288,10 +288,86 @@
 ### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+    <!-- laptop Logo -->
+    <h3>Laptop Image</h3>
+    <img src="./img/laptop2.jpg" width="150" height="" alt="Laptop Image" />
+
+    <!-- Table Element -->
+    <h3>Sample Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 4</td>
+          <td>Data 5</td>
+          <td>Data 6</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+```
+
+<img width="1583" height="1126" alt="image" src="https://github.com/user-attachments/assets/d9fcc1ee-c468-47e5-b7ab-7e8a3646a1d6" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/db9bc907-6d74-4e00-84b1-b002652be363" />
+
+</details>
+
+<details>
+  <summary>HTML Forms</summary>
+
+### projects-v1\html_app\index.html
+
+```html
 
 ```
 
 </details>
+
+<details>
+  <summary>I</summary>
+
+### projects-v1\html_app\index.html
+
+```html
+
+```
+
+</details>
+
+
 
 
 
