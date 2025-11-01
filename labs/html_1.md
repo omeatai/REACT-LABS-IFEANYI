@@ -346,18 +346,87 @@
 </details>
 
 <details>
-  <summary>HTML Forms</summary>
+  <summary>HTML Form Input and Submit</summary>
 
 ### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+
+    <!-- Form Element -->
+    <h3>Sample Form</h3>
+    <form action="#" method="post">
+      <!-- Text Input -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter First Name"
+        value=""
+        required
+      />
+      <br /><br />
+
+      <!-- Email Input -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+        value=""
+        required
+      />
+      <br /><br />
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter Password"
+        value=""
+        required
+      />
+      <br /><br />
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
 
 ```
+
+<img width="1583" height="1221" alt="image" src="https://github.com/user-attachments/assets/a26fb81e-93e7-49c4-961e-3752ae1b4f51" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/79b0a3de-c355-407c-a868-3567bf8b03ae" />
 
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>HTML Form Text Area</summary>
 
 ### projects-v1\html_app\index.html
 
