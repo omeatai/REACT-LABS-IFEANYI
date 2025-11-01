@@ -65,6 +65,44 @@
 </details>
 
 <details>
+  <summary>HTML Comments and Line Breaks</summary>
+
+### 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <!-- This is a comment -->
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+    <br/>
+    <!-- Udemy Logo -->
+    <h3>Purple Udemy Logo</h3>
+    <img src="./img/udemy.png" width="348" height="" alt="Udemy Image Logo" />
+    <br/>
+    <!-- laptop Logo -->
+    <h3>Laptop Image</h3>
+    <img src="./img/laptop2.jpg" width="348" height="" alt="Laptop Image" />
+  </body>
+</html>
+
+```
+
+<img width="1583" height="1126" alt="image" src="https://github.com/user-attachments/assets/b5e71bf5-e0ec-4242-ba43-e696d26b5bd9" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/8b80682e-ae67-4dab-81b1-8bd623e30b3b" />
+
+</details>
+
+<details>
   <summary>I</summary>
 
 ### 
@@ -75,7 +113,16 @@
 
 </details>
 
+<details>
+  <summary>I</summary>
 
+### 
+
+```html
+
+```
+
+</details>
 
 
 
