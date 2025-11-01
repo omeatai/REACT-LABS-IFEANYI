@@ -161,7 +161,60 @@
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>HTML Sup, Sub, Strong and EM Elements</summary>
+
+### projects-v1\html_app\index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My HTML5 App</title>
+    <meta
+      name="description"
+      content="A simple, accessible HTML5 starter page."
+    />
+  </head>
+  <body>
+    <!-- External Link -->
+    <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+
+    <!-- Internal Link -->
+    <a href="./about.html">About us</a>
+
+    <h1>Hello World 5!</h1>
+    <p>This is a simple HTML 5 app.</p>
+    <!-- laptop Logo -->
+    <h3>Laptop Image</h3>
+    <img src="./img/laptop2.jpg" width="348" height="" alt="Laptop Image" />
+
+    <!-- Sub and Sup Elements -->
+    <h4>Subscript and Superscript</h4>
+    <p>
+      This is an example of <sub>subscript</sub> and
+      <sup>superscript</sup> text.
+    </p>
+
+    <!-- Strong and EM Elements -->
+    <h4>Strong and Emphasized Text</h4>
+    <p>
+      This is an example of <strong>strong</strong> and
+      <em>emphasized</em> text.
+    </p>
+  </body>
+</html>
+
+```
+
+<img width="1583" height="1126" alt="image" src="https://github.com/user-attachments/assets/695ac14c-71e0-4059-b33c-43a0b5662ac7" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/c055a816-529d-46f6-844b-ca54dc512443" />
+
+</details>
+
+<details>
+  <summary>HTML Links</summary>
 
 ### projects-v1\html_app\index.html
 
@@ -171,9 +224,16 @@
 
 </details>
 
+<details>
+  <summary>I</summary>
 
+### projects-v1\html_app\index.html
 
+```html
 
+```
+
+</details>
 
 
 
