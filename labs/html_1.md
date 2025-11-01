@@ -214,7 +214,7 @@
 </details>
 
 <details>
-  <summary>HTML Links</summary>
+  <summary>HTML Lists</summary>
 
 ### projects-v1\html_app\index.html
 
