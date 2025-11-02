@@ -760,7 +760,31 @@ h2 {
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>CSS Selectors</summary>
+
+### projects-v1\html_app\example-2\css\styles.css
+
+```css
+/* Index Page */
+/* heading 1 */
+h1 {
+    color: red;
+    font-size: 50px;
+}
+
+/* heading 2 */
+h2 {
+    color: purple;
+    font-size: 30px;
+}
+```
+
+<img width="1191" height="809" alt="image" src="https://github.com/user-attachments/assets/6cf584fc-fd35-4d61-99e2-aa376834f131" />
+
+</details>
+
+<details>
+  <summary>CSS Selectors</summary>
 
 ### projects-v1\html_app\example-2\index.html
 
@@ -776,7 +800,22 @@ h2 {
 
 </details>
 
+<details>
+  <summary>I</summary>
 
+### projects-v1\html_app\example-2\index.html
+
+```html
+
+```
+
+### projects-v1\html_app\example-2\css\styles.css
+
+```css
+
+```
+
+</details>
 
 
 
