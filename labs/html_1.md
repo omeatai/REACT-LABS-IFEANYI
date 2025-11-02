@@ -644,7 +644,36 @@
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>Inline CSS </summary>
+
+### projects-v1\html_app\index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: brown; font-size: 50px;">Welcome to Coffee Junkie</h1>
+    <p>Your one-stop shop for all things coffee.</p>
+</body>
+
+</html>
+```
+
+<img width="1137" height="800" alt="image" src="https://github.com/user-attachments/assets/2e579d03-eb50-490a-b577-f0a97ad6dd05" />
+<img width="1363" height="906" alt="image" src="https://github.com/user-attachments/assets/fd72dacc-7450-4e94-b780-decda4ea7574" />
+
+</details>
+
+<details>
+  <summary>Internal CSS</summary>
 
 ### projects-v1\html_app\index.html
 
@@ -653,8 +682,6 @@
 ```
 
 </details>
-
-
 
 
 
