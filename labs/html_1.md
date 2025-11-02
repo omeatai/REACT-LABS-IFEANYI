@@ -716,20 +716,61 @@
 <details>
   <summary>External CSS</summary>
 
-### projects-v1\html_app\index.html
+### projects-v1\html_app\example-2\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- Internal CSS -->
+    <h1>Welcome to Coffee Junkie</h1>
+    <h2>Let's Brew Something Great</h2>
+    <p>Your one-stop shop for all things coffee.</p>
+</body>
+
+</html>
 ```
+
+### projects-v1\html_app\example-2\css\styles.css
+
+```css
+h1 {
+    color: red;
+    font-size: 50px;
+}
+
+h2 {
+    color: purple;
+    font-size: 30px;
+}
+```
+
+<img width="1191" height="809" alt="image" src="https://github.com/user-attachments/assets/2c80ce4d-26f8-4b45-8a17-5bdbe2cbee8b" />
+<img width="1341" height="911" alt="image" src="https://github.com/user-attachments/assets/67234a68-b81d-4fe0-b7dd-9edd412745d5" />
 
 </details>
 
 <details>
   <summary>I</summary>
 
-### projects-v1\html_app\index.html
+### projects-v1\html_app\example-2\index.html
 
 ```html
+
+```
+
+### projects-v1\html_app\example-2\css\styles.css
+
+```css
 
 ```
 
@@ -745,9 +786,15 @@
 <details>
   <summary>I</summary>
 
-### projects-v1\html_app\index.html
+### projects-v1\html_app\example-2\index.html
 
 ```html
+
+```
+
+### projects-v1\html_app\example-2\css\styles.css
+
+```css
 
 ```
 
