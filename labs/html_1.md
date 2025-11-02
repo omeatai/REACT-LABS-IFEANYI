@@ -678,10 +678,66 @@
 ### projects-v1\html_app\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        h1 {
+            color: brown;
+            font-size: 50px;
+        }
+
+        h2 {
+            color: darkorange;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Internal CSS -->
+    <h1>Welcome to Coffee Junkie</h1>
+    <h2>Let's Brew Something Great</h2>
+    <p>Your one-stop shop for all things coffee.</p>
+</body>
+
+</html>
+```
+
+<img width="1137" height="800" alt="image" src="https://github.com/user-attachments/assets/ce667978-e624-49d5-9ff1-d9937a3ab802" />
+<img width="1363" height="906" alt="image" src="https://github.com/user-attachments/assets/5aea729a-f140-423a-aaae-5c7bda2fe066" />
+
+</details>
+
+<details>
+  <summary>External CSS</summary>
+
+### projects-v1\html_app\index.html
+
+```html
 
 ```
 
 </details>
+
+<details>
+  <summary>I</summary>
+
+### projects-v1\html_app\index.html
+
+```html
+
+```
+
+</details>
+
+
+
+
 
 
 
