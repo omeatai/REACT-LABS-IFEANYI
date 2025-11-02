@@ -789,14 +789,83 @@ h2 {
 ### projects-v1\html_app\example-2\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1 id="title" class="uppercase">Welcome to Coffee Junkie</h1>
+    <h2>Let's Brew Something Great</h2>
+    <p id="summary">Your one-stop shop for all things coffee.</p>
+    <ul>
+        <li class="green-text uppercase">Espresso</li>
+        <li class="red-text">Americano</li>
+        <li class="green-text">Latte</li>
+        <li class="red-text">Cappuccino</li>
+        <li class="green-text">Macchiato</li>
+        <li class="red-text">Flat White</li>
+        <li class="green-text">Mocha</li>
+    </ul>
+</body>
+
+</html>
 ```
 
 ### projects-v1\html_app\example-2\css\styles.css
 
 ```css
+/* Element Selectors */
+h2 {
+    color: teal;
+    font-size: 20px;
+}
 
+/* Grouping Selectors */
+h1,
+h2,
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* ID Selectors */
+#title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: wheat;
+    background-color: black;
+}
+
+#summary {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Class Selectors */
+.green-text {
+    font-style: italic;
+    color: green;
+}
+
+.red-text {
+    font-style: italic;
+    color: red;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
 ```
+
+<img width="1191" height="809" alt="image" src="https://github.com/user-attachments/assets/1aa64155-58d5-4ff9-8220-a92e6492c562" />
+<img width="1284" height="918" alt="image" src="https://github.com/user-attachments/assets/29b244fc-54ff-4544-baf7-27b3b4492a19" />
 
 </details>
 
