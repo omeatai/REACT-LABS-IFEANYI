@@ -760,7 +760,7 @@ h2 {
 </details>
 
 <details>
-  <summary>CSS Selectors</summary>
+  <summary>CSS Comments</summary>
 
 ### projects-v1\html_app\example-2\css\styles.css
 
