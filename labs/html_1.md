@@ -871,7 +871,7 @@ p {
 </details>
 
 <details>
-  <summary>I</summary>
+  <summary>CSS DIV and Span Elements</summary>
 
 ### projects-v1\html_app\example-2\index.html
 
