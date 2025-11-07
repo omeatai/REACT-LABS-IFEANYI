@@ -876,6 +876,100 @@ p {
 ### projects-v1\html_app\example-2\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1 id="title" class="uppercase">Welcome to Coffee Junkie</h1>
+    <h2>Let's Brew Something Great</h2>
+    <div class="dark-bg-div">
+        <h3>Our Coffee Selection</h3>
+        <ul>
+            <li>Espresso</li>
+            <li>Latte</li>
+            <li>Cappuccino</li>
+            <li>Americano</li>
+        </ul>
+    </div>
+    <div>
+        <p>Discover the finest blends and single-origin coffees, carefully curated for every palate. <span>This is an
+                uppercase text.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam ratione
+            assumenda fugit, vero nobis provident reprehenderit? Consequuntur iste, a, earum officiis aliquam soluta
+            nobis debitis illo, veniam quos corrupti! Aspernatur optio praesentium, eum eius omnis, eveniet quae
+            obcaecati nisi aperiam at quibusdam temporibus porro totam, nesciunt dolorum? Aliquam, hic.
+        </p>
+    </div>
+</body>
+
+</html>
+```
+
+### projects-v1\html_app\example-2\css\styles.css
+
+```css
+/* Element Selectors */
+h2 {
+    color: teal;
+    font-size: 20px;
+}
+
+/* Grouping Selectors */
+h1,
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* Descendant Selectors */
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    color: wheat;
+    padding: 2px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* ID Selectors */
+#title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: wheat;
+    background-color: black;
+}
+
+/* Class Selectors */
+.dark-bg-div {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+```
+
+<img width="1396" height="1048" alt="image" src="https://github.com/user-attachments/assets/34005aa8-6326-4f57-8656-b56add60546c" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/8b5eaaf5-7f91-40be-9d6d-65c49fbc4427" />
+
+</details>
+
+<details>
+  <summary>CSS DIV and Span Elements</summary>
+
+### projects-v1\html_app\example-2\index.html
+
+```html
 
 ```
 
@@ -886,6 +980,12 @@ p {
 ```
 
 </details>
+
+
+
+
+
+
 
 
 
