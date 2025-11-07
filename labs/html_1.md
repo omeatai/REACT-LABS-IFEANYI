@@ -965,19 +965,71 @@ span {
 </details>
 
 <details>
-  <summary>CSS DIV and Span Elements</summary>
+  <summary>CSS Inheritance</summary>
 
 ### projects-v1\html_app\example-2\index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1 id="title" class="uppercase">Welcome to Coffee Junkie</h1>
+    <h2>Let's Brew Something Great</h2>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nisi ex explicabo? Dolorem ipsa rerum
+            pariatur, officia, commodi quo exercitationem veritatis explicabo reiciendis autem fugit laudantium suscipit
+            ea
+            dicta id.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nisi ex explicabo? Dolorem ipsa rerum
+            pariatur, officia, commodi quo exercitationem veritatis explicabo reiciendis autem fugit laudantium suscipit
+            ea
+            dicta id.</p>
+        <p class="special">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur nisi ex explicabo?
+            Dolorem
+            ipsa rerum
+            pariatur, officia, commodi quo exercitationem veritatis explicabo reiciendis autem fugit laudantium suscipit
+            ea
+            dicta id.</p>
+    </div>
+
+</body>
+
+</html>
 ```
 
 ### projects-v1\html_app\example-2\css\styles.css
 
 ```css
+/* Grouping Selectors */
+h1,
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
 
+body {
+    color: hotpink;
+}
+
+div {
+    color: teal;
+}
+
+.special {
+    color: blue;
+}
 ```
+
+<img width="1396" height="1048" alt="image" src="https://github.com/user-attachments/assets/38954936-0911-4202-8590-f6e979752679" />
+<img width="2560" height="1540" alt="image" src="https://github.com/user-attachments/assets/a3ff4953-07e0-4a19-96b4-740a25b7ccba" />
 
 </details>
 
