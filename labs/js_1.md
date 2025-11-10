@@ -207,19 +207,51 @@ console.log("A multi-line comment example");
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS Variables with Const and Let</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+//Variable Declaration and Assignment
+let studentName = "John Doe";
+let address, zip, state;
+let $studentPassword;
+const _StudentID = "A123456";
 
+address = "123 Main St";
+zip = "12345";
+state = "CA";
+studentName = "Jane Smith";
+$studentPassword = "password123";
+
+console.log(studentName);
+console.log(address, zip, state);
+console.log("Student Password:", $studentPassword);
+console.log("Student ID:", _StudentID);
 ```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/f437a1ce-a1b4-410b-a33a-64dfd9ea16e3" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/4c69f881-4bcd-456e-8805-38af29996494" />
 
 </details>
 
@@ -253,6 +285,7 @@ console.log("A multi-line comment example");
 ```
 
 </details>
+
 
 
 
