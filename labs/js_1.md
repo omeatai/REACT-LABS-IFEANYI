@@ -24,8 +24,8 @@
 </html>
 ```
 
-<img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/f84271ec-6d00-4baf-82af-3412ae3cb249" />
-<img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/b5896a5d-ded4-4d16-a843-830a40cddadd" />
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/77d52950-2c5f-48f7-96dc-79099bb3bc39" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/883e841e-8bf1-4e68-9254-a18b0168f136" />
 
 </details>
 
@@ -107,6 +107,7 @@
 ```
 
 </details>
+
 
 
 
