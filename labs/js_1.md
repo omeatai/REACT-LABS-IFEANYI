@@ -164,6 +164,49 @@ console.log("User confirmed: " + isConfirmed);
 </details>
 
 <details>
+  <summary>JS Single and Multi-line Comments</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// Single Line Comment: This is a single line comment in JavaScript
+console.log("A single line comment example");
+
+/*
+  Multi-line Comment:
+  This is a multi-line comment
+  in JavaScript
+*/
+console.log("A multi-line comment example");
+
+```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/58c8aefb-60a8-45ee-a6e4-039f38c2b4e8" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/a07b35d3-dc3d-48f7-9302-b9bf5ea14297" />
+
+</details>
+
+<details>
   <summary>JS</summary>
 
 ### projects-v1/app_js/sample_1/index.html
@@ -179,6 +222,13 @@ console.log("User confirmed: " + isConfirmed);
 ```
 
 </details>
+
+
+
+
+
+
+
 
 
 
@@ -203,6 +253,7 @@ console.log("User confirmed: " + isConfirmed);
 ```
 
 </details>
+
 
 
 
