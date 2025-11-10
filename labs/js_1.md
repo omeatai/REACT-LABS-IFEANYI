@@ -1,30 +1,89 @@
 ### [1 - JS Fundamentals - Coding Addict](https://www.codingaddict.io/l/products)
 
 <details>
-  <summary>JS Basics</summary>
+  <summary>Inline JS</summary>
 
-### projects-v1\html_app\index.html
+### projects-v1/app_js/sample_1/index.html
 
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>My HTML5 App</title>
-    <meta
-      name="description"
-      content="A simple, accessible HTML5 starter page."
-    />
-  </head>
-  <body>
-    <h1>Hello World 5!</h1>
-    <p>This is a simple HTML 5 app.</p>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <h2>Welcome to my website</h2>
+    <button onclick="alert('Button clicked!')">Click Me!</button>
+</body>
+
 </html>
+```
+
+<img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/f84271ec-6d00-4baf-82af-3412ae3cb249" />
+<img width="1680" height="1050" alt="image" src="https://github.com/user-attachments/assets/b5896a5d-ded4-4d16-a843-830a40cddadd" />
+
+</details>
+
+<details>
+  <summary>Internal JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
 
 ```
 
+```js
 
+```
 
 </details>
+
+
+<details>
+  <summary>External JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+```js
+
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+```js
+
+```
+
+</details>
+
+
