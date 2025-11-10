@@ -4,6 +4,7 @@
 
 - [x] [HTML & CSS Fundamentals](https://www.codingaddict.io/l/products) | [Notes_html_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/html_1.md)
 - [x] [JS Fundamentals](https://www.codingaddict.io/l/products) | [Notes_js_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/js_1.md)
+- [x] [TS Fundamentals](https://www.codingaddict.io/l/products) | [Notes_ts_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/ts_1.md)
 - [x] [REACT Fundamentals](https://www.codingaddict.io/l/products) | [Notes_react_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/react_1.md)
 - [x] [NODE Fundamentals](https://www.codingaddict.io/l/products) | [Notes_node_1](https://github.com/omeatai/REACT-LABS-IFEANYI/blob/main/labs/node_1.md)
 
