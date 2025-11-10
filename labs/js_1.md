@@ -108,9 +108,77 @@ document.querySelectorAll('button').forEach(function (button) {
 
 </details>
 
+<details>
+  <summary>JS Debugging Functions</summary>
 
+### projects-v1/app_js/sample_1/index.html
 
+```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// Javascript debugging functions
+// Write function
+document.write("<h2>Welcome to my website</h2>");
+document.write('<button onclick="alert(\'Button Clicked!\')">Click Me!</button>');
+
+// Alert function
+alert("This is an alert message!");
+
+// Console log function
+console.log("This is a message in the console.");
+
+// Prompt function
+let userName = prompt("Please enter your name:");
+console.log("User's name is: " + userName);
+
+// Confirm function
+let isConfirmed = confirm("Do you want to proceed?");
+console.log("User confirmed: " + isConfirmed);
+
+```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/4666d40c-b86a-4445-80c2-5a464a8e18d4" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/b42e38e2-3c4c-418d-8c01-b55217141553" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/bd4b06f2-1068-42e7-b823-e8231dc2cf4f" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/f6b4f6d7-d0e7-4926-bd65-9d68424622e6" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/2afeaa83-3965-49d2-9ebe-e3efe2acb362" />
+
+</details>
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
 
 
 
@@ -135,6 +203,7 @@ document.querySelectorAll('button').forEach(function (button) {
 ```
 
 </details>
+
 
 
 
