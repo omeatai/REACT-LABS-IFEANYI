@@ -255,6 +255,47 @@ console.log("Student ID:", _StudentID);
 
 </details>
 
+<details>
+  <summary>JS String Concatenation and template strings</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const firstName = "John";
+const lastName = "Doe";
+let fullName = firstName + " " + lastName;
+console.log("Hello, your full name is : " + fullName);
+
+const website = "youtube";
+const url = "https://www." + website + ".com";
+console.log("Visit website at : " + url);
+```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/4f8be781-07c3-4f23-8e1d-2ab7556acc74" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/94813faf-d429-4821-bbeb-e0c9c46c2dd7" />
+
+</details>
+
 
 
 
@@ -285,6 +326,7 @@ console.log("Student ID:", _StudentID);
 ```
 
 </details>
+
 
 
 
