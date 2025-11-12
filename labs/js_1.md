@@ -405,14 +405,86 @@ console.log("The sum2 is:", sum2);
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const friends = ['Alice', 'Bob', 'Charlie', 45, true, undefined, null];
+console.log(friends);
 
+// Accessing elements
+console.log(friends[0]); // Alice
+console.log(friends[3]); // 45
+console.log(friends[7]); // undefined
+
+// Modifying elements
+friends[1] = 'Bobby';
+console.log(friends); // ['Alice', 'Bobby', 'Charlie', 45, true, undefined, null]
+
+// Adding new elements
+friends.push('David');
+console.log(friends); // ['Alice', 'Bobby', 'Charlie', 45, true, undefined, null, 'David']
+
+// Adding new elements at the beginning
+friends.unshift('Zara');
+console.log(friends); // ['Zara', 'Alice', 'Bobby', 'Charlie', 45, true, undefined, null, 'David']
+
+// Adding new elements at a specific index
+friends.splice(3, 0, 'Eve'); // Adding 'Eve' at index 3
+console.log(friends); // ['Zara', 'Alice', 'Bobby', 'Eve', 'Charlie', 45, true, undefined, null, 'David']
+
+// Removing the last element
+friends.pop();
+console.log(friends); // ['Zara', 'Alice', 'Bobby', 'Eve', 'Charlie', 45, true, undefined, null]
+
+// Removing the first element
+friends.shift();
+console.log(friends); // ['Alice', 'Bobby', 'Eve', 'Charlie', 45, true, undefined, null]
+
+// Removing elements from a specific index
+friends.splice(2, 2); // Removing 2 elements starting from index 2
+console.log(friends); // ['Alice', 'Bobby', 45, true, undefined, null]
+
+// Checking the length of the array
+console.log(friends.length); // 6
+
+// Iterating through the array
+for (let i = 0; i < friends.length; i++) {
+    console.log(friends[i]);
+}
+
+// Using for...of loop
+for (const friend of friends) {
+    console.log(friend);
+}
+
+// Checking if an element exists
+console.log(friends.includes('Charlie')); // true
+console.log(friends.includes(45)); // true
+
+// Finding the index of an element
+console.log(friends.indexOf('Alice')); // 0
+console.log(friends.indexOf('David')); // -1
 ```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/8b589424-89f6-463d-9bb8-95be65a110c9" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/3829796f-9989-474b-b163-240dfbeff5ce" />
 
 </details>
 
@@ -447,6 +519,7 @@ console.log("The sum2 is:", sum2);
 ```
 
 </details>
+
 
 
 
