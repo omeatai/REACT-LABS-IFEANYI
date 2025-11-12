@@ -302,6 +302,109 @@ console.log("Visit website at : " + url);
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+/*
+DATA TYPES IN JAVASCRIPT
+### Primitive - String, Number, Boolean, Null, Undefined, Symbol
+### Non-Primitive (Object) - Object, Array, Function
+*/
+
+// String
+const fullName = "John Doe";
+console.log("Hello, " + fullName);
+console.log(`Hello, ${fullName}`);
+console.log("typeof: ", typeof fullName);
+
+// Number
+const age = 30;
+const height = 5.9;
+console.log("Age:", age);
+console.log("Height:", height);
+console.log("typeof: ", typeof age);
+console.log("typeof: ", typeof height);
+
+// Boolean
+const isStudent = false;
+console.log("Is Student:", isStudent);
+console.log("typeof: ", typeof isStudent);
+
+// Null
+const middleName = null;
+console.log("Middle Name:", middleName);
+console.log("typeof: ", typeof middleName);
+
+// Undefined
+let address;
+console.log("Address:", address);
+console.log("typeof: ", typeof address);
+
+// Symbol
+const uniqueId = Symbol("id");
+console.log("Unique ID:", uniqueId.toString());
+console.log("typeof: ", typeof uniqueId);
+
+// Object
+const person = {
+    name: "Jane Doe",
+    age: 25,
+    isEmployed: true
+};
+console.log("Person Object:", person);
+console.log("typeof: ", typeof person);
+
+// Array
+const colors = ["Red", "Green", "Blue"];
+console.log("Colors Array:", colors);
+console.log("typeof: ", typeof colors);
+
+// Function
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet("Alice"));
+console.log("typeof: ", typeof greet);
+
+// Convert string to number
+const number1 = "5";
+const number2 = 10;
+const sum = Number(number1) + number2;
+const sum2 = parseInt(number1) + number2;
+
+console.log("The sum is:", sum);
+console.log("The sum2 is:", sum2);
+
+```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/fa84e2f3-cfe1-4210-b902-e1185a24ba4b" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/807d915c-9e05-40a7-96dd-4478dcd05640" />
+
+</details>
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
 
 ```
 
@@ -312,8 +415,6 @@ console.log("Visit website at : " + url);
 ```
 
 </details>
-
-
 
 
 
@@ -346,6 +447,7 @@ console.log("Visit website at : " + url);
 ```
 
 </details>
+
 
 
 
