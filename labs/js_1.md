@@ -256,7 +256,7 @@ console.log("Student ID:", _StudentID);
 </details>
 
 <details>
-  <summary>JS String Concatenation and template strings</summary>
+  <summary>JS String Concatenation</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -326,6 +326,7 @@ console.log("Visit website at : " + url);
 ```
 
 </details>
+
 
 
 
