@@ -400,7 +400,7 @@ console.log("The sum2 is:", sum2);
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS Arrays</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -447,6 +447,7 @@ console.log("The sum2 is:", sum2);
 ```
 
 </details>
+
 
 
 
