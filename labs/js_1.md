@@ -296,6 +296,26 @@ console.log("Visit website at : " + url);
 
 </details>
 
+<details>
+  <summary>JS Implicit Type Conversion and Data Types</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
+
+
+
+
 
 
 
@@ -326,6 +346,7 @@ console.log("Visit website at : " + url);
 ```
 
 </details>
+
 
 
 
