@@ -488,7 +488,79 @@ console.log(friends.indexOf('David')); // -1
 
 </details>
 
+<details>
+  <summary>JS Functions</summary>
 
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// JS Function
+function hello(){
+    console.log("Hello, Bob!");
+    console.log("Hello, Anna!");
+    console.log("Hello, Charlie!");
+    return
+}
+
+hello();
+hello();
+
+// Function with Parameters 1
+function greetPerson(name="Peter") {
+    console.log("Hello my friend, " + name + "!");
+    return;
+}
+
+greetPerson();
+greetPerson("Bob");
+greetPerson("Anna");
+greetPerson("Charlie");
+
+// Function with Parameters 2
+function displayFriends(friends) {
+    let allFriends = [];
+    friends.forEach(function(friend) {
+        console.log(friend.name);
+        allFriends.push(friend.name);
+    });
+    return allFriends;
+}
+
+const myFriends = [
+    { name: 'Alice' },
+    { name: 'Bob' },
+    { name: 'Charlie' }
+];
+
+const myGroupedFriends = displayFriends(myFriends);
+console.log(myGroupedFriends);
+
+```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/8ed562bc-924f-418a-86e5-61e39805c428" />
+<img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/faea414f-83e0-48b4-8c7f-14895baee1bf" />
+
+</details>
 
 
 
@@ -519,6 +591,7 @@ console.log(friends.indexOf('David')); // -1
 ```
 
 </details>
+
 
 
 
