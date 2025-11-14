@@ -772,6 +772,61 @@ switch (person2.age >= 18 && person2.status === "resident") {
 </details>
 
 
+<details>
+  <summary>JS While Loop</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// while loops
+let count = 0;
+while (count <= 5) {
+    console.log("Count is: " + count);
+    count++;
+}
+
+```
+
+<img width="1555" height="1077" alt="image" src="https://github.com/user-attachments/assets/f7f082bf-b598-42ee-b940-aa53ddc36882" />
+
+</details>
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
 
 
 
@@ -803,6 +858,7 @@ switch (person2.age >= 18 && person2.status === "resident") {
 ```
 
 </details>
+
 
 
 
