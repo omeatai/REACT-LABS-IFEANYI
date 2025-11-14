@@ -676,19 +676,110 @@ console.log("Middle Name after preventExtensions attempt:", person.middleName); 
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS If, Else If and Switch Statements</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+// if conditions
+if (true) {
+    console.log("This condition is true.");
+} else {
+    console.log("This condition is false.");
+}
+
+const value1 = 10;
+const value2 = 20;
+
+if (value1 < value2) {
+    console.log("value1 is less than value2.");
+} else if (value1 > value2) {
+    console.log("value1 is greater than value2.");
+} else {
+    console.log("value1 is equal to value2.");
+}
+
+const studentName = "John";
+const age = 25;
+
+if (studentName === "John" && age === 25) {
+    console.log("Name is John and age is 25.");
+}
+if (studentName === "John" || age === 30) {
+    console.log("Either name is John or age is 30.");
+}
+
+// switch case
+let fruit = "apple";
+switch (fruit) {
+    case "banana":
+        console.log("This is a banana.");
+        break;
+    case "apple":
+        console.log("This is an apple.");
+        break;
+    default:
+        console.log("Unknown fruit.");
+}
+
+// Voting System
+const person1 = { name: "Alice", age: 25, status: "resident" };
+const person2 = { name: "Bob", age: 17, status: "tourist" };
+
+if (person1.age >= 18 && person1.status === "resident") {
+    console.log(`${person1.name} is eligible to vote.`);
+} else {
+    console.log(`${person1.name} is not eligible to vote.`);
+}
+
+if (person2.age >= 18 && person2.status === "resident") {
+    console.log(`${person2.name} is eligible to vote.`);
+} else {
+    console.log(`${person2.name} is not eligible to vote.`);
+}
+
+switch (person1.age >= 18 && person1.status === "resident") {
+    case true:
+        console.log(`${person1.name} can vote.`);
+        break;
+    case false:
+        console.log(`${person1.name} cannot vote.`);
+        break;
+}
+
+switch (person2.age >= 18 && person2.status === "resident") {
+    case true:
+        console.log(`${person2.name} can vote.`);
+        break;
+    case false:
+        console.log(`${person2.name} cannot vote.`);
+        break;
+}
 
 ```
+
+<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/ccaf8bac-78d5-4125-8442-1cbf0ff1faa3" />
+<img width="1555" height="1077" alt="image" src="https://github.com/user-attachments/assets/7aaac0a4-eeea-456e-b00a-100247812b33" />
 
 </details>
 
@@ -724,6 +815,7 @@ console.log("Middle Name after preventExtensions attempt:", person.middleName); 
 ```
 
 </details>
+
 
 
 
