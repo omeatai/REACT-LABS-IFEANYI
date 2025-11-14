@@ -24,7 +24,6 @@
 </html>
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/77d52950-2c5f-48f7-96dc-79099bb3bc39" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/883e841e-8bf1-4e68-9254-a18b0168f136" />
 
 </details>
@@ -61,7 +60,6 @@
 </html>
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/7b718970-680e-40c4-be22-e16ad43ac08b" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/7657a6d9-7ad2-4b60-ae66-47f4799ecaa7" />
 
 </details>
@@ -103,7 +101,6 @@ document.querySelectorAll('button').forEach(function (button) {
         });
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/cde1ca7f-1466-48ad-afd8-d5014126facf" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/1e148ad8-1bbf-4376-88f8-34ae423f20c0" />
 
 </details>
@@ -155,7 +152,6 @@ console.log("User confirmed: " + isConfirmed);
 
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/4666d40c-b86a-4445-80c2-5a464a8e18d4" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/b42e38e2-3c4c-418d-8c01-b55217141553" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/bd4b06f2-1068-42e7-b823-e8231dc2cf4f" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/f6b4f6d7-d0e7-4926-bd65-9d68424622e6" />
@@ -201,7 +197,6 @@ console.log("A multi-line comment example");
 
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/58c8aefb-60a8-45ee-a6e4-039f38c2b4e8" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/a07b35d3-dc3d-48f7-9302-b9bf5ea14297" />
 
 </details>
@@ -250,7 +245,6 @@ console.log("Student Password:", $studentPassword);
 console.log("Student ID:", _StudentID);
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/f437a1ce-a1b4-410b-a33a-64dfd9ea16e3" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/4c69f881-4bcd-456e-8805-38af29996494" />
 
 </details>
@@ -291,7 +285,6 @@ const url = "https://www." + website + ".com";
 console.log("Visit website at : " + url);
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/4f8be781-07c3-4f23-8e1d-2ab7556acc74" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/94813faf-d429-4821-bbeb-e0c9c46c2dd7" />
 
 </details>
@@ -394,7 +387,6 @@ console.log("The sum2 is:", sum2);
 
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/fa84e2f3-cfe1-4210-b902-e1185a24ba4b" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/807d915c-9e05-40a7-96dd-4478dcd05640" />
 
 </details>
@@ -483,7 +475,6 @@ console.log(friends.indexOf('Alice')); // 0
 console.log(friends.indexOf('David')); // -1
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/8b589424-89f6-463d-9bb8-95be65a110c9" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/3829796f-9989-474b-b163-240dfbeff5ce" />
 
 </details>
@@ -557,7 +548,6 @@ console.log(myGroupedFriends);
 
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/8ed562bc-924f-418a-86e5-61e39805c428" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/faea414f-83e0-48b4-8c7f-14895baee1bf" />
 
 </details>
@@ -670,7 +660,6 @@ console.log("Middle Name after preventExtensions attempt:", person.middleName); 
 
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/e7cf03e1-c16d-43cf-8f50-07a058f3d4b9" />
 <img width="1431" height="1063" alt="image" src="https://github.com/user-attachments/assets/e8c45b37-fdbd-4990-adb2-5c6789cdea51" />
 
 </details>
@@ -778,7 +767,6 @@ switch (person2.age >= 18 && person2.status === "resident") {
 
 ```
 
-<img width="1297" height="1010" alt="image" src="https://github.com/user-attachments/assets/ccaf8bac-78d5-4125-8442-1cbf0ff1faa3" />
 <img width="1555" height="1077" alt="image" src="https://github.com/user-attachments/assets/7aaac0a4-eeea-456e-b00a-100247812b33" />
 
 </details>
@@ -815,6 +803,7 @@ switch (person2.age >= 18 && person2.status === "resident") {
 ```
 
 </details>
+
 
 
 
