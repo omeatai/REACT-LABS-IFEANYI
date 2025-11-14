@@ -812,7 +812,48 @@ while (count <= 5) {
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS Do While Loop</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// do while loops
+let money = 0;
+
+do {
+  console.log("You have $" + money + " available.");
+  money++;
+} while (money < 10);
+console.log("End at: $" + money + ".");
+
+```
+
+<img width="1871" height="1338" alt="image" src="https://github.com/user-attachments/assets/911b0fb6-4e34-4c03-a655-49e0af70587f" />
+
+</details>
+
+<details>
+  <summary>JS For Loop</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -827,7 +868,6 @@ while (count <= 5) {
 ```
 
 </details>
-
 
 
 
@@ -858,6 +898,7 @@ while (count <= 5) {
 ```
 
 </details>
+
 
 
 
