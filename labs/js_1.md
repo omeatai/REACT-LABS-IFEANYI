@@ -961,6 +961,50 @@ console.log(String.fromCharCode(83, 97, 109, 112, 108, 101)); // fromCharCode() 
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// string Literals
+
+const studentName = "John Doe";
+const age = 25;
+const sentence =
+  "Hey there! My name is " + studentName + " and I am " + age + " years old.";
+
+const value = `Hey there! My name is ${studentName} and I am ${age} years old.`;
+
+console.log(sentence);
+console.log(value);
+
+```
+
+<img width="2187" height="1331" alt="image" src="https://github.com/user-attachments/assets/77980cf5-0e5d-43bc-b30f-ce111a4b5ea6" />
+
+</details>
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
 
 ```
 
@@ -971,6 +1015,11 @@ console.log(String.fromCharCode(83, 97, 109, 112, 108, 101)); // fromCharCode() 
 ```
 
 </details>
+
+
+
+
+
 
 
 
@@ -998,6 +1047,7 @@ console.log(String.fromCharCode(83, 97, 109, 112, 108, 101)); // fromCharCode() 
 ```
 
 </details>
+
 
 
 
