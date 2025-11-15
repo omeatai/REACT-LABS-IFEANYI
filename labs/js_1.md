@@ -1305,6 +1305,66 @@ console.log(fullNames5);
 
 </details>
 
+<details>
+  <summary>JS Using Ternary Operator</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const value = 2 > 1;
+
+if (value) {
+  console.log("Condition is true");
+} else {
+  console.log("Condition is false");
+}
+
+// Using Ternary Operator
+const result = value ? "Condition is true" : "Condition is false";
+console.log(result);
+
+```
+
+<img width="1252" height="912" alt="image" src="https://github.com/user-attachments/assets/4590250d-2289-4d29-ace7-2da59996714f" />
+
+</details>
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
 
 
 
@@ -1332,6 +1392,7 @@ console.log(fullNames5);
 ```
 
 </details>
+
 
 
 
