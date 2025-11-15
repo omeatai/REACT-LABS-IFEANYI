@@ -858,6 +858,46 @@ console.log("End at: $" + money + ".");
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// for loops
+for (let i = 0; i < 10; i++) {
+    console.log("Iteration number: " + i);
+}
+
+for (let j = 10; j > 0; j--) {
+    console.log("Countdown: " + j);
+}
+```
+
+<img width="1555" height="1074" alt="image" src="https://github.com/user-attachments/assets/26e82425-0583-44e9-8548-03cb712e8034" />
+
+</details>
+
+<details>
+  <summary>JS</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
 
 ```
 
@@ -868,8 +908,6 @@ console.log("End at: $" + money + ".");
 ```
 
 </details>
-
-
 
 
 
@@ -898,6 +936,7 @@ console.log("End at: $" + money + ".");
 ```
 
 </details>
+
 
 
 
