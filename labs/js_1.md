@@ -1236,7 +1236,74 @@ console.log("All fruits are short:", allShortFruits); // Output: false
 
 </details>
 
+<details>
+  <summary>JS Looping through Arrays</summary>
 
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const names = ["Alice", "Bob", "Charlie", "Diana"];
+const lastname = "Smith";
+
+// looping solution 1
+const fullNames = names.map((name) => `${name} ${lastname}`);
+console.log(fullNames);
+
+// looping solution 2
+let fullNames2 = [];
+names.forEach((name) => {
+  fullNames2.push(`${name} ${lastname}`);
+});
+console.log(fullNames2);
+
+// looping solution 3
+let fullNames3 = [];
+for (let i = 0; i < names.length; i++) {
+  fullNames3.push(`${names[i]} ${lastname}`);
+}
+console.log(fullNames3);
+
+// looping solution 4
+let fullNames4 = [];
+for (const name of names) {
+  fullNames4.push(`${name} ${lastname}`);
+}
+console.log(fullNames4);
+
+// looping solution 5
+let fullNames5 = [];
+let index = 0;
+while (index < names.length) {
+  fullNames5.push(`${names[index]} ${lastname}`);
+  index++;
+}
+console.log(fullNames5);
+
+```
+
+<img width="1252" height="912" alt="image" src="https://github.com/user-attachments/assets/2a17a5e5-6145-4bcd-8f03-1800ed5b18bf" />
+
+</details>
 
 
 
@@ -1265,6 +1332,7 @@ console.log("All fruits are short:", allShortFruits); // Output: false
 ```
 
 </details>
+
 
 
 
