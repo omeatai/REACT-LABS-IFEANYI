@@ -1000,19 +1000,50 @@ console.log(value);
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS String Parameters as Objects</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+// Basic Function parameters
+function fullName(firstName, lastName) {
+  return `${firstName} ${lastName}`.toUpperCase();
+}
+
+console.log(fullName("John", "Doe")); // Output: "JOHN DOE"
+console.log(fullName("Jane", "Smith")); // Output: "JANE SMITH"
+
+// Object Destructuring in Function parameters
+function fullName2({ firstName, lastName }) {
+  return `${firstName} ${lastName}`.toUpperCase();
+}
+
+console.log(fullName2({ firstName: "John", lastName: "Doe" })); // Output: "JOHN DOE"
+console.log(fullName2({ firstName: "Jane", lastName: "Smith" })); // Output: "JANE SMITH"
 
 ```
+
+<img width="2187" height="1331" alt="image" src="https://github.com/user-attachments/assets/7cf226d9-c142-43e6-8830-dc67b00bb9ba" />
 
 </details>
 
@@ -1047,6 +1078,7 @@ console.log(value);
 ```
 
 </details>
+
 
 
 
