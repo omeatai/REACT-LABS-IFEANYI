@@ -1121,7 +1121,8 @@ console.log("Sliced fruits:", citrusFruits); // Output: ["Apple", "Banana"]
 
 // Splice Method
 fruits = ["Apple", "Banana", "Cherry"];
-fruits.splice(1, 1, "Blueberry", "Apricot");
+let splicedFruit = fruits.splice(1, 1, "Blueberry", "Apricot");
+console.log("splicedFruit:", splicedFruit); // Output: ['Banana']
 console.log("After splice:", fruits); // Output: ['Apple', 'Blueberry', 'Apricot', 'Cherry']
 
 // Join Method
@@ -1228,9 +1229,10 @@ let allShortFruits = fruits.every(function (fruit) {
 });
 console.log("All fruits are short:", allShortFruits); // Output: false
 
+
 ```
 
-<img width="2187" height="1331" alt="image" src="https://github.com/user-attachments/assets/07b44fb4-5479-41af-aa64-7a3ecd277383" />
+<img width="1252" height="946" alt="image" src="https://github.com/user-attachments/assets/d146e945-a13b-4e0d-b3b5-cedc0a0b9857" />
 
 </details>
 
@@ -1263,6 +1265,7 @@ console.log("All fruits are short:", allShortFruits); // Output: false
 ```
 
 </details>
+
 
 
 
