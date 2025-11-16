@@ -1355,14 +1355,53 @@ console.log(result);
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+// Understanding Global vs Local scope in JavaScript
+let userName = "Alice";
+let age = 25;
+console.log("Initial userName: ", userName);
+console.log("Initial age: ", age);
+
+function calculate() {
+  // some other code
+  console.log("call 1: ", userName);
+  userName = "Charlie";
+  let age = 30;
+  console.log("Inside calc function - age: ", age);
+}
+calculate();
+
+if (true) {
+  //some other code
+  console.log("call 2: ", userName);
+  userName = "David";
+  console.log("Outside calc function - age: ", age);
+}
+
+console.log("call 3: ", userName);
 
 ```
+
+<img width="1474" height="931" alt="image" src="https://github.com/user-attachments/assets/9fa8e445-94ce-410d-b7b7-a2b7caeed934" />
 
 </details>
 
@@ -1392,6 +1431,7 @@ console.log(result);
 ```
 
 </details>
+
 
 
 
