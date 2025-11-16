@@ -1306,7 +1306,7 @@ console.log(fullNames5);
 </details>
 
 <details>
-  <summary>JS Using Ternary Operator</summary>
+  <summary>JS Using Ternary Operators</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1350,7 +1350,7 @@ console.log(result);
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS Global and Local Scope</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1392,6 +1392,7 @@ console.log(result);
 ```
 
 </details>
+
 
 
 
