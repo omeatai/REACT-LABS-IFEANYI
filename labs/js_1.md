@@ -1405,7 +1405,53 @@ console.log("call 3: ", userName);
 
 </details>
 
+<details>
+  <summary>JS Higher Order and Callback Functions </summary>
 
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+//  Callback function
+function morning(name) {
+    return `Good morning ${name.toUpperCase()}`;
+}
+function evening(name) {
+    return `Good evening ${name.toUpperCase()}`;
+}
+
+// Higher-order function
+function greet(name, callback, person) {
+    console.log(`${callback(name)}, my name is ${person}.`);
+}
+
+// Using the higher-order function with the callback
+greet('Alice', morning, 'John');
+greet('Bob', evening, 'Peter');
+```
+
+<img width="1437" height="1038" alt="image" src="https://github.com/user-attachments/assets/8a93f1fd-c35b-4dc2-93ea-a26dd8e2fb02" />
+
+</details>
 
 
 
@@ -1431,6 +1477,7 @@ console.log("call 3: ", userName);
 ```
 
 </details>
+
 
 
 
