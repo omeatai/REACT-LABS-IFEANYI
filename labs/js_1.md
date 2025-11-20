@@ -1453,16 +1453,66 @@ greet('Bob', evening, 'Peter');
 
 </details>
 
-
-
-
-
-
-
-
-
 <details>
   <summary>JS Array Method: forEach</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// forEach Array Method Example
+const people = [
+  { name: 'Alice', age: 25, position: 'Developer' },
+  { name: 'Bob', age: 30, position: 'Designer' },
+  { name: 'Charlie', age: 35, position: 'Manager' }
+];
+
+// Method 1: Using a named function
+function showPerson(person) {
+  console.log(person.name.toUpperCase());
+}
+people.forEach(showPerson);
+
+// Method 2: Using an anonymous function
+people.forEach(function(person) {
+    console.log(person.name.toLowerCase());
+});
+
+// Output:
+// ALICE
+// BOB
+// CHARLIE
+// alice
+// bob
+// charlie
+
+```
+
+<img width="1437" height="1038" alt="image" src="https://github.com/user-attachments/assets/60e85d4b-7ec9-43ab-ac97-cb5f93597d64" />
+
+</details>
+
+<details>
+  <summary>JS Array Method: map</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1477,6 +1527,34 @@ greet('Bob', evening, 'Peter');
 ```
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+<details>
+  <summary>JS Array Method: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
+
 
 
 
