@@ -1462,7 +1462,7 @@ greet('Bob', evening, 'Peter');
 
 
 <details>
-  <summary>JS</summary>
+  <summary>JS Array Method: forEach</summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1477,6 +1477,7 @@ greet('Bob', evening, 'Peter');
 ```
 
 </details>
+
 
 
 
