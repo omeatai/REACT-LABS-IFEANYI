@@ -1624,7 +1624,68 @@ console.log('Developers:', developers); // [{ name: 'Alice', age: 25, position: 
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// find Method Example
+const people = [
+  { name: 'Alice', age: 25, position: 'Developer', id: 1 },
+  { name: 'Bob', age: 30, position: 'Designer', id: 2 },
+  { name: 'Charlie', age: 35, position: 'Manager', id: 3 }
+];
+
+const person = people.find((person) => person.position === 'Designer');
+console.log(person); // { name: 'Bob', age: 30, position: 'Designer', id: 2 }
+
+const person2 = people.find(function(person) {
+  return person.id === 3;
+});
+console.log(person2); // { name: 'Charlie', age: 35, position: 'Manager', id: 3 }
+
+```
+
+<img width="1437" height="1038" alt="image" src="https://github.com/user-attachments/assets/0875d606-24a2-4a16-adf1-3475a52f2c64" />
+
+</details>
+
+<details>
+  <summary>JS Array Method: reduce </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
@@ -1634,6 +1695,8 @@ console.log('Developers:', developers); // [{ name: 'Alice', age: 25, position: 
 ```
 
 </details>
+
+
 
 
 
@@ -1666,6 +1729,7 @@ console.log('Developers:', developers); // [{ name: 'Alice', age: 25, position: 
 ```
 
 </details>
+
 
 
 
