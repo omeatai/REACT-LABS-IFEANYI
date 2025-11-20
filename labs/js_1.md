@@ -1577,6 +1577,53 @@ console.log('Updated People:', updatedPeople);
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// filter Method Example
+const people = [
+  { name: 'Alice', age: 25, position: 'Developer' },
+  { name: 'Bob', age: 30, position: 'Designer' },
+  { name: 'Charlie', age: 35, position: 'Manager' }
+];
+
+const adults = people.filter(person => person.age >= 30);
+console.log('Adults:', adults); // [{ name: 'Bob', age: 30, position: 'Designer' }, { name: 'Charlie', age: 35, position: 'Manager' }]
+
+const developers = people.filter(function(person) {
+  return person.position === 'Developer';
+});
+console.log('Developers:', developers); // [{ name: 'Alice', age: 25, position: 'Developer' }]
+
+```
+
+<img width="1437" height="1038" alt="image" src="https://github.com/user-attachments/assets/0c578ecd-c4c3-48c8-90ee-45503a298a73" />
+
+</details>
+
+<details>
+  <summary>JS Array Method: find </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
 
 ```
 
@@ -1587,8 +1634,6 @@ console.log('Updated People:', updatedPeople);
 ```
 
 </details>
-
-
 
 
 
@@ -1621,6 +1666,7 @@ console.log('Updated People:', updatedPeople);
 ```
 
 </details>
+
 
 
 
