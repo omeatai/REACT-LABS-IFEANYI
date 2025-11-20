@@ -1517,6 +1517,66 @@ people.forEach(function(person) {
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// map Method Example
+const people = [
+  { name: 'Alice', age: 25, position: 'Developer' },
+  { name: 'Bob', age: 30, position: 'Designer' },
+  { name: 'Charlie', age: 35, position: 'Manager' }
+];
+
+const names = people.map(person => person.name);
+const ages = people.map(person => person.age);
+const positions = people.map(function(person) {
+  return person.position;
+});
+const updatedPeople = people.map(person => {
+  return {
+    ...person,
+    age: person.age + 100,
+    position: 'Senior ' + person.position
+  };
+});
+
+console.log('Names:', names); // Output: Names: [ 'Alice', 'Bob', 'Charlie' ]
+console.log('Ages:', ages); // Output: Ages: [ 25, 30, 35 ]
+console.log('Positions:', positions); // Output: Positions: [ 'Developer', 'Designer', 'Manager' ]
+console.log('Updated People:', updatedPeople);
+// Output: Updated People: [
+// { name: 'Alice', age: 125, position: 'Senior Developer' },
+// { name: 'Bob', age: 130, position: 'Senior Designer' },
+// { name: 'Charlie', age: 135, position: 'Senior Manager' } ]
+```
+
+<img width="1437" height="1038" alt="image" src="https://github.com/user-attachments/assets/59aabd87-cb18-4dfa-916d-1fd17584281b" />
+
+</details>
+
+<details>
+  <summary>JS Array Method: filter </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
 
 ```
 
@@ -1527,6 +1587,13 @@ people.forEach(function(person) {
 ```
 
 </details>
+
+
+
+
+
+
+
 
 
 
@@ -1554,6 +1621,7 @@ people.forEach(function(person) {
 ```
 
 </details>
+
 
 
 
