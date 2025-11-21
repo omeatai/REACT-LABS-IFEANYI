@@ -1917,21 +1917,42 @@ const students = [
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+console.log(students);
+
+const numberOfStudents = students.length;
+console.log("Number of students:", numberOfStudents);
+
+const totalScore = students.reduce((total, student) => {
+  total += student.score;
+  return total;
+}, 0)
+console.log("Total score:", totalScore);
+
+const averageScore = totalScore / numberOfStudents;
+console.log("Average score:", averageScore);
+
+// return Object with favorite subject as key and number of students as value
+const favoriteSubjectCount = students.reduce( (obj, student) => {
+  const favouriteSub = student.favoriteSubject;
+  if(obj[favouriteSub]){
+    obj[favouriteSub] += 1;
+  } else {
+    obj[favouriteSub] = 1;
+  }
+  return obj;
+}, {});
+
+console.log("Favorite subject count:", favoriteSubjectCount);
 
 ```
+
+<img width="1554" height="1042" alt="image" src="https://github.com/user-attachments/assets/c70d22f9-5cca-47b9-a652-885bb46c69d0" />
 
 </details>
 
 
-
-
-
-
-
-
-
 <details>
-  <summary>JS Array Method: </summary>
+  <summary>JS Math Object </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1980,7 +2001,7 @@ const students = [
 
 
 <details>
-  <summary>JS DOM: </summary>
+  <summary>JS </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1995,6 +2016,7 @@ const students = [
 ```
 
 </details>
+
 
 
 
