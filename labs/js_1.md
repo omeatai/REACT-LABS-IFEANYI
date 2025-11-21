@@ -1975,17 +1975,51 @@ console.log("Favorite subject count:", favoriteSubjectCount);
 </html>
 ```
 
-### projects-v1/app_js/sample_1/data.js
+### projects-v1/app_js/sample_1/app.js
 
 ```js
-// student data
-const students = [
-  { id: 1, name: 'Alice', age: 25, score: 80, favoriteSubject: "math",},
-  { id: 2, name: 'Bob', age: 30, score: 85, favoriteSubject: "history" },
-  { id: 3, name: 'Charlie', age: 35, score: 34, favoriteSubject: "art" },
-  { id: 4, name: 'David', age: 40, score: 95, favoriteSubject: "math" },
-  { id: 5, name: 'Eve', age: 28, score: 88, favoriteSubject: "math" }
-];
+//Math Object
+console.log("Math.round(4.56789):", Math.round(4.56789)); // 5
+console.log("Math.ceil(4.333):", Math.ceil(4.333)); // 5
+console.log("Math.floor(4.666):", Math.floor(4.666)); // 4
+console.log("Math.sqrt(25):", Math.sqrt(25)); // 5
+console.log("Math.pow(2, 3):", Math.pow(2, 3)); // 8
+console.log("Math.abs(-10):", Math.abs(-10)); // 10
+console.log("Math.PI:", Math.PI); // 3.141592653589793
+console.log("Math.min(3, 1, 4, 2):", Math.min(3, 1, 4, 2)); // 1
+console.log("Math.max(3, 1, 4, 2):", Math.max(3, 1, 4, 2)); // 4
+console.log("Math.random():", Math.random()); // Random number between 0 and 1
+
+console.log("Numbers btw 1 and 10", Math.floor(Math.random() * 10) + 1); // Random number between 1 and 10
+
+```
+
+<img width="1554" height="1042" alt="image" src="https://github.com/user-attachments/assets/cfcad96b-e416-4095-880b-8d928259c641" />
+
+</details>
+
+<details>
+  <summary>JS </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
@@ -1995,6 +2029,9 @@ const students = [
 ```
 
 </details>
+
+
+
 
 
 
@@ -2006,7 +2043,22 @@ const students = [
 ### projects-v1/app_js/sample_1/index.html
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
 ```
 
 ### projects-v1/app_js/sample_1/app.js
@@ -2016,6 +2068,7 @@ const students = [
 ```
 
 </details>
+
 
 
 
