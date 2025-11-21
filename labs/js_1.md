@@ -1691,12 +1691,44 @@ console.log(person2); // { name: 'Charlie', age: 35, position: 'Manager', id: 3 
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+// reduce Method Example
+const people = [
+  { name: 'Alice', age: 25, position: 'Developer', salary: 500, id: 1 },
+  { name: 'Bob', age: 30, position: 'Designer', salary: 600, id: 2 },
+  { name: 'Charlie', age: 35, position: 'Manager', salary: 1000, id: 3 }
+];
 
+const totalSalary = people.reduce((total, person) => {
+  console.log(`Current Total: ${total}`);
+  console.log(`${person.name}: ${person.salary}`);
+  total += person.salary;
+  return total;
+}, 0);
+
+console.log(`Total Salary: $${totalSalary}`); // Output: Total Salary: $2100
 ```
+
+<img width="1554" height="1042" alt="image" src="https://github.com/user-attachments/assets/d0a1e775-66f3-4838-90ec-e6f458e84e2f" />
 
 </details>
 
 
+<details>
+  <summary>JS DOM: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
 
 
 
@@ -1714,7 +1746,7 @@ console.log(person2); // { name: 'Charlie', age: 35, position: 'Manager', id: 3 
 
 
 <details>
-  <summary>JS Array Method: </summary>
+  <summary>JS : </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -1729,6 +1761,7 @@ console.log(person2); // { name: 'Charlie', age: 35, position: 'Manager', id: 3 
 ```
 
 </details>
+
 
 
 
