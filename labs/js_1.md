@@ -1862,12 +1862,65 @@ const students = [
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+console.log(students);
+
+const search = students.find(student => student.id === 1);
+const search2 = students.find(student => student.favoriteSubject === 'math');
+
+console.log(search);
+console.log(search2);
+
+```
+
+<img width="1554" height="1042" alt="image" src="https://github.com/user-attachments/assets/18155648-d50f-4438-b155-2ee1ecf3a784" />
+
+</details>
+
+ 
+<details>
+  <summary>JS Array Method: Reduce-2 </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/data.js
+
+```js
+// student data
+const students = [
+  { id: 1, name: 'Alice', age: 25, score: 80, favoriteSubject: "math",},
+  { id: 2, name: 'Bob', age: 30, score: 85, favoriteSubject: "history" },
+  { id: 3, name: 'Charlie', age: 35, score: 34, favoriteSubject: "art" },
+  { id: 4, name: 'David', age: 40, score: 95, favoriteSubject: "math" },
+  { id: 5, name: 'Eve', age: 28, score: 88, favoriteSubject: "math" }
+];
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
 
 ```
 
 </details>
-
-
 
 
 
@@ -1922,6 +1975,10 @@ const students = [
 
 </details>
 
+
+
+
+
 <details>
   <summary>JS DOM: </summary>
 
@@ -1938,6 +1995,7 @@ const students = [
 ```
 
 </details>
+
 
 
 
