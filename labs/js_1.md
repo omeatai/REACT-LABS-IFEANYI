@@ -2407,12 +2407,53 @@ console.log(lastChild);
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const heading = document.querySelector("h2");
+console.log(heading);
+console.log(heading.parentElement);
+console.log(heading.parentElement.parentElement);
+console.log(heading.parentElement.parentElement.parentElement);
+console.log(heading.parentElement.parentElement.parentElement.parentElement);
+
+const parentOfH2 = heading.parentElement;
+console.log(parentOfH2);
+parentOfH2.style.color = "red";
+```
+
+<img width="2067" height="1352" alt="image" src="https://github.com/user-attachments/assets/2ab35d54-982c-4efa-a858-86f260d2278f" />
+
+</details>
+
+<details>
+  <summary>JS DOM: nextSibling and previousSibling </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
 
 ```
 
 </details>
-
-
 
 
 
@@ -2465,6 +2506,7 @@ console.log(lastChild);
 ```
 
 </details>
+
 
 
 
