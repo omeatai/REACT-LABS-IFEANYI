@@ -2605,6 +2605,85 @@ console.log(links);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .colors {
+            color: white;
+            background-color: red;
+        }
+
+        .colors2 {
+            color: white;
+            background-color: black;
+        }
+
+        .text {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="first" class="colors">I'm First Element</h1>
+    <h1 id="second">I'm Second Element</h1>
+    <h1 id="third">I'm Third Element</h1>
+    <h1 id="forth">I'm Fourth Element</h1>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const first = document.getElementById('first');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
+const forth = document.getElementById('forth');
+
+const classValue = first.className;
+console.log('Class value of first element:', classValue);
+
+second.className = 'colors2';
+const classValue2 = second.className;
+console.log('Class value of second element:', classValue2);
+
+third.classList.add('colors');
+third.classList.add('text')
+const classValue3 = third.className;
+console.log('Class value of third element:', classValue3);
+
+forth.classList.add('colors2', 'text');
+const classValue4 = forth.className;
+console.log('Class value of forth element:', classValue4);
+forth.classList.remove('colors2');
+const classValue5 = forth.className;
+console.log('Class value of forth element after removing colors2 class:', classValue5);
+
+const hasTextClass = third.classList.contains('text');
+console.log('Does third element have "text" class?', hasTextClass);
+```
+
+<img width="1488" height="1020" alt="image" src="https://github.com/user-attachments/assets/a25006dd-2305-4916-a253-3421f37909d7" />
+
+</details>
+
+<details>
+  <summary>JS DOM: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -2623,6 +2702,11 @@ console.log(links);
 ```
 
 </details>
+
+
+
+
+
 
 
 
@@ -2682,6 +2766,7 @@ console.log(links);
 ```
 
 </details>
+
 
 
 
