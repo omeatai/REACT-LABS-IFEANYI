@@ -1999,6 +1999,76 @@ console.log("Numbers btw 1 and 10", Math.floor(Math.random() * 10) + 1); // Rand
 </details>
 
 <details>
+  <summary>JS Date Object </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+const now = new Date();
+const nowFormatted = new Date().toLocaleString();
+const nowFormatted2 = new Date().toISOString();
+const nowFormatted3 = new Date('2025-08-20T14:30:00Z');
+const nowFormatted4 = new Date('11/20/2025 14:30:00');
+const nowDate = now.getDate();
+const nowYear = now.getFullYear();
+const nowMonth = now.getMonth();
+const nowDay = now.getDay();
+const nowHours = now.getHours();
+const nowMinutes = now.getMinutes();
+const nowSeconds = now.getSeconds();
+
+console.log('now:', now);
+console.log('nowFormatted:', nowFormatted);
+console.log('nowFormatted2:', nowFormatted2);
+console.log('nowFormatted3:', nowFormatted3);
+console.log('nowFormatted4:', nowFormatted4);
+console.log('nowDate:', nowDate);
+console.log('nowYear:', nowYear);
+console.log('nowMonth:', nowMonth);
+console.log('nowDay:', nowDay);
+console.log('nowHours:', nowHours);
+console.log('nowMinutes:', nowMinutes);
+console.log('nowSeconds:', nowSeconds);
+
+const month = months[nowMonth];
+const day = days[nowDay];
+const date = nowDate;
+const year = nowYear;
+
+console.log(`Today is ${day}, ${month} ${date}, ${year}`);
+console.log(`Current Time: ${nowHours}:${nowMinutes < 10 ? '0' + nowMinutes : nowMinutes}:${nowSeconds < 10 ? '0' + nowSeconds : nowSeconds}`);
+
+```
+
+<img width="1554" height="1042" alt="image" src="https://github.com/user-attachments/assets/1efd1b89-d41c-4fe5-b5ec-7de2f49b1599" />
+
+</details>
+
+<details>
   <summary>JS </summary>
 
 ### projects-v1/app_js/sample_1/index.html
@@ -2029,6 +2099,18 @@ console.log("Numbers btw 1 and 10", Math.floor(Math.random() * 10) + 1); // Rand
 ```
 
 </details>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2068,6 +2150,7 @@ console.log("Numbers btw 1 and 10", Math.floor(Math.random() * 10) + 1); // Rand
 ```
 
 </details>
+
 
 
 
