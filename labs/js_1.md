@@ -2424,7 +2424,7 @@ parentOfH2.style.color = "red";
 </details>
 
 <details>
-  <summary>JS DOM: nextSibling, nextElementSibling, previousSibling, previousElementSibling </summary>
+  <summary>JS DOM: Sibling - nextSibling, nextElementSibling, previousSibling, previousElementSibling </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2561,6 +2561,7 @@ third.style.fontSize = "1.5rem";
 ```
 
 </details>
+
 
 
 
