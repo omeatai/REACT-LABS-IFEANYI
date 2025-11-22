@@ -2481,7 +2481,7 @@ third.style.fontSize = "1.5rem";
 </details>
 
 <details>
-  <summary>JS DOM: </summary>
+  <summary>JS DOM: nodeValue, childNodes, textContent </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2561,6 +2561,7 @@ third.style.fontSize = "1.5rem";
 ```
 
 </details>
+
 
 
 
