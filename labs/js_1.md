@@ -2424,7 +2424,64 @@ parentOfH2.style.color = "red";
 </details>
 
 <details>
-  <summary>JS DOM: nextSibling and previousSibling </summary>
+  <summary>JS DOM: nextSibling, nextElementSibling, previousSibling, previousElementSibling </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <ul id="result">
+        <li class="first">first</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li id="last">last</li>
+    </ul>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const first = document.querySelector(".first");
+console.log(first);
+
+const last = document.querySelector("#last");
+console.log(last);
+
+const second = first.nextElementSibling;
+console.log(second);
+
+const second2 = first.nextSibling.nextSibling;
+console.log(second2);
+
+second.style.color = "red";
+second.style.fontSize = "1.5rem";
+
+const third = last.previousElementSibling;
+console.log(third);
+third.style.color = "blue";
+third.style.fontSize = "1.5rem";
+```
+
+<img width="2067" height="1352" alt="image" src="https://github.com/user-attachments/assets/5bd4ede8-8bcd-4c24-8ece-f4e183e3e1ca" />
+
+</details>
+
+<details>
+  <summary>JS DOM: </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2454,8 +2511,6 @@ parentOfH2.style.color = "red";
 ```
 
 </details>
-
-
 
 
 
@@ -2506,6 +2561,7 @@ parentOfH2.style.color = "red";
 ```
 
 </details>
+
 
 
 
