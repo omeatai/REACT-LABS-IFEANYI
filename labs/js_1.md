@@ -2496,8 +2496,8 @@ third.style.fontSize = "1.5rem";
 </head>
 
 <body>
-    <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
+    <h1 id="special">This is a special content</h1>
+    <button class="btn" id="btn">Click Me</button>
     <script src="./app.js"></script>
 </body>
 
@@ -2507,8 +2507,26 @@ third.style.fontSize = "1.5rem";
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const item = document.getElementById("special");
+
+const value = item.nodeValue;
+console.log(value);
+
+const childNode = item.childNodes[0];
+console.log(childNode);
+
+const childNode2 = item.firstChild;
+console.log(childNode2);
+
+const childValue = childNode.nodeValue;
+console.log(childValue);
+
+const itemValue = item.textContent;
+console.log(itemValue);
 
 ```
+
+<img width="1982" height="1339" alt="image" src="https://github.com/user-attachments/assets/70682f6b-0ffb-409e-abf6-de3193ddf6a6" />
 
 </details>
 
@@ -2561,6 +2579,7 @@ third.style.fontSize = "1.5rem";
 ```
 
 </details>
+
 
 
 
