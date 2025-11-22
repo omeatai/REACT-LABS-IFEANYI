@@ -2530,6 +2530,109 @@ console.log(itemValue);
 
 </details>
 
+<details>
+  <summary>JS DOM: getAttribute() and setAttribute() </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <ul>
+        <li class="first mylist" id="special">I have class of first</li>
+        <li class="mylist" id="linklist">
+            <a href="first.html" id="link">random link</a>
+        </li>
+        <li class="mylist">I have no attributes</li>
+    </ul>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const first = document.querySelector(".first");
+console.log(first);
+
+const classValue = first.getAttribute("class");
+console.log(classValue);
+
+const idValue = first.getAttribute("id");
+console.log(idValue);
+
+const link = document.getElementById("link");
+const showLink = link.getAttribute("href");
+console.log(showLink);
+
+const linkList = document.getElementById("linklist");
+console.log(linkList);
+
+const last = linkList.nextElementSibling;
+console.log(last);
+last.setAttribute("class", "first");
+last.textContent = "I also have a class of first";
+
+const links = document.querySelectorAll(".first");
+console.log(links);
+```
+
+<img width="1982" height="1339" alt="image" src="https://github.com/user-attachments/assets/ce924252-b261-45fd-823e-4d38bd79334f" />
+
+</details>
+
+<details>
+  <summary>JS DOM: ClassList and ClassName </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2579,6 +2682,7 @@ console.log(itemValue);
 ```
 
 </details>
+
 
 
 
