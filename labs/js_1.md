@@ -2146,11 +2146,65 @@ btn.addEventListener('click', () => {
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const h1 = document.getElementById('title');
+h1.style.color = 'red';
+
+const headings = document.getElementsByTagName('h2');
+console.log(headings);
+console.log(headings.length);
+headings[0].style.color = 'blue';
+
+const items = document.getElementsByTagName('li');
+console.log(items);
+
+const listedItems = Array.from(items);
+const listedItems2 = [...items];
+console.log(listedItems);
+console.log(listedItems2);
+
+listedItems[1].style.fontWeight = 'bold';
+listedItems.forEach((item) => {
+    item.style.color = 'green';
+    item.style.fontSize = '20px';
+});
+
+```
+
+<img width="2067" height="1352" alt="image" src="https://github.com/user-attachments/assets/af0f6ad4-12ac-4238-9000-34abe38b6bbc" />
+
+</details>
+
+<details>
+  <summary>JS DOM: getElementsByClassName </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
 
 ```
 
 </details>
-
 
 
 
@@ -2203,6 +2257,7 @@ btn.addEventListener('click', () => {
 ```
 
 </details>
+
 
 
 
