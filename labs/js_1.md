@@ -2069,7 +2069,58 @@ console.log(`Current Time: ${nowHours}:${nowMinutes < 10 ? '0' + nowMinutes : no
 </details>
 
 <details>
-  <summary>JS </summary>
+  <summary>JS DOM: getElementByID </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <h1 id="title">Hello</h1>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const h1 = document.getElementById('title');
+h1.style.color = 'red';
+
+const btn = document.getElementById('btn');
+btn.style.backgroundColor = 'black';
+btn.style.color = 'white';
+btn.style.padding = '10px 20px';
+btn.style.border = 'none';
+btn.style.borderRadius = '5px';
+btn.style.cursor = 'pointer';
+
+btn.addEventListener('click', () => {
+    alert('Button Clicked!');
+});
+
+```
+
+<img width="1557" height="1020" alt="image" src="https://github.com/user-attachments/assets/0ffba66f-61b7-4bf1-9c38-4a6635bdcf37" />
+
+</details>
+
+
+<details>
+  <summary>JS DOM: getElementByTagName </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2099,6 +2150,8 @@ console.log(`Current Time: ${nowHours}:${nowMinutes < 10 ? '0' + nowMinutes : no
 ```
 
 </details>
+
+
 
 
 
@@ -2120,7 +2173,7 @@ console.log(`Current Time: ${nowHours}:${nowMinutes < 10 ? '0' + nowMinutes : no
 
 
 <details>
-  <summary>JS </summary>
+  <summary>JS DOM: </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2150,6 +2203,7 @@ console.log(`Current Time: ${nowHours}:${nowMinutes < 10 ? '0' + nowMinutes : no
 ```
 
 </details>
+
 
 
 
