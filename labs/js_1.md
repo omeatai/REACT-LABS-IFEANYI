@@ -2136,7 +2136,16 @@ btn.addEventListener('click', () => {
 
 <body>
     <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
+    <h1 id="title">Hello</h1>
+    <h2>List of students</h2>
+    <ul>
+        <li>Student 1</li>
+        <li>Student 2</li>
+        <li>Student 3</li>
+        <li>Student 4</li>
+        <li>Student 5</li>
+    </ul>
+    <button class="btn" id="btn">Click Me</button>
     <script src="./app.js"></script>
 </body>
 
@@ -2191,6 +2200,131 @@ listedItems.forEach((item) => {
 
 <body>
     <h1>Javascript Basics</h1>
+    <h1 id="title">Hello</h1>
+    <h2>List of students</h2>
+    <ul>
+        <li class="special">Student 1</li>
+        <li>Student 2</li>
+        <li class="special">Student 3</li>
+        <li>Student 4</li>
+        <li class="special">Student 5</li>
+    </ul>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const h1 = document.getElementById("title");
+h1.style.color = "red";
+
+const headings = document.getElementsByTagName("h2");
+console.log(headings);
+console.log(headings.length);
+headings[0].style.color = "blue";
+
+const items = document.getElementsByClassName("special");
+console.log(items);
+
+items[2].style.fontWeight = "bold";
+Array.from(items).forEach((item) => {
+  item.style.color = "red";
+  item.style.fontSize = "20px";
+});
+```
+
+<img width="2067" height="1352" alt="image" src="https://github.com/user-attachments/assets/76ad9abd-4bee-49a5-91e2-8c65ba37e78a" />
+
+</details>
+
+<details>
+  <summary>JS DOM: QuerySelector and QuerySelectorAll </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <h1 id="title">Hello</h1>
+    <h2>List of students</h2>
+    <ul id="result">
+        <li class="special">Student 1</li>
+        <li>Student 2</li>
+        <li class="special">Student 3</li>
+        <li>Student 4</li>
+        <li class="special last">Student 5</li>
+    </ul>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const h1 = document.getElementById("title");
+h1.style.color = "red";
+
+const headings = document.getElementsByTagName("h2");
+console.log(headings);
+console.log(headings.length);
+headings[0].style.color = "blue";
+
+const result = document.querySelector("#result");
+result.style.backgroundColor = "black";
+result.style.color = "white";
+
+const students = document.querySelectorAll(".special");
+console.log(students);
+students.forEach((student) => {
+  student.style.color = "pink";
+});
+
+const lastStudent = document.querySelector(".last");
+console.log(lastStudent);
+lastStudent.style.fontSize = "30px";
+
+const lastStudent2 = document.querySelector("li:last-child");
+console.log(lastStudent2);
+lastStudent2.innerHTML += " - color is pink.";
+```
+
+<img width="2067" height="1352" alt="image" src="https://github.com/user-attachments/assets/335ed919-14a5-4d38-9ca1-c614807a9f4a" />
+
+</details>
+
+<details>
+  <summary>JS DOM: Children </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
 </body>
@@ -2205,6 +2339,10 @@ listedItems.forEach((item) => {
 ```
 
 </details>
+
+
+
+
 
 
 
@@ -2257,6 +2395,7 @@ listedItems.forEach((item) => {
 ```
 
 </details>
+
 
 
 
