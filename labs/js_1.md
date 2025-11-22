@@ -2120,7 +2120,7 @@ btn.addEventListener('click', () => {
 
 
 <details>
-  <summary>JS DOM: getElementByTagName </summary>
+  <summary>JS DOM: getElementsByTagName </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2203,6 +2203,7 @@ btn.addEventListener('click', () => {
 ```
 
 </details>
+
 
 
 
