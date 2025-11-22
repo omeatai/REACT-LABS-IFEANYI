@@ -2309,7 +2309,79 @@ lastStudent2.innerHTML += " - color is pink.";
 </details>
 
 <details>
-  <summary>JS DOM: Children </summary>
+  <summary>JS DOM: Children - firstChild, firstElementChild, lastChild, lastElementChild </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1 id="title">Javascript Basics</h1>
+    <h2>List of students</h2>
+    <ul id="result">
+        <li>Student 1</li>
+        <li>Student 2</li>
+        <li>Student 3</li>
+        <li>Student 4</li>
+        <li>Student 5</li>
+    </ul>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const h1 = document.getElementById("title");
+h1.style.color = "red";
+
+const headings = document.getElementsByTagName("h2");
+console.log(headings);
+console.log(headings.length);
+headings[0].style.color = "blue";
+
+const result = document.querySelector("#result");
+console.log(result);
+result.style.backgroundColor = "wheat";
+
+const children = result.children;
+console.log(children);
+
+const firstElementChild = result.firstElementChild;
+console.log(firstElementChild);
+firstElementChild.style.color = "green";
+firstElementChild.style.fontWeight = "bold";
+
+const firstChild = result.firstChild;
+console.log(firstChild);
+
+const lastElementChild = result.lastElementChild;
+console.log(lastElementChild);
+lastElementChild.style.color = "blue";
+lastElementChild.style.fontWeight = "bold";
+
+const lastChild = result.lastChild;
+console.log(lastChild);
+
+```
+
+<img width="2067" height="1352" alt="image" src="https://github.com/user-attachments/assets/64bb71bc-584c-415c-bcf5-ad2141cf9063" />
+
+</details>
+
+<details>
+  <summary>JS DOM: parentElement </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2339,8 +2411,6 @@ lastStudent2.innerHTML += " - color is pink.";
 ```
 
 </details>
-
-
 
 
 
@@ -2395,6 +2465,7 @@ lastStudent2.innerHTML += " - color is pink.";
 ```
 
 </details>
+
 
 
 
