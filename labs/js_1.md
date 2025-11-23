@@ -2672,7 +2672,7 @@ console.log('Does third element have "text" class?', hasTextClass);
 </details>
 
 <details>
-  <summary>JS DOM: </summary>
+  <summary>JS DOM: createElement, createTextNode, appendChild </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2766,6 +2766,7 @@ console.log('Does third element have "text" class?', hasTextClass);
 ```
 
 </details>
+
 
 
 
