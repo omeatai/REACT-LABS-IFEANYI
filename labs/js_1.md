@@ -2862,7 +2862,7 @@ document.body.replaceChild(h6, result);
 </details>
 
 <details>
-  <summary>JS DOM: Prepend InnerText </summary>
+  <summary>JS DOM: Prepend and InnerText </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2874,29 +2874,52 @@ document.body.replaceChild(h6, result);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
-    <style>
-        .red {
-            color: white;
-            background-color: red;
-        }
-
-        .blue {
-            color: white;
-            background-color: blue;
-        }
-
-        .black {
-            color: white;
-            background-color: black;
-        }
-    </style>
 </head>
 
 <body>
-    <div id="result">
-        <h1 class="red">I'm the child of result</h1>
-    </div>
+    <h2>first heading</h2>
     <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// create empty heading element
+const h1 = document.createElement("h1");
+
+// prepend with InnerText
+h1.innerText = "I'm the created Text element";
+document.body.prepend(h1);
+console.log(document.body.children);
+
+```
+
+<img width="1318" height="965" alt="image" src="https://github.com/user-attachments/assets/5b5bf161-a6cd-4c04-8147-cc476d39eb97" />
+
+</details>
+
+<details>
+  <summary>JS DOM: Remove and Remove Child </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
     <script src="./app.js"></script>
 </body>
 
@@ -2910,7 +2933,6 @@ document.body.replaceChild(h6, result);
 ```
 
 </details>
-
 
 
 
@@ -2970,6 +2992,7 @@ document.body.replaceChild(h6, result);
 ```
 
 </details>
+
 
 
 
