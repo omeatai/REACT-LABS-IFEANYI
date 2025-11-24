@@ -2684,11 +2684,126 @@ console.log('Does third element have "text" class?', hasTextClass);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .red {
+            color: white;
+            background-color: red;
+        }
+
+        .blue {
+            color: white;
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
+    <div id="result">
+        <h1 class="red">I'm the child of result</h1>
+    </div>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const result = document.querySelector("#result");
+
+// create empty h2 element
+const h2 = document.createElement("h2");
+
+// append text to h2
+// h2.innerText = "I'm the new created element";
+const h2textNode = document.createTextNode("I'm the new created Text element");
+h2.appendChild(h2textNode);
+
+// manipulate classList and style for h2
+h2.classList.add("red");
+h2.classList.toggle("blue");
+console.log(h2.classList);
+console.log(h2.className);
+h2.style.fontSize = "40px";
+h2.style.backgroundColor = "green";
+h2.style.color = "white";
+h2.style.padding = "10px";
+h2.style.textAlign = "center";
+
+// append h2 to result
+result.appendChild(h2);
+
+// create empty div and p element
+const div = document.createElement("div");
+const p = document.createElement("p");
+
+// create Text Node
+const textNode = document.createTextNode("I'm the second created element");
+
+// append textNode to p
+p.appendChild(textNode);
+
+// manipulate classList for p
+p.classList.add("blue");
+p.style.fontSize = "40px";
+p.style.color = "white";
+p.style.padding = "10px";
+p.style.textAlign = "center";
+
+// append p to div
+div.appendChild(p);
+
+// append div to result
+result.appendChild(div);
+
+console.log(result.children);
+console.log(Array.from(result.children)[0]);
+console.log(Array.from(result.children)[1]);
+console.log(Array.from(result.children)[2]);
+
+// for (node of result.children) {
+//   console.log(node);
+// }
+
+```
+
+<img width="1318" height="965" alt="image" src="https://github.com/user-attachments/assets/2804cbbb-3822-4117-88f7-07d07147c9f0" />
+
+</details>
+
+<details>
+  <summary>JS DOM: insertBefore and replaceChild </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .red {
+            color: white;
+            background-color: red;
+        }
+
+        .blue {
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result">
+        <h1 class="red">I'm the child of result</h1>
+    </div>
+    <button class="btn" id="btn">Click Me</button>
     <script src="./app.js"></script>
 </body>
 
@@ -2702,8 +2817,6 @@ console.log('Does third element have "text" class?', hasTextClass);
 ```
 
 </details>
-
-
 
 
 
@@ -2766,6 +2879,7 @@ console.log('Does third element have "text" class?', hasTextClass);
 ```
 
 </details>
+
 
 
 
