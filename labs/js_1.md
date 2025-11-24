@@ -2796,6 +2796,99 @@ console.log(Array.from(result.children)[2]);
             color: white;
             background-color: blue;
         }
+
+        .black {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result">
+        <h1 class="red">I'm the child of result</h1>
+    </div>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const result = document.querySelector("#result");
+
+// create empty div and p element
+const div = document.createElement("div");
+const p = document.createElement("p");
+
+// create Text Node
+const textNode = document.createTextNode("I'm the created Text element");
+
+// append textNode to p
+p.appendChild(textNode);
+
+// manipulate classList for p
+p.classList.add("blue");
+p.style.fontSize = "40px";
+p.style.color = "white";
+p.style.padding = "10px";
+p.style.textAlign = "center";
+
+// append p to div
+div.appendChild(p);
+
+// append div to result
+document.body.insertBefore(div, result);
+
+const siblingBeforeResult = result.previousElementSibling;
+console.log(siblingBeforeResult);
+console.log(Array.from(siblingBeforeResult.children));
+
+const h6 = document.createElement("h6");
+const h6Text = document.createTextNode("I'm a H6 replacment Text");
+h6.appendChild(h6Text);
+h6.classList.add("black");
+h6.style.padding = "10px";
+h6.style.textAlign = "center";
+document.body.replaceChild(h6, result);
+
+```
+
+<img width="1318" height="965" alt="image" src="https://github.com/user-attachments/assets/9d8509a7-8935-47e4-949b-6786206d3706" />
+
+</details>
+
+<details>
+  <summary>JS DOM: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .red {
+            color: white;
+            background-color: red;
+        }
+
+        .blue {
+            color: white;
+            background-color: blue;
+        }
+
+        .black {
+            color: white;
+            background-color: black;
+        }
     </style>
 </head>
 
@@ -2817,8 +2910,6 @@ console.log(Array.from(result.children)[2]);
 ```
 
 </details>
-
-
 
 
 
@@ -2879,6 +2970,7 @@ console.log(Array.from(result.children)[2]);
 ```
 
 </details>
+
 
 
 
