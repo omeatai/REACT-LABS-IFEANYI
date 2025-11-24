@@ -2862,7 +2862,7 @@ document.body.replaceChild(h6, result);
 </details>
 
 <details>
-  <summary>JS DOM: </summary>
+  <summary>JS DOM: Prepend InnerText </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -2970,6 +2970,7 @@ document.body.replaceChild(h6, result);
 ```
 
 </details>
+
 
 
 
