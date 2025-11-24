@@ -2918,6 +2918,60 @@ console.log(document.body.children);
 </head>
 
 <body>
+    <h1 id="header">hello world</h1>
+    <div id="result">
+        <h1>second heading</h1>
+    </div>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+// create empty heading element
+const h1 = document.createElement("h1");
+
+// prepend with InnerText
+h1.innerText = "I'm the created Text element";
+document.body.prepend(h1);
+console.log(document.body.children);
+
+// remove
+const header = document.querySelector("#header");
+header.remove();
+
+// removeChild
+const result = document.querySelector("#result");
+const heading = result.querySelector("h1");
+result.removeChild(heading);
+console.log(result.children);
+
+```
+
+<img width="1314" height="930" alt="image" src="https://github.com/user-attachments/assets/b1817b38-1408-443b-9081-98464933a921" />
+
+</details>
+
+<details>
+  <summary>JS DOM: InnerHTML and TextContent </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
     <h1>Javascript Basics</h1>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
@@ -2933,7 +2987,6 @@ console.log(document.body.children);
 ```
 
 </details>
-
 
 
 
@@ -2992,6 +3045,7 @@ console.log(document.body.children);
 ```
 
 </details>
+
 
 
 
