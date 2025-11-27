@@ -3102,6 +3102,95 @@ btn.addEventListener('click', changeParagraphColors);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+            text-transform: capitalize;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header">hello world</h1>
+    <p>I can trigger an event!</p>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector('.btn');
+const header = document.querySelector('#header');
+const p = document.querySelector('p');
+
+function clickEvent() {
+   console.log('Button was clicked!');
+}
+
+function mouseDownEvent() {
+    console.log('Mouse is Down');
+}
+
+function mouseUpEvent() {
+    console.log('Mouse is Up');
+}
+
+btn.addEventListener('click', clickEvent);
+btn.addEventListener('mousedown', mouseDownEvent);
+btn.addEventListener('mouseup', mouseUpEvent);
+
+header.addEventListener('mouseenter', function() {
+    console.log('Mouse entered the header');
+    header.classList.add('red');
+});
+
+header.addEventListener('mouseleave', function() {
+    console.log('Mouse left the header');
+    header.classList.remove('red');
+});
+
+```
+
+<img width="1506" height="1025" alt="image" src="https://github.com/user-attachments/assets/a805f0e8-a50a-4cc2-9ebb-86e902946594" />
+
+</details>
+
+<details>
+  <summary>JS Events: Key Events </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -3120,8 +3209,6 @@ btn.addEventListener('click', changeParagraphColors);
 ```
 
 </details>
-
-
 
 
 
@@ -3174,6 +3261,7 @@ btn.addEventListener('click', changeParagraphColors);
 ```
 
 </details>
+
 
 
 
