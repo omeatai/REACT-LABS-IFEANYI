@@ -3014,7 +3014,83 @@ document.body.insertBefore(ul, btn);
 </details>
 
 <details>
-  <summary>JS Events: </summary>
+  <summary>JS Events: Click Events</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+            text-transform: capitalize;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header">hello world</h1>
+    <p>I can trigger an event!</p>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector('.btn');
+const header = document.querySelector('#header');
+const p = document.querySelector('p');
+
+btn.addEventListener('click', function() {
+    console.log('Button was clicked!');
+    header.className === '' ? header.classList.add('red') : header.classList.remove('red');
+    console.log(`Header.className: ${header.className}`);
+});
+
+function changeParagraphColors() {
+    let hasClass = p.classList.contains('blue');
+    hasClass ? p.classList.remove('blue') : p.classList.add('blue');
+    console.log(`p.className: ${p.className}`);
+}
+btn.addEventListener('click', changeParagraphColors);
+
+```
+
+<img width="1506" height="1025" alt="image" src="https://github.com/user-attachments/assets/b3e75314-ec47-422a-a5f8-b9b4fb8fa360" />
+
+</details>
+
+<details>
+  <summary>JS DOM: Mouse Events </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3044,8 +3120,6 @@ document.body.insertBefore(ul, btn);
 ```
 
 </details>
-
-
 
 
 
@@ -3100,6 +3174,7 @@ document.body.insertBefore(ul, btn);
 ```
 
 </details>
+
 
 
 
