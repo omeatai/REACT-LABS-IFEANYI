@@ -2972,6 +2972,63 @@ console.log(result.children);
 </head>
 
 <body>
+    <h1 id="header">hello world</h1>
+    <ul id="first">
+        <li class="item">list item</li>
+        <li>list item</li>
+    </ul>
+    <div id="second">
+        i have some text content
+    </div>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const list = document.getElementById('first');
+const items = list.querySelector('.item');
+const div = document.getElementById('second');
+const btn = document.querySelector('.btn');
+
+console.log(div.textContent);
+console.log(list.innerHTML);
+
+const ul = document.createElement('ul');
+ul.innerHTML = `
+    <li>New Item 1</li>
+    <li>New Item 2</li>
+    <li>New Item 3</li>
+`;
+
+document.body.insertBefore(ul, btn);
+
+```
+
+<img width="1506" height="1025" alt="image" src="https://github.com/user-attachments/assets/2a2bbdf1-135d-4b95-95a7-3d0f831a6c7b" />
+
+</details>
+
+<details>
+  <summary>JS Events: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
     <h1>Javascript Basics</h1>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
@@ -2987,8 +3044,6 @@ console.log(result.children);
 ```
 
 </details>
-
-
 
 
 
@@ -3045,6 +3100,7 @@ console.log(result.children);
 ```
 
 </details>
+
 
 
 
