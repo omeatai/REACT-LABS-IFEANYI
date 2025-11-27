@@ -3090,7 +3090,7 @@ btn.addEventListener('click', changeParagraphColors);
 </details>
 
 <details>
-  <summary>JS DOM: Mouse Events </summary>
+  <summary>JS Events: Mouse Events </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3144,7 +3144,7 @@ btn.addEventListener('click', changeParagraphColors);
 
 
 <details>
-  <summary>JS DOM: </summary>
+  <summary>JS Events: </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3174,6 +3174,7 @@ btn.addEventListener('click', changeParagraphColors);
 ```
 
 </details>
+
 
 
 
