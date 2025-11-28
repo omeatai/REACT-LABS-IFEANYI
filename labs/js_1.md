@@ -3331,6 +3331,104 @@ link.addEventListener("click", function (e) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="list-items">
+            <li class="item"><a href="#" class="link">link</a></li>
+            <li class="item"><a href="#" class="link">link</a></li>
+            <li class="item"><a href="#" class="link">link</a></li>
+        </ul>
+    </div>
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const link = document.getElementById("link");
+const container = document.querySelector(".container");
+const list = document.querySelector(".list-items");
+
+function preventPropagation(e) {
+  console.log("Link clicked, propagation stopped.");
+  e.stopPropagation();
+}
+
+function showBubbling(e) {
+  console.log("#######################################");
+  console.log("Current Target:", e.currentTarget);
+  console.log("Target:", e.target);
+}
+
+// Event Bubbling
+list.addEventListener("click", showBubbling);
+container.addEventListener("click", showBubbling);
+document.addEventListener("click", showBubbling);
+window.addEventListener("click", showBubbling);
+
+// Event Propagation Prevention
+// list.addEventListener("click", preventPropagation);
+// container.addEventListener("click", showBubbling);
+// document.addEventListener("click", showBubbling);
+// window.addEventListener("click", showBubbling);
+
+// Event Capturing
+// list.addEventListener("click", showBubbling, { capture: true });
+// container.addEventListener("click", showBubbling, { capture: true });
+// document.addEventListener("click", showBubbling, { capture: true });
+// window.addEventListener("click", showBubbling, { capture: true });
+
+btn.addEventListener("click", function () {
+  const element = document.createElement("h1");
+  element.classList.add("heading");
+  element.textContent = "New Heading Added inside container!";
+  container.appendChild(element);
+});
+
+container.addEventListener("click", function (e) {
+  if (e.target.classList.contains("heading")) {
+    console.log("#######################################");
+    console.log("Hello there from heading!");
+  }
+});
+
+```
+
+<img width="2138" height="1386" alt="image" src="https://github.com/user-attachments/assets/08af2f31-ed28-45ee-b627-288f633e1786" />
+
+</details>
+
+<details>
+  <summary>JS Forms: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -3349,6 +3447,16 @@ link.addEventListener("click", function (e) {
 ```
 
 </details>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3397,6 +3505,7 @@ link.addEventListener("click", function (e) {
 ```
 
 </details>
+
 
 
 
