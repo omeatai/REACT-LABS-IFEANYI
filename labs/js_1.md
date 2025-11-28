@@ -3245,12 +3245,15 @@ nameInput.addEventListener('keydown', function(e) {
 nameInput.addEventListener('keyup', function(e) {
     console.log(`Key up: "${e.key}"`);
 });
+
 ```
+
+<img width="1506" height="1025" alt="image" src="https://github.com/user-attachments/assets/ca709b20-4157-4a1c-a944-6a6281b20c18" />
 
 </details>
 
 <details>
-  <summary>JS Events: </summary>
+  <summary>JS Events: Event Object </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3330,6 +3333,7 @@ nameInput.addEventListener('keyup', function(e) {
 ```
 
 </details>
+
 
 
 
