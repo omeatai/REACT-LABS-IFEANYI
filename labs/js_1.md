@@ -3253,7 +3253,73 @@ nameInput.addEventListener('keyup', function(e) {
 </details>
 
 <details>
-  <summary>JS Events: Event Object </summary>
+  <summary>JS Events: The Event Object and e.preventDefault() </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 80vh;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn" id="btn">Click Me</button>
+    <h1>some <span>spanned heading</span></h1>
+    <a href="#" id="link">random link</a>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const heading = document.querySelector("h1");
+const btn = document.querySelector(".btn");
+const link = document.getElementById("link");
+
+heading.addEventListener("click", function (e) {
+  console.log(e.currentTarget);
+  console.log(e.target);
+  console.log(e.type);
+  console.log(e);
+});
+
+link.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("link clicked, prevented default behavior");
+});
+
+```
+
+<img width="2052" height="1447" alt="image" src="https://github.com/user-attachments/assets/48653d75-84b0-4135-a1d7-9dc579da24b3" />
+
+</details>
+
+<details>
+  <summary>JS Events: Event Propagation </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3283,8 +3349,6 @@ nameInput.addEventListener('keyup', function(e) {
 ```
 
 </details>
-
-
 
 
 
@@ -3333,6 +3397,7 @@ nameInput.addEventListener('keyup', function(e) {
 ```
 
 </details>
+
 
 
 
