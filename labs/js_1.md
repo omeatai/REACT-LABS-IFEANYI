@@ -3191,6 +3191,77 @@ header.addEventListener('mouseleave', function() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .red {
+            background-color: red;
+            color: white;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .blue {
+            background-color: blue;
+            color: white;
+            text-transform: capitalize;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="name">
+    <button class="btn" id="btn">Click Me</button>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+const btn = document.querySelector('.btn');
+const nameInput = document.querySelector('#name');
+
+nameInput.addEventListener('keypress', function(e) {
+    console.log(`You pressed a key: "${e.key}"`);
+});
+
+nameInput.addEventListener('keydown', function(e) {
+    console.log(`Key down: "${e.key}"`);
+});
+
+nameInput.addEventListener('keyup', function(e) {
+    console.log(`Key up: "${e.key}"`);
+});
+```
+
+</details>
+
+<details>
+  <summary>JS Events: </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -3209,8 +3280,6 @@ header.addEventListener('mouseleave', function() {
 ```
 
 </details>
-
-
 
 
 
@@ -3261,6 +3330,7 @@ header.addEventListener('mouseleave', function() {
 ```
 
 </details>
+
 
 
 
