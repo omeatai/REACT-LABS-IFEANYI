@@ -3319,7 +3319,7 @@ link.addEventListener("click", function (e) {
 </details>
 
 <details>
-  <summary>JS Events: Event Propagation </summary>
+  <summary>JS Events: Event Propagation, Bubbling and Capturing </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3397,6 +3397,7 @@ link.addEventListener("click", function (e) {
 ```
 
 </details>
+
 
 
 
