@@ -3608,11 +3608,35 @@ retrieveBtn.addEventListener("click", function () {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
+    <form action="" id="form">
+        <input type="text" id="fruit" placeholder="Enter Fruit Name" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
+    <input type="button" value="Retrieve Friend Data" class="btn" id="retrieve-friend-btn" /> <br /><br />
+    <input type="button" value="Retrieve Fruit Data" class="btn" id="retrieve-fruit-btn" /><br /><br />
+    <input type="button" value="Clear Local Storage" class="btn" id="clear-storage-btn" /><br /><br />
     <script src="./app.js"></script>
 </body>
 
@@ -3622,42 +3646,84 @@ retrieveBtn.addEventListener("click", function () {
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const btn = document.querySelector(".btn");
+const retrieveFriendsBtn = document.querySelector("#retrieve-friend-btn");
+const retrieveFruitBtn = document.querySelector("#retrieve-fruit-btn");
+const clearStorageBtn = document.querySelector("#clear-storage-btn");
+const form = document.querySelector("form");
+const fruit = document.querySelector("#fruit");
+
+// Web Storage API - Local Storage, Session Storage
+
+// Set Item
+// localStorage.setItem("name", "John Doe");
+
+// Get Item
+// const nameFromLocalStorage = localStorage.getItem("name");
+// console.log(nameFromLocalStorage);
+
+// Remove Item
+// localStorage.removeItem("name");
+
+// Clear Storage
+// localStorage.clear();
+
+//. JSON.stringy() and JSON.parse()
+
+const friends = ["Mike", "Jessie", "John"];
+
+// Set Array in Local Storage with JSON.stringify()
+localStorage.setItem("friends", JSON.stringify(friends));
+
+// Get Array from Local Storage with JSON.parse()
+const friendsFromLocalStorage = JSON.parse(localStorage.getItem("friends"));
+
+retrieveFriendsBtn.addEventListener("click", function() {
+    alert(friendsFromLocalStorage);
+});
+
+
+let fruits;
+
+if (localStorage.getItem("fruits")) {
+    fruits = JSON.parse(localStorage.getItem("fruits"));
+} else {
+    fruits = [];
+}
+
+// Retrieve Fruit Data
+retrieveFruitBtn.addEventListener("click", function() {
+    alert(fruits);
+});
+
+// Add Fruit Data
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const fruitValue = fruit.value.trim();
+    if (fruitValue !== "") {
+        fruits.push(fruitValue);
+        localStorage.setItem("fruits", JSON.stringify(fruits));
+        fruit.value = "";
+        alert("Fruit added!");
+    } else {
+        alert("Please enter a fruit name.");
+    }
+});
+
+// Clear Local Storage
+clearStorageBtn.addEventListener("click", function() {
+    localStorage.clear();
+    alert("Local storage cleared!");
+});
 
 ```
 
+<img width="1564" height="1031" alt="image" src="https://github.com/user-attachments/assets/cbdaa836-7db9-4df8-b19d-8035f7a54e40" />
+
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <details>
-  <summary>JS Forms: </summary>
+  <summary>JS setTimeout </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3727,8 +3793,37 @@ retrieveBtn.addEventListener("click", function () {
 
 
 
+<details>
+  <summary>JS  </summary>
 
+### projects-v1/app_js/sample_1/index.html
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
 
 
 
