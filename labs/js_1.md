@@ -3501,6 +3501,113 @@ form.addEventListener("submit", function (e) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="password" id="password" placeholder="Enter Password" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
+    <input type="button" value="Retrieve Data" class="btn" id="retrieve-btn" />
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const retrieveBtn = document.querySelector("#retrieve-btn");
+const form = document.querySelector("form");
+const name = document.querySelector("#name");
+const password = document.querySelector("#password");
+
+// Web Storage API - Local Storage, Session Storage
+
+// Set Item
+// localStorage.setItem("name", "John Doe");
+// sessionStorage.setItem("name", "John Doe Session");
+
+// Get Item
+// const nameFromLocalStorage = localStorage.getItem("name");
+// const nameFromSessionStorage = sessionStorage.getItem("name");
+// console.log(nameFromLocalStorage);
+// console.log(nameFromSessionStorage);
+
+// Remove Item
+// localStorage.removeItem("name");
+// sessionStorage.removeItem("name");
+
+// Clear Storage
+// localStorage.clear();
+// sessionStorage.clear();
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  // Save data to Local Storage
+  localStorage.setItem("name", name.value);
+  localStorage.setItem("password", password.value);
+
+  // Save data to Session Storage
+  // sessionStorage.setItem("name", name.value);
+  // sessionStorage.setItem("password", password.value);
+
+  alert("Data saved!");
+});
+
+retrieveBtn.addEventListener("click", function () {
+  // Retrieve data from Local Storage
+  const storedName = localStorage.getItem("name");
+  const storedPassword = localStorage.getItem("password");
+
+  // Retrieve data from Session Storage
+  // const storedName = sessionStorage.getItem("name");
+  // const storedPassword = sessionStorage.getItem("password");
+
+  alert(`Name: ${storedName}\nPassword: ${storedPassword}`);
+});
+
+```
+
+<img width="1564" height="1031" alt="image" src="https://github.com/user-attachments/assets/095175ff-b26a-473e-9d4e-b2f95c50dcbb" />
+
+</details>
+
+<details>
+  <summary>JS Forms: Local Storage API with JSON.stringify() and JSON.parse() </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -3519,6 +3626,11 @@ form.addEventListener("submit", function (e) {
 ```
 
 </details>
+
+
+
+
+
 
 
 
@@ -3575,6 +3687,7 @@ form.addEventListener("submit", function (e) {
 ```
 
 </details>
+
 
 
 
