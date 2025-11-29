@@ -3417,6 +3417,134 @@ container.addEventListener("click", function (e) {
 </details>
 
 <details>
+  <summary>JS Forms: Basics </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="password" id="password" placeholder="Enter Password" /><br /><br />
+        <input type="submit" value="Submit" class="btn" />
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const form = document.querySelector("form");
+const name = document.querySelector("#name");
+const password = document.querySelector("#password");
+
+// console.log(btn, form, name, password);
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("Form submitted!");
+  console.log(e.target)
+  console.log(e.target.name)
+  console.log("Name:", e.target.name.value);
+  console.log("Password:", e.target.password.value);
+  console.log("Name:", name.value);
+  console.log("Password:", password.value);
+});
+
+```
+
+<img width="1564" height="1031" alt="image" src="https://github.com/user-attachments/assets/968b3cb4-2d63-49b6-888e-8435c94dd0cd" />
+
+</details>
+
+<details>
+  <summary>JS Forms: Local Storage API </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details>
   <summary>JS Forms: </summary>
 
 ### projects-v1/app_js/sample_1/index.html
@@ -3448,63 +3576,6 @@ container.addEventListener("click", function (e) {
 
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<details>
-  <summary>JS Events: </summary>
-
-### projects-v1/app_js/sample_1/index.html
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Basics</title>
-</head>
-
-<body>
-    <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
-    <script src="./app.js"></script>
-</body>
-
-</html>
-```
-
-### projects-v1/app_js/sample_1/app.js
-
-```js
-
-```
-
-</details>
 
 
 
