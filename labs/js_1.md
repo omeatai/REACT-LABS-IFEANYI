@@ -3489,7 +3489,7 @@ form.addEventListener("submit", function (e) {
 </details>
 
 <details>
-  <summary>JS Forms: Local Storage API </summary>
+  <summary>JS Forms: Local Storage/ Session Storage API </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3575,6 +3575,7 @@ form.addEventListener("submit", function (e) {
 ```
 
 </details>
+
 
 
 
