@@ -3735,6 +3735,86 @@ clearStorageBtn.addEventListener("click", function() {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const form = document.querySelector("form");
+const nameInput = document.querySelector("#name");
+
+function sayHello() {
+    console.log(`Hello ${nameInput.value || "Jasmine!"}`);
+}
+
+function showScore(name, score) {
+    console.log(`${name}, your score is ${score}%.`);
+}
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const firstID = setTimeout(sayHello, 1000);
+    const secondID = setTimeout(function () {
+        console.log("Would you like to know your score?");
+    }, 3000);
+    const thirdID = setTimeout(showScore, 5000, nameInput.value || "Jasmine", 95);
+
+    // To cancel the timeouts, uncomment the lines below
+    // clearTimeout(firstID);
+    // clearTimeout(secondID);
+    // clearTimeout(thirdID);
+});
+
+```
+
+<img width="1564" height="1031" alt="image" src="https://github.com/user-attachments/assets/99a0e041-3040-40cf-97ac-a1d7e1d90355" />
+
+</details>
+
+<details>
+  <summary>JS setInterval </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -3753,22 +3833,6 @@ clearStorageBtn.addEventListener("click", function() {
 ```
 
 </details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3824,32 +3888,6 @@ clearStorageBtn.addEventListener("click", function() {
 ```
 
 </details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
