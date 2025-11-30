@@ -4280,7 +4280,7 @@ btn.addEventListener("click", function () {
 
 ### projects-v1\app_js\projects\color_flipper\hex.html
 
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -4397,7 +4397,7 @@ boxesArray.forEach(function (box, index) {
 
 ### projects-v1\app_js\projects\color_flipper\styles.css
 
-```js
+```css
 /*
 ===============
 Fonts
@@ -4679,6 +4679,38 @@ main {
 </details>
 
 
+<details>
+  <summary>JS  </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
+
 
 
 
@@ -4735,6 +4767,7 @@ main {
 ```
 
 </details>
+
 
 
 
