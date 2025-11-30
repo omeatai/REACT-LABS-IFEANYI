@@ -4084,6 +4084,100 @@ window.addEventListener("scroll", () => {
 </details>
 
 
+<details>
+  <summary>JS Window Height, WIdth and getBoundingClientRect()</summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div><br /><br />
+    <input type="button" value="Get Dimensions" class="btn" /><br /><br />
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const box = document.querySelector(".box");
+
+console.log("height: ", window.innerHeight);
+console.log("width: ", window.innerWidth);
+
+btn.addEventListener("click", () => {
+  const values = box.getBoundingClientRect();
+  console.log(values);
+});
+
+```
+
+<img width="1338" height="909" alt="image" src="https://github.com/user-attachments/assets/bdf9ce3b-9912-4e41-9fe7-a42c71167e3c" />
+
+</details>
+
+<details>
+  <summary>JS Events: Resize </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
+
 
 
 
@@ -4143,6 +4237,7 @@ window.addEventListener("scroll", () => {
 ```
 
 </details>
+
 
 
 
