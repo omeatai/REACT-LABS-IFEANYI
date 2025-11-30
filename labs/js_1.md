@@ -3884,6 +3884,69 @@ setInterval(showScore, 4000, "Jasmine", 95);
 </details>
 
 <details>
+  <summary>JS DOMContentLoaded </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const stopBtn = document.querySelector("#stop-btn");
+const form = document.querySelector("form");
+const nameInput = document.querySelector("#name");
+
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded and parsed.....");
+});
+
+```
+
+<img width="1328" height="941" alt="image" src="https://github.com/user-attachments/assets/920cea2d-db64-459e-a525-81ddad424698" />
+
+</details>
+
+<details>
   <summary>JS  </summary>
 
 ### projects-v1/app_js/sample_1/index.html
@@ -3914,7 +3977,6 @@ setInterval(showScore, 4000, "Jasmine", 95);
 ```
 
 </details>
-
 
 
 
@@ -3978,6 +4040,7 @@ setInterval(showScore, 4000, "Jasmine", 95);
 ```
 
 </details>
+
 
 
 
