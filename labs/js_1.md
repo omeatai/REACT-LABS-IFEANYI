@@ -4204,6 +4204,8 @@ window.addEventListener("resize", () => {
 
 ```
 
+<img width="1338" height="910" alt="image" src="https://github.com/user-attachments/assets/9b44bb8d-c590-4551-b281-94a49afcf3fb" />
+
 </details>
 
 
@@ -4265,6 +4267,7 @@ window.addEventListener("resize", () => {
 ```
 
 </details>
+
 
 
 
