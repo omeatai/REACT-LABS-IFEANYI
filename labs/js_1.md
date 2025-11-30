@@ -4012,7 +4012,76 @@ window.addEventListener("load", () => {
 
 </details>
 
+<details>
+  <summary>JS Events: Scroll </summary>
 
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .footer {
+            margin-top: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
+    <p class="footer">This is the Footer</p>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const stopBtn = document.querySelector("#stop-btn");
+const form = document.querySelector("form");
+const nameInput = document.querySelector("#name");
+
+// Scroll Event
+window.addEventListener("scroll", () => {
+  console.log("Scrolling...");
+  console.log(`Scroll Y: ${window.scrollY} px`);
+  console.log(`Scroll X: ${window.scrollX} px`);
+});
+```
+
+<img width="1200" height="909" alt="image" src="https://github.com/user-attachments/assets/9c12f894-11d0-487f-95e6-b588c094e1a9" />
+
+</details>
 
 
 
@@ -4074,6 +4143,7 @@ window.addEventListener("load", () => {
 ```
 
 </details>
+
 
 
 
