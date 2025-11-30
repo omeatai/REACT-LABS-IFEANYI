@@ -4208,7 +4208,37 @@ window.addEventListener("resize", () => {
 
 </details>
 
+<details>
+  <summary>JS DOM Projects: Color Flipper </summary>
 
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+
+<body>
+    <h1>Javascript Basics</h1>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+
+```
+
+</details>
 
 
 
@@ -4267,6 +4297,7 @@ window.addEventListener("resize", () => {
 ```
 
 </details>
+
 
 
 
