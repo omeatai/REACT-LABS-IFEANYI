@@ -4159,11 +4159,29 @@ btn.addEventListener("click", () => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
+    <div class="box"></div><br /><br />
+    <input type="button" value="Get Dimensions" class="btn" /><br /><br />
     <script src="./app.js"></script>
 </body>
 
@@ -4173,6 +4191,16 @@ btn.addEventListener("click", () => {
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const btn = document.querySelector(".btn");
+const box = document.querySelector(".box");
+
+console.log("First height: ", window.innerHeight);
+console.log("First width: ", window.innerWidth);
+
+window.addEventListener("resize", () => {
+  console.log("height: ", window.innerHeight);
+  console.log("width: ", window.innerWidth);
+});
 
 ```
 
@@ -4237,6 +4265,7 @@ btn.addEventListener("click", () => {
 ```
 
 </details>
+
 
 
 
