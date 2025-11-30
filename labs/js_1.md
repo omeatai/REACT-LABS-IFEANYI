@@ -3815,6 +3815,87 @@ form.addEventListener("submit", function (e) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
+    <input type="button" value="Stop Interval" class="btn" id="stop-btn" /><br /><br />
+    <script src="./app.js"></script>
+</body>
+
+</html>
+```
+
+### projects-v1/app_js/sample_1/app.js
+
+```js
+const btn = document.querySelector(".btn");
+const stopBtn = document.querySelector("#stop-btn");
+const form = document.querySelector("form");
+const nameInput = document.querySelector("#name");
+
+function sayHello() {
+  console.log(`Hello ${nameInput.value || "Jasmine!"}`);
+}
+
+let firstID;
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  firstID = setInterval(sayHello, 2000);
+});
+
+stopBtn.addEventListener("click", function () {
+  // To cancel the interval
+  clearInterval(firstID);
+});
+
+function showScore(name, score) {
+  console.log(`${name} scored ${score}.`);
+}
+setInterval(showScore, 4000, "Jasmine", 95);
+
+```
+
+<img width="1328" height="941" alt="image" src="https://github.com/user-attachments/assets/2c805087-e9cd-45ea-9c2a-8372f04a5f45" />
+
+</details>
+
+<details>
+  <summary>JS  </summary>
+
+### projects-v1/app_js/sample_1/index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
 </head>
 
 <body>
@@ -3833,6 +3914,15 @@ form.addEventListener("submit", function (e) {
 ```
 
 </details>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3888,6 +3978,7 @@ form.addEventListener("submit", function (e) {
 ```
 
 </details>
+
 
 
 
