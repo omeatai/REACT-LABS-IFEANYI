@@ -4680,7 +4680,7 @@ main {
 
 
 <details>
-  <summary>JS  </summary>
+  <summary>JS DOM Projects: Counter </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -4767,6 +4767,7 @@ main {
 ```
 
 </details>
+
 
 
 
