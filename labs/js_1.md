@@ -3884,7 +3884,7 @@ setInterval(showScore, 4000, "Jasmine", 95);
 </details>
 
 <details>
-  <summary>JS DOMContentLoaded </summary>
+  <summary>JS Events: DOMContentLoaded </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3936,6 +3936,8 @@ const stopBtn = document.querySelector("#stop-btn");
 const form = document.querySelector("form");
 const nameInput = document.querySelector("#name");
 
+// DOMContentLoaded is fired when the initial HTML document has been completely loaded and parsed
+// without waiting for stylesheets, images, and subframes to finish loading.
 window.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed.....");
 });
@@ -3947,7 +3949,7 @@ window.addEventListener("DOMContentLoaded", () => {
 </details>
 
 <details>
-  <summary>JS  </summary>
+  <summary>JS Events: Load </summary>
 
 ### projects-v1/app_js/sample_1/index.html
 
@@ -3959,11 +3961,32 @@ window.addEventListener("DOMContentLoaded", () => {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Basics</title>
+    <style>
+        .btn {
+            background-color: #f15025;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            font-size: 1.2rem;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Javascript Basics</h1>
-    <script src="./data.js"></script>
+    <form action="" id="form">
+        <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+        <input type="submit" value="Submit" class="btn" /><br /><br />
+    </form>
     <script src="./app.js"></script>
 </body>
 
@@ -3973,8 +3996,19 @@ window.addEventListener("DOMContentLoaded", () => {
 ### projects-v1/app_js/sample_1/app.js
 
 ```js
+const btn = document.querySelector(".btn");
+const stopBtn = document.querySelector("#stop-btn");
+const form = document.querySelector("form");
+const nameInput = document.querySelector("#name");
+
+// Load event is fired when the whole HTML is loaded and parsed, including all deferred stylesheets and Images.
+window.addEventListener("load", () => {
+  console.log("Page fully loaded and parsed.....");
+});
 
 ```
+
+<img width="1328" height="941" alt="image" src="https://github.com/user-attachments/assets/b6e82a23-f5d1-442d-9cf6-38deabb49609" />
 
 </details>
 
@@ -4040,6 +4074,7 @@ window.addEventListener("DOMContentLoaded", () => {
 ```
 
 </details>
+
 
 
 
